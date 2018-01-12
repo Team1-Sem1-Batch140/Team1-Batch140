@@ -1,0 +1,17 @@
+#attraction{
+    margin-top: 30px;
+}
+.attractionInfo{
+    margin:20px;
+}
+.caption h3{
+    color: red;
+}
+.caption{
+    padding: 10px 20px;
+    border-style: dotted;
+    border-top: solid 5px red;
+}
+.caption:hover{
+    border-color: red;
+}

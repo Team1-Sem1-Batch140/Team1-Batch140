@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styleRadio.css">
+    <link rel="stylesheet" href="Css/Header.css">
+    <script src="Js/simpleCounter.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar").affix({offset: {top: $("header").outerHeight(true)}});
+        });
+
+
+        var app = angular.module('cusApp', []);
+        app.controller('cusController', function ($scope) {
+            $scope.Customer = {name: '', pwd: ''};
+            $scope.showUser = false;
+            $scope.myClick = function () {
+                $scope.showUser = !$scope.showUser;
+            }
+        });
+
+
+    </script>
+</head>
+<body>
+<!--INCLUDE HEADER-->
+<!--<object type="text/html" data="Header.html"></object>-->
+<div w3-include-html="Header.html"></div>
+<script>
+    w3IncludeHTML();
+</script>
+
+<div class="container">
+    <h3>Park tickets</h3>
+    <p>Start your reservation by choosing your tickets <br> Some attractions are undergoing refurbishments.
+        <a href="#">See the calendar for details.</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1">
+                <h2>1</h2>
+            </div>
+            <div class="col-lg-11">
+                <h2>Select your type of tickets</h2>
+                <p>All ticket access to all games (except for water sports games).</p>
+                <form class="form cf">
+                    <section class="plan cf">
+                        <input type="radio" name="radio1" id="1turn" value="1turn">
+                        <label class="free-label four col" for="1turn">
+                            <div>Cable car return ticket.</div>
+                        </label>
+                        <input type="radio" name="radio1" id="2turn" value="2turn">
+                        <label class="basic-label four col" for="2turn">Cable car ticket on returning.</label>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+                <h2>2</h2>
+            </div>
+            <div class="col-lg-11">
+                <h2>Select your Number of tickets</h2>
+                <p>Please note that children under 1m don't need a ticket.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <script type="text/javascript">
+                            var clicks = 0;
+                            function clickAdd() {
+                                clicks += 1;
+                                document.getElementById("clicks").innerHTML = clicks;
+                            };
+                            function clickSub() {
+                                clicks -= 1;
+                                document.getElementById("clicks").innerHTML = clicks;
+                            };
+                        </script>
+                        <span>
+                            <button type="button" onClick="clickSub()"><span class="glyphicon glyphicon-minus"></span></button>
+                        </span>
+                            <span>Guests >= 1.4m: <a id="clicks">0</a></span>
+                        <span>
+                            <button type="button" onClick="clickAdd()"><span class="glyphicon glyphicon-plus"></span></button>
+                        </span>
+                        <p>Price: 800.000 VND</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <script type="text/javascript">
+                            var clicks = 0;
+                            function clickAdd2() {
+                                clicks += 1;
+                                document.getElementById("child").innerHTML = clicks;
+                            };
+                            function clickSub2() {
+                                clicks -= 1;
+                                document.getElementById("child").innerHTML = clicks;
+                            };
+                        </script>
+                        <span>
+                            <button type="button" onClick="clickSub2()"><span class="glyphicon glyphicon-minus"></span></button>
+                        </span>
+                        <span>Guests from 1m – under 1.4m: <a id="child">0</a></span>
+                        <span>
+                            <button type="button" onClick="clickAdd2()"><span class="glyphicon glyphicon-plus"></span></button>
+                        </span>
+                        <p>Price: 730.000 VND</p>
+                    </div>
+                    <a href="cart.html">NEXT</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
