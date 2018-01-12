@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact-Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="Js/angular.min.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+</head>
+<style>
+
+    .only-bighead > h1, .only-text > p{
+        text-align: center;
+    }
+    input[type=text], textarea, [type=email] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        margin-bottom: 30px;
+    }
+    @media screen and (max-width: 600px){
+        input[type=text], textarea, [type=email]{
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+</style>
+<script>
+    function initMap() {
+        var uluru = {lat: 12.220396, lng: 109.241387};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    initMap();
+
+//    function myMap() {
+//        var mapCanvas = document.getElementById("map");
+//        var mapOptions = {
+//            center: new google.maps.LatLng(12.220396, 109.241387), zoom: 10
+//        };
+//        var map = new google.maps.Map(mapCanvas, mapOptions);
+//    }
+</script>
+
+<body>
+<div>
+    <!-- HEADER -->
+</div>
+<div id="Contact-Us" class="container">
+
+    <!--Top -->
+    <div class="row">
+
+        <div class="col-md-2"></div>
+
+
+        <div class="col-xs-8 col-sm-8 col-md-8 only-bighead">
+            <h1>Contact Us</h1>
+        </div>
+
+
+        <div class="col-md-2"></div>
+
+    </div>
+
+    <!-- Mid -->
+    <div class="row">
+        <div class="col-md-2"></div>
+
+
+        <div class="col-md-8 only-text">
+            <p>Asperiores, itaque vero facere laudantium voluptas temporibus mollitia nisi deleniti illo minima quisquam
+                corporis possimus nesciunt.</p>
+        </div>
+
+
+        <div class="col-md-2"></div>
+    </div>
+
+
+    <div class="row">
+        <!-- Bot -->
+        <div id="map" class="col-sm-6 col-md-6"  style="width:100%;height:400px;">
+        </div>
+
+
+
+        <div class="col-sm-6 col-md-6">
+                <div class="row contact-form">
+                   <fieldset class="col-sm-6 col-md-6">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                   </fieldset>
+
+
+                    <fieldset class="col-sm-6 col-md-6">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </fieldset>
+
+                    <fieldset class="col-sm-12 col-md-12">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </fieldset>
+
+
+                    <fieldset class="col-sm-12 col-md-12">
+                        <textarea rows="6" type="text" id="comments" name="comments" placeholder="Write something.."></textarea>
+                    </fieldset>
+
+                </div>
+
+
+            <fieldset class="col-md-12">
+                <input type="submit" name="send" value="Send Message" id="submit" class="button">
+            </fieldset>
+        </div>
+
+
+    </div>
+
+</div>
+<div>
+    <!-- FOOTER -->
+</div>
+</body>
+</html>
