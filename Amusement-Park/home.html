@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="Css/home.css">
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('customersCtrl', function($scope, $http) {
+            $http.get("customers.php").then(function (response) {
+                $scope.names = response.data.records;
+            });
+        });
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="customersCtrl" style="background: #f2f2f2">
+<div ng-include="'Common/Header.html'"></div>
+<div class="container">
+    <h1 style="text-align: center"><i style="color: darkred">Restaurant</i></h1>
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <h3 style="text-align: center">Fast Food</h3>
+            <a href=""> <img src="Images/pizza-hot-and-spicy.jpg" style="width: 100%"></a>
+            <p><i>Merciado restaurant serves Fast Food and drink to customers in return for money..</i></p>
+            <a href="" class="button-2" style="margin-left: 70%">Read More..</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3 style="text-align: center">Mutton & B.Q.</h3>
+            <a href=""><img src="Images/bar-B.Q.jpg" style="width: 100%"></a>
+            <p><i>Merciado restaurant serves mutton ,Bar B.Q and Beef and drink to customers in return for money..</i></p>
+            <a href="" class="button-2" style="margin-left: 70%">Read More..</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3 style="text-align: center">Sea food</h3>
+            <a href=""><img src="Images/tom-hum.jpg" style="width: 100%"></a>
+            <p><i>Merciado restaurant serves complete vriety and drink to customers in return for money..</i></p>
+            <a href="" class="button-2" style="margin-left: 70%">Read More..</a>
+
+        </div>
+    </div>
+</div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h1 style="text-align: center"><i style="color: darkred">Attraction</i></h1>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h3 style="text-align: center">Water Park</h3>
+                    <a href=""><img src="Images/duong-truot-6-lan-750x400.jpg" style="width: 100%"></a>
+                    <p><i>Merciado Amusement Park are provided Entertainments like SHows,Concerts,Magic Shows .Entertainment is a form of activity</i></p>
+                    <a href="" class="button-2" style="margin-left: 70%">Read More..</a>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3 style="text-align: center">Shows</h3>
+                    <a href=""><img src="Images/images.jpg" style="width: 100%"></a>
+                    <p><i>A Merciado establishment a great Entertainment which prepares great shows and entertainment fields...</i></p>
+                    <a href="" class="button-2" style="margin-left: 70%">Read More..</a>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3 style="text-align: center">Rides</h3>
+                    <a href=""><img src="Images/rides_1800x900.jpg" style="width: 100%"></a>
+                    <p><i>Merciado establishment a great Carnival which prepares and serves great Rides and enjoyment fields...</i></p>
+                    <a href="" class="button-2" style="margin-left: 70%">Read More..</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+</html>
