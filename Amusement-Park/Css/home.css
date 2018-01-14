@@ -7,3 +7,15 @@ h2 {
 .row button{
     background-color: orange;
 }
+.button-2 b{
+    padding: 7px 10px;
+    background: green;
+    color: white;
+    background: orangered;
+}
+ .row a{
+    text-decoration: none;
+}
+ b:hover{
+     background: orange;
+ }
