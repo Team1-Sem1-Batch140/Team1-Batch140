@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="Css/home.css">
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('customersCtrl', function($scope, $http) {
+            $http.get("customers.php").then(function (response) {
+                $scope.names = response.data.records;
+            });
+        });
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="customersCtrl" style="background: #f2f2f2">
+<div ng-include="'Common/Header.html'"></div>
+<br>
+<div class="container">
+    <h1 style="text-align: center"><i style="color: darkred">Gallery</i></h1>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <a href=""> <img src="Images/duong-truot-6-lan-750x400.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/rides_1800x900.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/aqua-shute.jpg" style="width: 100%"></a>
+
+        </div>
+    </div>
+        <br>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <a href=""> <img src="Images/aqua-swing.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/duong-truot-phao-750x450.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/11-750x309.jpg" style="width: 100%"></a>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <a href=""> <img src="Images/anhtulieu-2-750x560.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/DSC_0761-750x450.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/IMG_7058-copy-970x400.jpg" style="width: 100%"></a>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <a href=""> <img src="Images/index.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/MG_0492.jpg" style="width: 100%"></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/DSC_1481-750x450.jpg" style="width: 100%"></a>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
