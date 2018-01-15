@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <title>Restaurant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="Css/Restaurant.css">
+    <!--<link rel="stylesheet" href="Css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/Restaurant.css">
+    <link rel="stylesheet" href="Css/Style's Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-    <!--<script src="Js/jquery-3.2.1.min.js"></script>-->
-    <!--<script src="Js/bootstrap.min.js"></script>-->
-    <!--<script src="Js/angular.min.js"></script>-->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+
+
 </head>
 
 <script>
@@ -29,19 +35,20 @@
         document.getElementById("quantity").innerHTML = add();
     }
 
+    $(function () {
+        $("#header").load("Common/Header.html");
+        $("#footer").load("Common/Footer.html");
+    });
+
 
 </script>
 <body>
-
-<div ng-app="cusApp">
-    <!-- HEADER -->
-
-
-</div>
+<!-- HEADER -->
+<div w3-include-html="Common/Header.html" id="header"></div>
 
 
 <!-- BOT HEADER -->
-<div class="bot-header">
+<div id="bot-header">
 
     <div id="main">
         <h2 class="easy">Vinpearl Land</h2>
@@ -53,7 +60,9 @@
             <!-- Carousel -->
             <div class="row on-carousel">
 
-                <div id="carouselRes" class="carousel slide col-md-12 " data-ride="carousel" data-interval="2500">
+                <!-- NEW CAROUSEL -->
+
+                <div id="carouselRes" class="carousel slide col-md-12 " data-ride="carousel" data-interval="3500">
 
                     <ol class="carousel-indicators">
                         <li data-target="#carouselRes" data-slide-to="0" class="active"></li>
@@ -64,45 +73,54 @@
                     </ol>
 
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+
+                        <div class="item active">
                             <img src="Images/yen-sao.jpg" alt="">
                             <div class="carousel-caption">
                                 <h2>Yến Sào</h2>
                             </div>
                         </div>
-                        <div class="carousel-item">
+
+                        <div class="item">
                             <img src="Images/nem.jpeg" alt="">
                             <div class="carousel-caption">
                                 <h2>Nem</h2>
                             </div>
                         </div>
-                        <div class="carousel-item">
+
+                        <div class="item">
                             <img src="Images/muc.jpg" alt="">
                             <div class="carousel-caption">
                                 <h2>Mực nướng</h2>
                             </div>
                         </div>
-                        <div class="carousel-item">
+
+                        <div class="item">
                             <img src="Images/tom-hum.jpg" alt="">
                             <div class="carousel-caption">
                                 <h2>Tôm hùm</h2>
                             </div>
                         </div>
-                        <div class="carousel-item">
+
+                        <div class="item">
                             <img src="Images/xien-nuong.jpg" alt="">
                             <div class="carousel-caption">
                                 <h2>Xiên nướng</h2>
                             </div>
                         </div>
-
                     </div>
-                    <a class="carousel-control-prev" href="#carouselRes" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
+
+
+                    <a class="left carousel-control" href="#carouselRes" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselRes" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
+                    <a class="right carousel-control" href="#carouselRes" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
+
 
             </div>
             <div class="col-md-2"></div>
@@ -115,26 +133,27 @@
         <div class="container">
 
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <!-- LINE 1 -->
-                <h3>Catalogue</h3>
-                <div class="row">
+
+                <h3 id="main-logue">Catalogue</h3>
+                <div>
+                    <!-- LINE 1 -->
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/banh-khot.jpg" alt="" class="img-thumbnail"></a>
-                        <h4>Bánh Khọt</h4>
+                        <h3>Bánh Khọt</h3>
                         <p>Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được chiên và ăn kèm với rau
                             sống, ớt tươi, thường ăn với nước mắm pha ngọt, rất ít khi chấm nước sốt mắm tôm...</p>
 
                         <p class="price">
                             Price: &#36;
                         </p>
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/banh-canh.jpg" alt="" class="img-thumbnail"></a>
-                        <h4>Bánh Canh</h4>
+                        <h3>Bánh Canh</h3>
                         <p> Bánh canh bao gồm nước dùng được nấu từ tôm, cá và giò
                             heo thêm gia vị tùy theo từng loại bánh canh. Bánh được làm từ bột gạo, bột mì, hoặc bột sắn
                             hoặc bột gạo...</p>
@@ -142,28 +161,28 @@
                         <p class="price">
                             Price: &#36;
                         </p>
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/pho.jpg" alt="" class="img-thumbnail hard"></a>
-                        <h4>Phở</h4>
+                        <h3>Phở</h3>
                         <p>Phở là một món ăn truyền thống của Việt Nam, cũng có thể xem là một trong những món ăn tiêu
-                            biểu cho ẩm thực Việt Nam. Thành phần chính của phở là bánh phở và nước dùng...</p>
+                            biểu cho ẩm thực Việt Nam. Thành phần chính của phở là...</p>
 
                         <p class="price">
                             Price: &#36;
                         </p>
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/banh-xeo.jpg" alt="" class="img-thumbnail hard"></a>
-                        <h4>Bánh Xèo</h4>
+                        <h3>Bánh Xèo</h3>
                         <p>Bánh xèo là một loại bánh phổ biến ở Việt Nam, Nhật Bản và Triều Tiên có bột bên ngoài, bên
                             trong có nhân là tôm, thịt, giá đỗ; kimchi, khoai tây, hẹ, thủy sản (bánh xèo Triều
                             Tiên)...</p>
@@ -172,20 +191,21 @@
                             Price: &#36;
                         </p>
 
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-12">
-                <!-- LINE 2 -->
-                <div class="row">
+            <!-- LINE 2 -->
 
+            <div class="col-sm-12 col-md-12">
+
+                <div>
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/ice-cream.jpeg" alt="" class="img-thumbnail hard"></a>
-                        <h4>Kem</h4>
+                        <h3>Kem</h3>
                         <p>Kem còn được gọi là cà rem, cà lem, là món ăn ngọt dạng đông lạnh làm từ sản phẩm sữa như kem
                             béo, trứng gà thêm phụ gia như đường,
                             vani, sô-cô-la... ..</p>
@@ -194,14 +214,14 @@
                             Price: &#36;
                         </p>
 
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/refreshments.jpg" alt="" class="img-thumbnail hard"></a>
-                        <h4>Sinh tố</h4>
+                        <h3>Sinh tố</h3>
                         <p>Nước sinh tố là một dung dịch tự nhiên chứa các mô từ trái cây hoặc các loại rau. Nước sinh
                             tố được tạo ra một cách máy móc bằng cách ép hoặc vắt hoặc giầm trái cây hoặc...</p>
 
@@ -209,14 +229,14 @@
                             Price: &#36;
                         </p>
 
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/xien-nuong.jpg" alt="" class="img-thumbnail hard"></a>
-                        <h4>Xiên nướng</h4>
+                        <h3>Xiên nướng</h3>
                         <p>Thịt nướng xâu hay là thịt nướng xiên que là một món ăn thịt nguyên miếng xắt nhỏ, xiên que
                             và nướng, thường được phục vụ với một loại nước sốt. Có thể bao gồm...</p>
 
@@ -224,21 +244,21 @@
                             Price: &#36;
                         </p>
 
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
                         <a href="#"><img src="Images/chuck.jpg" alt="" class="img-thumbnail hard"></a>
-                        <h4>Vịt Quay</h4>
+                        <h3>Vịt Quay</h3>
                         <p>Đặc trưng của món vịt quay là da vịt mỏng, giòn, màu vàng sậm. Nhiều nhà hàng phục vụ món da
                             và món thịt riêng. Vịt Bắc Kinh to, béo sau khi được quay trong lò lửa lớn...</p>
                         <p class="price">
                             Price: &#36;
                         </p>
 
-                        <button type="button" class="btn btn-success add-cart" onclick="myCart()"><span
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
                                 class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
                         </button>
                     </div>
@@ -251,9 +271,8 @@
 </div>
 
 
-<div>
-    <!-- FOOTER -->
-</div>
+<!-- FOOTER -->
+<div w3-include-html="Common/Footer.html" id="footer"></div>
 
 </body>
 </html>

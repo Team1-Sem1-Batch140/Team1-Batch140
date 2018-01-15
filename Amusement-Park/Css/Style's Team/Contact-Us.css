@@ -1,0 +1,53 @@
+#contact-us {
+    background: rgb(45, 44, 69);
+}
+
+.only-bighead > h2, .only-text > p {
+    text-align: center;
+    color: white;
+}
+
+input[name], textarea, [type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    input[type=text], textarea, [type=email] {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+#nameH {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 30px;
+}
+
+#map {
+    width: 500px;
+    height: 400px;
+}
+
+#submit {
+    background: rgb(247, 220, 20);
+    border-color: rgb(247, 220, 20);
+    width: 50%;
+    border-radius: 25px;
+
+}
+
+#submit:hover {
+    background: rgb(24, 24, 24);
+    color: white;
+}

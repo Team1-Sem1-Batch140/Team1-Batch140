@@ -1,0 +1,103 @@
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix + .container {
+    padding-top: 130px;
+}
+
+#main-header {
+    background: rgb(26, 23, 47);
+    color: white;
+}
+
+.special {
+    margin: 10px 5px;
+}
+
+label {
+    font-size: small;
+}
+
+#name{
+    width: 125px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+#pwd {
+    width: 125px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+#login {
+    margin: 13px 4px;
+    padding: 2px;
+    height: 26px;
+    width: 57px;
+    border-radius: 7px;
+    background: rgb(33, 170, 247);
+    border-color: rgb(33, 170, 247);
+}
+
+#login:hover {
+    background: rgb(24, 24, 24);
+}
+
+.navbar-default {
+    border-radius: 0;
+    background: rgb(26, 23, 47);
+    margin: 0;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: x-large;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: rgb(26, 23, 47);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: rgb(247, 220, 20);
+    color: white;
+}
+
+.navbar-nav > li > a {
+    padding: 20px;
+    margin-left: 3px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: rgb(247, 220, 20);
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background: rgb(26, 23, 47);
+    color: white;
+
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    margin-left: 2px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background: rgb(247, 220, 20);
+}

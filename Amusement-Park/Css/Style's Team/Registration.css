@@ -1,3 +1,7 @@
+#registrationPage{
+    background: rgb(45, 44, 69);
+    color: white;
+}
 .easy {
     text-align: center;
 }
@@ -40,4 +44,6 @@ select {
     color: #555;
     display: inline-block;
 }
-
+#complete{
+    margin-bottom: 17px;
+}

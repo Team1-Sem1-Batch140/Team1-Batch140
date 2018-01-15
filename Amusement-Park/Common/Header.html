@@ -1,5 +1,6 @@
+
 <header>
-    <div class="main-header" ng-app="cusApp" ng-controller="cusController">
+    <div id="main-header" ng-app="cusApp" ng-controller="cusController">
 
         <div class="container">
 
@@ -31,7 +32,7 @@
         </div>
 
 
-        <nav class="navbar navbar-default ">
+        <nav class="navbar navbar-default " ng-show="showNecess" data-spy="affix" data-offset-top="197">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
@@ -43,30 +44,30 @@
                 </div>
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="nav navbar-nav">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="">Home</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Places to Visit
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="Restaurant.html">Restaurant</a></li>
-                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="#">Gallery</a></li>
                                 <li><a href="#">Entertainment</a></li>
-                                <li><a href="#">Attraction</a></li>
+                                <li><a href="attractions.html">Attraction</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Online Ticket</a></li>
-                        <li><a href="../Contact-Us.html">Contact Us</a></li>
+                        <li><a href="ticket.html">Online Ticket</a></li>
+                        <li><a href="Contact-Us.html">Contact Us</a></li>
                         <li><a href="Registration.html">Registration</a></li>
                         <li><a href="#">About Us</a></li>
                         <li></li>
                     </ul>
 
                     <!--Right Nav -->
-                    <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-                        <li><a href="#" ng-show="showUser"><span class="glyphicon glyphicon-user"></span>{{Customer.name}}</a>
+                    <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm" >
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span><!--{{Customer.name}}--></a>
                         </li>
-                        <li><a href="#"><span id="quantity">(0) <span class="glyphicon glyphicon-shopping-cart"></span></span>
-                            Cart</a></li>
+                        <li><a href="#"><span id="quantity">(0)</span> <span class="glyphicon glyphicon-shopping-cart"></span>
+                            {{Customer.cart}}</a></li>
                     </ul>
 
                 </div>

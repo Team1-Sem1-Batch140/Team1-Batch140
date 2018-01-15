@@ -1,0 +1,66 @@
+.all-bot {
+    background-color: rgb(26, 23, 47);
+    color: white;
+    font-family: sans-serif;
+
+}
+#footer-logo img{
+    width: 120px;
+    height: 82px;
+}
+
+.fa-facebook-square:before, .fa-twitter:before, .fa-pinterest:before, .fa-youtube-play:before, .fa-cloud:before{
+    font-size: 24px;
+    margin: 0 8px 0 20px;
+
+}
+.fa-map-marker:before, .fa-envelope:before{
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.same {
+    margin-bottom: 42px;
+}
+
+.about-social > #social-list li, .about-menu-footer > #menu-footer li, .about-hours > #hours-open li, .about-contacts > #contact-information li {
+    list-style-type: none;
+    margin: 10px 0 0 -40px;
+    padding: 5px;
+}
+
+.about-social > #social-list a {
+    color: white;
+}
+
+.about-social > #social-list a:hover {
+    text-decoration: none;
+    color: rgb(247, 220, 20);
+}
+.about-menu-footer > #menu-footer a{
+    color: white;
+}
+.about-menu-footer > #menu-footer a:hover{
+    text-decoration: none;
+    color: #F7DC14;
+}
+.about-contacts > #contact-information a {
+    color: white;
+}
+
+.about-contacts > #contact-information a:hover {
+    text-decoration: none;
+}
+#tel{
+    font-size: 38px;
+}
+#contact-information > #tel a{
+    color: #21aaf7;
+}
+#contact-information > #tel a:hover{
+    color: white;
+    transition: all 444ms;
+}
+#text-final {
+    margin-top: 53px;
+}

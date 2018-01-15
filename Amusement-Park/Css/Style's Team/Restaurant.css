@@ -1,0 +1,85 @@
+#bot-header {
+    background: rgb(45, 44, 69);
+    color: white;
+}
+
+#main {
+    /*background-color: rgb(230, 115, 0);*/
+    background: rgb(45, 44, 69);
+}
+
+#on-main {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin: 1% 10%;
+
+}
+
+#carouselRes {
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    z-index: 2;
+
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    width: 1060px;
+    height: 475px;
+    border: 2px solid white;
+    border-radius: 13px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%);
+}
+
+.on-carousel {
+    position: relative;
+    z-index: 3;
+    border: 3px solid white;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.carousel-indicators li {
+    background-color: #f8d7da;
+}
+
+.carousel-item > .carousel-caption h2 {
+    color: white;
+}
+
+.easy {
+    text-align: center;
+    margin-top: 0;
+    padding: 13px;
+    color: white;
+}
+
+.price {
+    color: white;
+}
+
+.add-cart {
+    margin: 0 0 23px 0;
+    color: black;
+    /*background: rgb(247, 220, 20);*/
+}
+/*.add-cart:hover{*/
+    /*color: white;*/
+/*}*/
+
+p {
+    color: white;
+    font-size: 15px;
+}
+
+.catalogue h3 {
+    color: white;
+}
+
+#main-logue {
+    margin-left: 15px;
+}

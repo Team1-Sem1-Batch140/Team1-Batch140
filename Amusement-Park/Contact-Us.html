@@ -4,107 +4,95 @@
     <meta charset="UTF-8">
     <title>Contact-Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/Contact-Us.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-    <script src="Js/angular.min.js"></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
     </script>
 
+
 </head>
-<style>
 
-    .only-bighead > h1, .only-text > p{
-        text-align: center;
-    }
-    input[type=text], textarea, [type=email] {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        resize: vertical;
-        margin-bottom: 30px;
-    }
-    @media screen and (max-width: 600px){
-        input[type=text], textarea, [type=email]{
-            width: 100%;
-            margin-top: 15px;
-        }
-    }
-</style>
 <script>
-    function initMap() {
-        var uluru = {lat: 12.220396, lng: 109.241387};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
-    initMap();
-
 //    function myMap() {
-//        var mapCanvas = document.getElementById("map");
+//        var mapCanvas = document.getElementById("googleMap");
 //        var mapOptions = {
-//            center: new google.maps.LatLng(12.220396, 109.241387), zoom: 10
+//            center: new google.maps.LatLng(12.220396, 109.241387),
+//            zoom: 7,
+//            zoomControl: true,
+//            zoomControlOptions: {style: google.maps.ZoomControlStyle.SMALL}
 //        };
 //        var map = new google.maps.Map(mapCanvas, mapOptions);
 //    }
+
+
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(12.220396, 109.241387),
+            zoom:5,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    $(function () {
+        $("#header").load("Common/Header.html");
+        $("#footer").load("Common/Footer.html");
+
+    });
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
 <body>
-<div>
-    <!-- HEADER -->
-</div>
-<div id="Contact-Us" class="container">
 
-    <!--Top -->
-    <div class="row">
+<!-- HEADER -->
 
-        <div class="col-md-2"></div>
+<div w3-include-html="Common/Header.html" id="header"></div>
 
+<div id="contact-us">
+    <div class="container">
 
-        <div class="col-xs-8 col-sm-8 col-md-8 only-bighead">
-            <h1>Contact Us</h1>
+        <!--Top -->
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 only-bighead">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="col-md-2"></div>
         </div>
 
-
-        <div class="col-md-2"></div>
-
-    </div>
-
-    <!-- Mid -->
-    <div class="row">
-        <div class="col-md-2"></div>
+        <!-- Mid -->
+        <!--<div class="">-->
+        <!--<div class="col-md-2"></div>-->
 
 
-        <div class="col-md-8 only-text">
-            <p>Asperiores, itaque vero facere laudantium voluptas temporibus mollitia nisi deleniti illo minima quisquam
-                corporis possimus nesciunt.</p>
-        </div>
+        <!--<div class="col-xs-12 col-sm-12 col-md-8 only-text">-->
+        <!--<p>Asperiores, itaque vero facere laudantium voluptas temporibus mollitia nisi deleniti illo minima quisquam-->
+        <!--corporis possimus nesciunt.</p>-->
+        <!--</div>-->
 
 
-        <div class="col-md-2"></div>
-    </div>
+        <!--<div class="col-md-2"></div>-->
+        <!--</div>-->
 
 
-    <div class="row">
-        <!-- Bot -->
-        <div id="map" class="col-sm-6 col-md-6"  style="width:100%;height:400px;">
-        </div>
-
-
-
-        <div class="col-sm-6 col-md-6">
+        <div>
+            <!-- Bot -->
+            <div class="col-sm-12 col-md-12">
                 <div class="row contact-form">
-                   <fieldset class="col-sm-6 col-md-6">
-                        <input type="text" id="name" name="name" placeholder="Name">
-                   </fieldset>
+                    <fieldset class="col-sm-6 col-md-6">
+                        <input type="text" id="nameH" name="nameH" placeholder="Name">
+                    </fieldset>
 
 
                     <fieldset class="col-sm-6 col-md-6">
@@ -117,23 +105,25 @@
 
 
                     <fieldset class="col-sm-12 col-md-12">
-                        <textarea rows="6" type="text" id="comments" name="comments" placeholder="Write something.."></textarea>
+                    <textarea rows="6" type="text" id="comments" name="comments"
+                              placeholder="Write something.."></textarea>
                     </fieldset>
-
                 </div>
 
+                <fieldset class="col-md-4">
+                    <input type="submit" name="send" value="Send Message" id="submit" class="btn btn-default">
+                </fieldset>
+            </div>
 
-            <fieldset class="col-md-12">
-                <input type="submit" name="send" value="Send Message" id="submit" class="button">
-            </fieldset>
+            <br>
+            <!--Google MAP -->
+            <div id="googleMap" class="col-sm-12 col-md-12" style="width:100%;height:400px"></div>
         </div>
 
-
     </div>
+</div>
 
-</div>
-<div>
-    <!-- FOOTER -->
-</div>
+<!-- FOOTER -->
+<div w3-include-html="Common/Footer.html" id="footer"></div>
 </body>
 </html>

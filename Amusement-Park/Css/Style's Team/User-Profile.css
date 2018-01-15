@@ -1,0 +1,8 @@
+#profile{
+    background: rgb(45, 44, 69);
+    color: white;
+    height: 400px;
+}
+.thumbnail, .form-horizontal{
+    margin-top: 20px;
+}
