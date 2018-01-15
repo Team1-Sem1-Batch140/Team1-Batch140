@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <link rel="stylesheet" href="Css/thongtinsukien.css">
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('customersCtrl', function($scope, $http) {
+                $http.get("customers.php").then(function (response) {
+                    $scope.names = response.data.records;
+                });
+            });
+        </script>
+    </head>
+<body ng-app="myApp" ng-controller="customersCtrl" style="background: #f2f2f2">
+<div ng-include="'Common/Header.html'"></div>
+<main id="main" >
+    <div class="container" style="background: white">
+        <div class="row">
+
+            <div class="col-xs-12">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <h2 style="color: darkred"><span class="glyphicon glyphicon-pawn"> Khu vui chơi</span></h2>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="Images/11-750x3091.jpg" alt="Los Angeles" style="width: 100%">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="Images/aqua-swing1.jpg" alt="Chicago" style="width: 100%">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="Images/aqua-shute1.jpg" alt="New York" style="width: 100%">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <br>
+                            <p>Các trò chơi ngoài trời của Vinpearl Land được thiết kế bằng công nghệ từ các nước châu Âu như Đức, Argentina, và Ý. Họ (các trò chơi) chắc chắn sẽ thu hút sự chú ý của mọi người, kích động sự tò mò và khát vọng chinh phục, khẳng định sự dũng cảm và dũng cảm.
+                            </p>
+                            <p>Du khách bắt đầu cuộc hành trình cảm xúc với những trò chơi gia đình hấp dẫn như Merry-go-round, Voi đi vòng, Trà cốc, xe Bumper, vv và dần dần leo thang thách thức với những chuyến đi vui chơi như đi xe Evolution, Swing Carousel, Roller Coaster , Tàu Pirate ... Đặc biệt, đừng quên trải nghiệm chiếc tàu cao tốc Alpine Coaster của Vinpearl Land - hệ thống tàu cao tốc hòn đảo đầu tiên của châu Á - một trong những chuyến đi chơi giải trí yêu thích nhất của mọi người trên thế giới với tổng chiều dài 1.760 mét, hai vòng xoắn ốc trên cùng chiều xuống và chiều cao giữa hai ga tới 133 mét - lớn nhất ở Đông Nam Á.
+                            </p>
+                            <h2 style="color: darkred">Game</h2>
+                            <br>
+                            <h4 style="color:darkred;">AMUSEMENT RIDE AREA
+                            </h4>
+                            <br>
+                            <p><b>Booster Music Express</b></p>
+                            <p>Một trong những trò chơi mới nhất cung cấp một spin bốc đồng với nhịp điệu âm nhạc rực rỡ. Hãy đi và tận hưởng cảm giác lạ thường trong mỗi vòng xoáy!
+
+                            </p>
+                            <p>Vị trí: Quảng Trường Đại Dương
+
+                            </p>
+                            <p style="text-align: center"><img src="Images/tải%20xuống%20(3).jpg" style="width: 70%" ></p>
+                            <br>
+                            <p><b>Evolution ride
+
+                            </b></p>
+                            <p>Chuyến đi tiến hóa (vui nhộn 3D), được liệt kê là một trong những trò chơi mạo hiểm của Vinpearl Land Nha Trang. Đây là nơi những người tìm kiếm cảm giác hào hứng thể hiện sự dũng cảm và can đảm của họ.
+
+
+                            </p>
+                            <p><b>Swing Carousel
+                            </b></p>
+                            <p>Chơi băng chuyền xoay, dù được kéo dài hay nghiêng trong không trung ở độ cao 3 mét, sẽ làm cho bạn cảm thấy như đang bay trong không gian, rơi tự do và lật đổ trong không khí rộng rãi.
+
+                            </p>
+                            <p><b>Roller coaster
+
+                            </b></p>
+                            <p>Là đúng với tên của nó, Roller coaster là một trò chơi với sự thay đổi nhanh chóng về tốc độ và hướng. Tàu lượn lượn tạo ra những trận động đất dữ dội và kinh ngạc trong đường cong.</p>
+                            <p style="text-align: center"><img src="Images/11-750x309.jpg" style="width: 70%" ></p>
+                            <p><b>Pirate Ship
+
+                            </b></p>
+                            <p>Tàu cướp biển vội vã đi về phía trước và vội vã quay trở lại thời gian sau khi thời gian mang lại cho bạn cảm giác bay qua không khí và giảm nhẹ woo! khoảnh khắc.
+
+                            </p>
+                            <p><b>Sky Drop
+
+                            </b></p>
+                            <p>Tháp Sky Drop mang lại những giây phút hít thở cho những người ủng hộ trò chơi này. Từ dưới đất, bạn sẽ được đưa lên đỉnh tháp với chiều cao trên 20 mét. Ở vị trí cao nhất này, nếu bạn đủ can đảm, giữ cho đôi mắt của bạn rộng mở để thưởng thức cảnh đại dương lãng mạn trước khi rơi tự do bắt đầu ngay từ bây giờ.
+
+                            </p>
+                            <p><b>Giant Sky Chaser
+
+                            </b></p>
+                            <p>Kết hợp giữa chiều cao và tốc độ, Chaser trên trời khổng lồ cho phép bạn trải nghiệm "Theo đuổi đường cao tốc" ở độ cao 10 mét trong xe ô tô đầy màu sắc.
+
+                            </p>
+                            <br>
+                            <h4 style="color: darkred">FAMILY AND CHILDREN GAMES
+
+                            </h4>
+                            <p><b>Bubble merry go round</b>
+
+                            </p>
+                            <p>Visitors and their kids revisit childhood times in colorful 12 meters high vertical merry go round, overviewing the wonrderful Nha Trang bay and Vinpearl Land ferry port.
+
+                            </p>
+                            <p><b>Bungee Jumping
+
+                            </b></p>
+                            <p>Bungee, một trò chơi nhảy, lý tưởng cho những du khách yêu thích trải nghiệm tuyệt vời và tuyệt vời của nổi trong không khí lành mạnh flips và nhảy. Với hệ thống trụ, dây cáp và đai an toàn kết nối mạnh mẽ, Bungee Jumper giúp bạn thực hiện nhảy nhào lộn, đu và lật một cách an toàn và khéo léo ở cấp độ nhào lộn chuyên nghiệp.</p>
+                            <p style="text-align: center"><img src="Images/DSC_1481-750x450.jpg" style="width: 70%" ></p>
+                            <p><b>Merry-go-round
+
+                            </b></p>
+                            <p>Merry đi vòng quanh không chỉ mang lại hứng thú cho trẻ em với cưỡi lên cao, mà còn giúp cha mẹ nhớ lại những kỷ niệm thời thơ ấu của họ.
+
+                            </p>
+                            <p><b>Elephant merry-go-round
+
+                            </b></p>
+                            <p>Merry-go-round với những chiếc ghế được thiết kế theo hình dạng con voi vui nhộn sẽ mang lại cho trẻ em một cuộc hành trình rộng rãi thú vị. Điều đặc biệt về trò chơi này là trẻ em có thể điều chỉnh chiều cao của ghế để bay lên hoặc xuống khi chơi.
+
+                            </p>
+                            <p><b>Bumper Cars
+
+                            </b></p>
+                            <p>The bumper car system is designed with maximum safety. It promises to be the attraction point delivering exquisite moments to all family members.
+
+                            </p>
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <b>Giờ mở cửa</b>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        <p>
+                                            Mùa cao điểm (Tháng 6 đến Tháng Tám): 08:00 - 21:45
+                                            Mùa thấp: 08:30 - 20:45
+                                        </p>
+                                        <p>
+                                            &nbsp;
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Dịch vụ khác	</b>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        Máy đếm thức ăn nhanh và đồ uống
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <br>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row-1">
+            <div class="col-md-4 col-sm-12">
+                <a href=""><img src="Images/images.jpg" style="width: 100%"></a>
+                <h3 style="text-align: center">Cáp treo</h3>
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href=""><img src="Images/tải%20xuống%20(1).jpg" style="width: 100%"></a>
+                <h3 style="text-align: center">Bến phà</h3>
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href=""><img src="Images/11-750x309.jpg" style="width: 100%"></a>
+                <h3 style="text-align: center">Khu vui chơi</h3>
+
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+</div>
+
+</body>
+</html>
