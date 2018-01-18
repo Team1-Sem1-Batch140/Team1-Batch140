@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="Css/Style's Team/thongbaosukien.css">
+    <link rel="stylesheet" href="Css/Style's Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+
+
+
+    <script>
+        //        var app = angular.module('myApp', []);
+        //        app.controller('customersCtrl', function ($scope, $http) {
+        //            $http.get("customers.php").then(function (response) {
+        //                $scope.names = response.data.records;
+        //            });
+        //        });
+        $(function () {
+            $("#header").load("Common/Header.html");
+            $("#footer").load("Common/Footer.html");
+        });
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="customersCtrl"  style="background: #2d2c45;">
+<div w3-include-html="Common/Header.html" id="header"></div>
+<br>
+<br>
+<main id="main" >
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="container">
+                            <div class="row">
+                                <h2 style="color: darkorange"><span class="glyphicon glyphicon-pawn">Thông báo-Sự kiện </span></h2>
+                                <br>
+                                <div class="col-sm-6 col-md-4">
+                               <a href="#"><img src="Images/1.png" class="img-thumbnail" style="width: 100%"></a>
+                           </div>
+                            <div class="col-sm-6 col-md-8">
+                            <a href="#"><h2>(Vietnamese) THÔNG BÁO – NHÀ HÀNG CORAL DỪNG DỊCH VỤ BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017</h2></a>
+                            </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#">  <img src="Images/15.jpg" class="img-thumbnail" style="width: 100%"></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                  <a href="#">  <h2>(Vietnamese) MÙA DU LỊCH, ĐỪNG BỎ LỠ NHỮNG HOẠT ĐỘNG NGOÀI TRỜI SIÊU HOT TẠI VINPEARL LAND NHA TRANG!</h2></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <a href="#"> <img src="Images/13.jpg" class="img-thumbnail" style="width: 100%"></a>
+                            </div>
+                            <div class="col-sm-6 col-md-8">
+                                <a href="#"><h2>(Vietnamese) THÔNG BÁO – NHÀ HÀNG CORAL DỪNG DỊCH VỤ BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017</h2></a>
+                            </div>
+
+                        </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <img src="Images/1.png" class="img-thumbnail" style="width: 100%">
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a><h2>(Vietnamese) THÔNG BÁO – NHÀ HÀNG CORAL DỪNG DỊCH VỤ BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017</h2></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <ul class="pagination">
+                                <li><a href="thongbaosukien.html">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+</main>
+<div class="container" id="1">
+    <div class="row-1">
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/images.jpg" class="img-thumbnail" style="width: 100%"></a>
+            <h3 style="text-align: center">Cáp treo</h3>
+
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/0123.jpg" class="img-thumbnail" style="width: 100%">
+                <h3 style="text-align: center">Bến phà</h3>
+
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=""><img src="Images/11-750x309.jpg" class="img-thumbnail" style="width: 100%"></a>
+            <h3 style="text-align: center">Khu vui chơi</h3>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+<div w3-include-html="Common/Footer.html" id="footer"></div>
+
+
+</body>
+</html>

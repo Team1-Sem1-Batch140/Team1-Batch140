@@ -9,27 +9,43 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <link rel="stylesheet" href="Css/thongtinsukien.css">
-        <script>
-            var app = angular.module('myApp', []);
-            app.controller('customersCtrl', function($scope, $http) {
-                $http.get("customers.php").then(function (response) {
-                    $scope.names = response.data.records;
-                });
-            });
-        </script>
+    <link rel="stylesheet" href="Css/Style's Team/khuvuichoi.css">
+    <link rel="stylesheet" href="Css/Style's Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+
+
+
+    <script>
+        //        var app = angular.module('myApp', []);
+        //        app.controller('customersCtrl', function ($scope, $http) {
+        //            $http.get("customers.php").then(function (response) {
+        //                $scope.names = response.data.records;
+        //            });
+        //        });
+        $(function () {
+            $("#header").load("Common/Header.html");
+            $("#footer").load("Common/Footer.html");
+        });
+    </script>
     </head>
-<body ng-app="myApp" ng-controller="customersCtrl" style="background: #f2f2f2">
-<div ng-include="'Common/Header.html'"></div>
+<body ng-app="myApp" ng-controller="customersCtrl"  style="background: #2d2c45;">
+<div w3-include-html="Common/Header.html" id="header"></div>
+<br>
+<br>
 <main id="main" >
-    <div class="container" style="background: white">
+    <div class="container">
         <div class="row">
 
             <div class="col-xs-12">
                     <div class="row">
 
                         <div class="col-md-12">
-                            <h2 style="color: darkred"><span class="glyphicon glyphicon-pawn"> Khu vui chơi</span></h2>
+                            <h2 style="color: darkorange"><span class="glyphicon glyphicon-pawn"> Khu vui chơi</span></h2>
                             <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
@@ -41,15 +57,15 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="Images/11-750x3091.jpg" alt="Los Angeles" style="width: 100%">
+                                        <img src="Images/duong-truot-phao-750x450.jpg" alt="Los Angeles" style="width: 100%">
                                     </div>
 
                                     <div class="item">
-                                        <img src="Images/aqua-swing1.jpg" alt="Chicago" style="width: 100%">
+                                        <img src="Images/aqua-swing.jpg" alt="Chicago" style="width: 100%">
                                     </div>
 
                                     <div class="item">
-                                        <img src="Images/aqua-shute1.jpg" alt="New York" style="width: 100%">
+                                        <img src="Images/aqua-shute.jpg" alt="New York" style="width: 100%">
                                     </div>
                                 </div>
 
@@ -80,7 +96,7 @@
                             <p>Vị trí: Quảng Trường Đại Dương
 
                             </p>
-                            <p style="text-align: center"><img src="Images/tải%20xuống%20(3).jpg" style="width: 70%" ></p>
+                            <p style="text-align: center"><img src="Images/duong-truot-6-lan-750x400.jpg" style="width: 70%" ></p>
                             <br>
                             <p><b>Evolution ride
 
@@ -188,31 +204,34 @@
     <br>
     <br>
     <br>
-    <div class="container">
-        <div class="row-1">
-            <div class="col-md-4 col-sm-12">
-                <a href=""><img src="Images/images.jpg" style="width: 100%"></a>
-                <h3 style="text-align: center">Cáp treo</h3>
 
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <a href=""><img src="Images/tải%20xuống%20(1).jpg" style="width: 100%"></a>
-                <h3 style="text-align: center">Bến phà</h3>
-
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <a href=""><img src="Images/11-750x309.jpg" style="width: 100%"></a>
-                <h3 style="text-align: center">Khu vui chơi</h3>
-
-
-            </div>
-        </div>
-
-    </div>
 </main>
+<div class="container" id="1">
+    <div class="row-1">
+        <div class="col-md-4 col-sm-12">
+            <a href="captreo.html"><img src="Images/images.jpg" style="width: 100%"></a>
+            <h3 style="text-align: center">Cáp treo</h3>
+
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href=" benpha.html"><img src="Images/0123.jpg" style="width: 100%"></a>
+            <h3 style="text-align: center">Bến phà</h3>
+
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href="khuvuichoi.html"><img src="Images/11-750x309.jpg" style="width: 100%"></a>
+            <h3 style="text-align: center">Khu vui chơi</h3>
+
+
+        </div>
+    </div>
+
+</div>
 
 
 </div>
+<div w3-include-html="Common/Footer.html" id="footer"></div>
+
 
 </body>
 </html>

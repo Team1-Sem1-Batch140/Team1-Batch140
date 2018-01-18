@@ -4,23 +4,38 @@
     padding: -20px;
     color: white;
 }
- /*img{*/
-    /*border: white solid 10px;*/
-/*}*/
-/*.row button{*/
-    /*background-color: orange;*/
-/*}*/
-/*.button-2 b{*/
-    /*padding: 7px 10px;*/
-    /*background: green;*/
-    /*color: white;*/
-/*}*/
- /*.row a{*/
-    /*text-decoration: none;*/
-/*}*/
- /*b:hover{*/
-     /*background: orange;*/
- /*}*/
+h3,p,a{
+    color: white;
+}
+.button-3 p{
+    width: 100%;
+}
+button{
+margin-left: 25%;
+    width: 50%;
+}
+.button-2 {
+    padding: 7px 10px;
+    background: green;
+    color: white;}
+
+.row button{
+    background-color: orange;
+}
+.button-2 b{
+    padding: 7px 10px;
+    background: green;
+    color: white;
+}
+ .row a{
+    text-decoration: none;
+}
+ .row-1 a{
+     text-decoration: none;
+ }
+ b:hover{
+     background: orange;
+ }
 #bot-header {
     background: rgb(45, 44, 69);
     color: white;
@@ -38,6 +53,7 @@
     margin: 1% 10%;
 
 }
+
 
 #carouselRes {
     position: relative;
@@ -72,4 +88,7 @@
 
 .carousel-item > .carousel-caption h2 {
     color: white;
+}
+body {
+    background: #2d2c45;
 }
