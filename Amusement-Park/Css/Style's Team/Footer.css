@@ -1,66 +1,138 @@
-.all-bot {
-    background-color: rgb(26, 23, 47);
+
+.all-footer {
+    background: rgb(26, 23, 47);
     color: white;
     font-family: sans-serif;
 
 }
-#footer-logo img{
-    width: 120px;
-    height: 82px;
+
+.box-footer {
+    width: auto;
+    height: 232px;
+    background: rgb(45, 44, 69);
+    border: 2px solid #ccc;
+    margin: 20px 10px;
+    text-align: center;
 }
 
-.fa-facebook-square:before, .fa-twitter:before, .fa-pinterest:before, .fa-youtube-play:before, .fa-cloud:before{
-    font-size: 24px;
-    margin: 0 8px 0 20px;
+
+#address p {
+    margin: 60px 30px;
+    font-size: 16px;
+    opacity: 0.7;
 
 }
-.fa-map-marker:before, .fa-envelope:before{
-    font-size: 24px;
-    margin-right: 8px;
+
+#contact p {
+    margin: 58px 30px;
+    font-size: 18px;
+    opacity: 0.7;
 }
 
-.same {
-    margin-bottom: 42px;
-}
-
-.about-social > #social-list li, .about-menu-footer > #menu-footer li, .about-hours > #hours-open li, .about-contacts > #contact-information li {
-    list-style-type: none;
-    margin: 10px 0 0 -40px;
-    padding: 5px;
-}
-
-.about-social > #social-list a {
+#contact p a {
+    list-style: none;
     color: white;
+
 }
 
-.about-social > #social-list a:hover {
-    text-decoration: none;
-    color: rgb(247, 220, 20);
-}
-.about-menu-footer > #menu-footer a{
-    color: white;
-}
-.about-menu-footer > #menu-footer a:hover{
-    text-decoration: none;
-    color: #F7DC14;
-}
-.about-contacts > #contact-information a {
-    color: white;
-}
-
-.about-contacts > #contact-information a:hover {
+#contact p a:hover {
     text-decoration: none;
 }
-#tel{
-    font-size: 38px;
+
+#about-social > #social-list li {
+    float: left;
+    list-style: none;
+    width: 51px;
+    height: 37px;
+    padding: 4px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    margin: 41px 1px;
+    opacity: 0.7;
+    transition: all 0.2s ease-out 0s;
+    display: block;
 }
-#contact-information > #tel a{
-    color: #21aaf7;
+
+#about-social > #social-list a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: inline-block;
 }
-#contact-information > #tel a:hover{
+
+@media only screen and (max-width: 1199px) {
+    #address p {
+        margin: 25px 30px;
+    }
+
+    #contact p {
+        margin: 30px 5px;
+    }
+
+    #about-social > #social-list li {
+        width: 40px;
+        margin: 0 1px;
+    }
+
+    #connect h3 {
+        margin-bottom: 25px;
+    }
+
+}
+
+.about-social > #social-list > .facebook {
+    margin-left: 20px;
+}
+
+#about-social > #social-list > .facebook:hover {
+    background: rgb(54, 89, 148);
     color: white;
-    transition: all 444ms;
+    opacity: 1.0;
 }
-#text-final {
-    margin-top: 53px;
+
+#about-social > #social-list > .inst:hover {
+    background: rgb(123, 102, 86);
+    opacity: 1.0;
+}
+
+#about-social > #social-list > .youtube:hover {
+    background: rgb(180, 70, 57);
+    opacity: 1.0;
+}
+
+#about-social > #social-list > .twitter:hover {
+    background: rgb(57, 156, 205);
+    opacity: 1.0;
+}
+
+#about-social > #social-list > .pinterest:hover {
+    background: rgb(191, 50, 50);
+    opacity: 1.0;
+}
+
+.breadcrumb{
+    padding: 0 15px;
+}
+#menu-menu-footer li {
+    float: left;
+    list-style: none;
+    display: inline;
+    margin-bottom: 10px;
+
+}
+#menu-menu-footer a {
+    color: white;
+    margin: 0 50px 0 37px;
+    opacity: 0.5;
+    font-size: small;
+
+}
+#menu-menu-footer a:hover{
+    opacity: 1.0;
+}
+@media only screen and (max-width: 440px) {
+    #menu-menu-footer a {
+        margin: 0 0 0 -1px;
+        font-size: 10px;
+
+    }
 }

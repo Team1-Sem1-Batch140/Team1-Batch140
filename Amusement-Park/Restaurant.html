@@ -14,16 +14,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script>
         w3IncludeHTML();
     </script>
 
 
+
 </head>
 
 <script>
+    $(function () {
+        $("#header").load("Common/Header.html");
+        $("#footer").load("Common/Footer.html");
+    });
+
     var add = (function () {
         var counter = 0;
         return function () {
@@ -35,10 +40,15 @@
         document.getElementById("quantity").innerHTML = add();
     }
 
-    $(function () {
-        $("#header").load("Common/Header.html");
-        $("#footer").load("Common/Footer.html");
-    });
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
 
 
 </script>
@@ -46,12 +56,54 @@
 <!-- HEADER -->
 <div w3-include-html="Common/Header.html" id="header"></div>
 
+<div id="sign-in-modal" class="modal">
+  <span onclick="document.getElementById('sign-in-modal').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <form action="" id="sign-in" class="modal-content animate">
+        <div class="imgContainer">
+            <img src="Images/default-ava.jpg" alt="" class="avatar">
+        </div>
+
+        <div class="" id="sign-in-form">
+            <div class="">
+                <div class="col-25">
+                    <label><b>Tài khoản</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="uname" placeholder="Tên đăng nhập" name="uname" required>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="col-25">
+                    <label><b>Mật khẩu</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="psw" placeholder="Mật khẩu" name="psw" required>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="checked" id="remember"> Nhớ mật khẩu
+            </label>
+        </div>
+
+        <button type="submit" id="login">Đăng nhập</button>
+        <button type="button" class="cancelbtn"
+                onclick="document.getElementById('sign-in-modal').style.display='none'">Hủy
+        </button>
+        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+
+    </form>
+</div>
+
 
 <!-- BOT HEADER -->
 <div id="bot-header">
 
     <div id="main">
-        <h2 class="easy">Vinpearl Land</h2>
+        <h2 class="easy">&nbsp;</h2>
 
         <div id="on-main">
 
@@ -143,11 +195,11 @@
                         <p>Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được chiên và ăn kèm với rau
                             sống, ớt tươi, thường ăn với nước mắm pha ngọt, rất ít khi chấm nước sốt mắm tôm...</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
 
@@ -158,11 +210,11 @@
                             heo thêm gia vị tùy theo từng loại bánh canh. Bánh được làm từ bột gạo, bột mì, hoặc bột sắn
                             hoặc bột gạo...</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
 
@@ -172,11 +224,11 @@
                         <p>Phở là một món ăn truyền thống của Việt Nam, cũng có thể xem là một trong những món ăn tiêu
                             biểu cho ẩm thực Việt Nam. Thành phần chính của phở là...</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
 
@@ -187,12 +239,12 @@
                             trong có nhân là tôm, thịt, giá đỗ; kimchi, khoai tây, hẹ, thủy sản (bánh xèo Triều
                             Tiên)...</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
 
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
                 </div>
@@ -200,7 +252,7 @@
 
             <!-- LINE 2 -->
 
-            <div class="col-sm-12 col-md-12">
+            <div class="col-md-12">
 
                 <div>
                     <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
@@ -210,12 +262,12 @@
                             béo, trứng gà thêm phụ gia như đường,
                             vani, sô-cô-la... ..</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
 
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
 
@@ -225,12 +277,12 @@
                         <p>Nước sinh tố là một dung dịch tự nhiên chứa các mô từ trái cây hoặc các loại rau. Nước sinh
                             tố được tạo ra một cách máy móc bằng cách ép hoặc vắt hoặc giầm trái cây hoặc...</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
 
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
 
@@ -240,12 +292,12 @@
                         <p>Thịt nướng xâu hay là thịt nướng xiên que là một món ăn thịt nguyên miếng xắt nhỏ, xiên que
                             và nướng, thường được phục vụ với một loại nước sốt. Có thể bao gồm...</p>
 
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
 
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
 
@@ -254,12 +306,12 @@
                         <h3>Vịt Quay</h3>
                         <p>Đặc trưng của món vịt quay là da vịt mỏng, giòn, màu vàng sậm. Nhiều nhà hàng phục vụ món da
                             và món thịt riêng. Vịt Bắc Kinh to, béo sau khi được quay trong lò lửa lớn...</p>
-                        <p class="price">
-                            Price: &#36;
+                        <p class="Giá">
+                            Giá: VNĐ
                         </p>
 
                         <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
-                                class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
                         </button>
                     </div>
                 </div>

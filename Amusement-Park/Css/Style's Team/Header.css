@@ -9,43 +9,225 @@
     padding-top: 130px;
 }
 
+.modal {
+    display: none;
+    position: fixed; /
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    right: 25px;
+    z-index: 999;
+    top: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+#sign-in {
+    border: 3px solid #f1f1f1;
+}
+
+.col-25 {
+    margin-top: 15px;
+    width: 25%;
+    float: left;
+}
+
+.col-75 {
+    width: 75%;
+    float: left;
+}
+
+#uname, #psw {
+    width: 90%;
+    padding: 12px 13px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+#login {
+    color: white;
+    width: 8%;
+    padding: 11px;
+    background: rgb(76, 175, 80);
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.cancelbtn, #remember {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    width: 99.2%;
+}
+
+#login:hover, .cancelbtn:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 11px 18px;
+    background-color: #f44336;
+}
+
+.imgContainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+#sign-in-form {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    margin-right: 20px;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 768px) {
+    span.psw {
+        display: block;
+        float: none;
+        font-size: smaller;
+        margin: 0 0 2px 16px;
+    }
+
+    .cancelbtn {
+        width: 35%;
+        padding: 10px;
+    }
+
+    #login {
+        width: 45%;
+        padding: 11px;
+        font-size: small;
+    }
+
+    .col-25 label b {
+        font-size: 12px;
+    }
+}
+
 #main-header {
     background: rgb(26, 23, 47);
     color: white;
 }
 
-.special {
+#special a {
     margin: 10px 5px;
+    color: white;
+
+}
+
+#special a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 label {
     font-size: small;
 }
 
-#name{
-    width: 125px;
+#search {
+    width: 130px;
     height: 25px;
-    border-radius: 3px;
+    margin-top: 23px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 13px;
+    font-size: 16px;
+    background-color: white;
+    /*background-image: url('../../Images/search-icon.png');*/
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 13px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color: black;
 }
 
-#pwd {
-    width: 125px;
-    height: 25px;
-    border-radius: 3px;
+#search:focus {
+    width: 80%;
 }
 
-#login {
-    margin: 13px 4px;
-    padding: 2px;
-    height: 26px;
-    width: 57px;
-    border-radius: 7px;
-    background: rgb(33, 170, 247);
-    border-color: rgb(33, 170, 247);
+#btn-search {
+    width: 13%;
+    padding: 3px;
+    margin: -2px 0 0 -25px;
+    border-radius: 13px;
 }
 
-#login:hover {
-    background: rgb(24, 24, 24);
+@media only screen and (max-width: 991px) {
+    #just-only-form {
+        margin-left: 65%;
+        margin-top: -64px;
+    }
 }
 
 .navbar-default {
@@ -60,16 +242,22 @@ label {
     font-size: x-large;
 }
 
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+
 .navbar-nav > li > .dropdown-menu {
     background-color: rgb(26, 23, 47);
+    margin-left: 22px;
 }
 
 .navbar-default .navbar-nav > li > a {
     color: white;
+    font-size: 13px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    background: rgb(247, 220, 20);
+    background: rgb(20, 18, 33);
     color: white;
 }
 
@@ -79,12 +267,32 @@ label {
 
 }
 
+.navbar-default .navbar-text {
+    padding: 5px;
+    margin-left: 100px;
+    font-size: 13px;
+}
+
+.navbar-default .navbar-text a {
+    color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+    .navbar-default .navbar-text {
+        visibility: hidden;
+    }
+}
+
+.navbar-default .navbar-text a:hover:focus {
+    text-decoration: none;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background: white;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background: rgb(247, 220, 20);
+    background: rgb(20, 18, 33);
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -99,5 +307,11 @@ label {
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    background: rgb(247, 220, 20);
+    background: rgb(20, 18, 33);
+    color: white;
 }
+
+#sign-in {
+    border: 3px solid #f1f1f1;
+}
+

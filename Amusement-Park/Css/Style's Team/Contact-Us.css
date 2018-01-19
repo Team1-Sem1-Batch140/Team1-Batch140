@@ -2,11 +2,15 @@
     background: rgb(45, 44, 69);
 }
 
-.only-bighead > h2, .only-text > p {
+.only-text > p {
     text-align: center;
     color: white;
 }
-
+.only-bighead h2{
+    float: left;
+    color: white;
+    margin-left: 13px;
+}
 input[name], textarea, [type=email] {
     width: 100%;
     padding: 12px;
@@ -35,19 +39,17 @@ input[name], textarea, [type=email] {
 }
 
 #map {
-    width: 500px;
+    width: 100%;
     height: 400px;
+    margin-bottom: 20px;
 }
 
 #submit {
-    background: rgb(247, 220, 20);
-    border-color: rgb(247, 220, 20);
     width: 50%;
     border-radius: 25px;
+    margin-left: -15px;
 
 }
-
-#submit:hover {
-    background: rgb(24, 24, 24);
-    color: white;
-}
+/*#submit:hover {*/
+    /*color: white;*/
+/*}*/
