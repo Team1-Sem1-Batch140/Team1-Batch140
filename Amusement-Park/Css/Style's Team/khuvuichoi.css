@@ -7,9 +7,6 @@
 .row h2{
  padding: 10px;
 }
-.container img{
-    border: white solid 10px;
-}
 h3 {
     color: white;
 }
@@ -19,7 +16,19 @@ p {
 b{
     color: white;
 }
-
+h4{
+    color: white;
+}
+h2{
+    color: white;
+}
+td{
+    color: white;
+}
+.thumbnail{
+    text-align: center;
+    width: 50%;
+}
 
 
 

@@ -1,32 +1,48 @@
+#tuan140 > button{
+    text-align: center;
+}
 .easy{
     text-align: center;
     margin-top: 0;
     padding: -20px;
     color: white;
 }
-h3,p,a{
+ h3,p,a{
     color: white;
+}
+ .tuan h3{
+     text-align: center;
+ }
+.tuan1 h3{
+    text-align: center;
+}
+.tuan2 h3{
+    text-align: center;
 }
 .button-3 p{
     width: 100%;
 }
-button{
-margin-left: 25%;
-    width: 50%;
-}
-.button-2 {
-    padding: 7px 10px;
+.tuan button{
     background: green;
-    color: white;}
+    border: 1px solid green;
+}
+.tuan1 button{
+    background: green;
+    border: 1px solid green;
+}
+.tuan2 button{
+    background: green;
+    border: 1px solid green;
+}
+.tuan button{
+    margin-left: 73%;
+}
+.tuan2 button{
+    margin-left :73%;
+}
 
-.row button{
-    background-color: orange;
-}
-.button-2 b{
-    padding: 7px 10px;
-    background: green;
-    color: white;
-}
+
+
  .row a{
     text-decoration: none;
 }
