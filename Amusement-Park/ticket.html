@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/styleRadio.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/styleRadio.css">
     <script src="Js/simpleCounter.js"></script>
 </head>
-<body>
+<body ng-app="">
 <div class="container">
     <h3>Park tickets</h3>
-    <p>Start your reservation by choosing your tickets <br> Some attractions are undergoing refurbishments.
-        <a href="#">See the calendar for details.</a></p>
+    <p>Start your reservation by choosing your tickets <br>All ticket access to all games (except for water sports games)</a></p>
     <div class="container">
         <div class="row">
             <div class="col-lg-1">
@@ -25,13 +24,12 @@
                 <h2>Select your type of tickets</h2>
                 <form class="form cf">
                     <section class="plan cf">
-                        <input type="radio" name="radio1" id="1turn" value="1turn">
-                        <label class="free-label four col" for="1turn">
-                            <div>Admission card*</div>
+                        <input type="radio" ng-model="myVar" name="ticket" id="ticket1" value="ticket1">
+                        <label class="free-label four col" for="ticket1">
+                            <div>Cable car return ticket.</div>
                         </label>
-                        <input type="radio" name="radio1" id="2turn" value="2turn">
-                        <label class="basic-label four col" for="2turn">Admission card (by other means of
-                            transportation)*</label>
+                        <input type="radio" ng-model="myVar" name="ticket" id="ticket2" value="ticket2">
+                        <label class="basic-label four col" for="ticket2">Cable car ticket on returning.</label>
                     </section>
                 </form>
             </div>
@@ -41,58 +39,65 @@
             <div class="col-lg-1">
                 <h2>2</h2>
             </div>
-            <div class="col-lg-11">
+            <div class="col-lg-11" >
                 <h2>Select your Number of tickets</h2>
                 <p>Please note that children under 1m don't need a ticket.</p>
-                <div class="row">
+                <div class="row" >
                     <div class="col-lg-6">
-                        <script type="text/javascript">
-                            var clicks = 0;
-                            function clickAdd() {
-                                clicks += 1;
-                                document.getElementById("clicks").innerHTML = clicks;
-                            };
-                            function clickSub() {
-                                clicks -= 1;
-                                document.getElementById("clicks").innerHTML = clicks;
-                            };
-                        </script>
-                        <span>
-                            <button type="button" onClick="clickSub()"><span class="glyphicon glyphicon-minus"></span></button>
-                        </span>
-                            <span>Guests >= 1.4m: <a id="clicks">0</a></span>
-                        <span>
-                            <button type="button" onClick="clickAdd()"><span class="glyphicon glyphicon-plus"></span></button>
-                        </span>
-                        <p>Price: 800.000 VND</p>
+                        <span>Guests >= 1.4m:</span>
+                        <input type="number" id="guest">
+                        <div ng-switch="myVar">
+                            <p ng-switch-when="ticket1">Price: 800.000 VND</p>
+                            <p ng-switch-when="ticket2">Price: 730.000 VND</p>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <script type="text/javascript">
-                            var clicks = 0;
-                            function clickAdd2() {
-                                clicks += 1;
-                                document.getElementById("child").innerHTML = clicks;
-                            };
-                            function clickSub2() {
-                                clicks -= 1;
-                                document.getElementById("child").innerHTML = clicks;
-                            };
-                        </script>
-                        <span>
-                            <button type="button" onClick="clickSub2()"><span class="glyphicon glyphicon-minus"></span></button>
-                        </span>
-                        <span>Guests from 1m – under 1.4m: <a id="child">0</a></span>
-                        <span>
-                            <button type="button" onClick="clickAdd2()"><span class="glyphicon glyphicon-plus"></span></button>
-                        </span>
-                        <p>Price: 730.000 VND</p>
+                        <span>Guests from 1m – under 1.4m:</span>
+                        <input type="number" id="child">
+                        <div ng-switch="myVar">
+                            <p ng-switch-when="ticket1">Price: 700.000 VND</p>
+                            <p ng-switch-when="ticket2">Price: 650.000 VND</p>
+                        </div>
                     </div>
-                    <a href="cart.html">NEXT</a>
+                    <!--<a href="cart.html">NEXT</a>-->
                 </div>
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11"><button type="button" onClick="price()">Submit</button></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1">
+                <h2>3</h2>
+            </div>
+            <div class="col-lg-11" >
+                <h2>Ticket Prices: </h2>
+                <div ng-switch="myVar">
+                    <p ng-switch-when="ticket1">Ticket package: Cable car return ticket</p>
+                    <p ng-switch-when="ticket2">Ticket package: Cable car ticket on returning</p>
+                </div>
+                <h3>Total Prices: <a id="totalPrice">0</a> VND</h3>
+            </div>
+        </div>
     </div>
+    <script>
+        function price() {
+            var i, j,total,package;
+            i= document.getElementById("guest").value;
+            j= document.getElementById("child").value;
+            var checkbox = document.getElementsByName("ticket");
+            for (var i = 0; i < checkbox.length; i++){
+                if (checkbox[i].checked === true){
+                    package = checkbox[i].value;
+                }
+            }
+            if(package == "ticket1"){total = i * 800000 + j * 700000;}
+            else {total = i * 730000 + j * 650000;}
+            document.getElementById("totalPrice").innerHTML = total;
+        }
+    </script>
 </div>
 </body>
 </html>

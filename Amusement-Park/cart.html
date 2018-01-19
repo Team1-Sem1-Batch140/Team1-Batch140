@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Css/Style's%20Team/styleRadio.css">
+    <script src="Js/simpleCounter.js"></script>
 </head>
 <body>
 <h1>Credit Card Information</h1>
 <form action="">
     <div class="form-group">
         <input type="text" class="form-control" id="numberCard"
-               placeholder="Credit Card Number e.g= xxxx-xxxx-xxxx-xxxx">
+               placeholder="Credit Card Number e.g= xxxx-xxxx-xxxx-xxxx" required>
     </div>
     <div class="form-group">
-        <label class="checkbox-inline"><input type="checkbox" name="card" value="master">Master Card</label>
-        <label class="checkbox-inline"><input type="checkbox" name="card" value="visa">VISA</label>
-        <label class="checkbox-inline"><input type="checkbox" name="card" value="paypal">PayPal</label>
+        <label class="checkbox-inline"><input type="radio" name="card" value="master" checked="checked">Master Card</label>
+        <label class="checkbox-inline"><input type="radio" name="card" value="visa">VISA</label>
+        <label class="checkbox-inline"><input type="radio" name="card" value="paypal">PayPal</label>
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" id="pin" placeholder="Pin Code">
+        <input type="text" class="form-control" id="pin" placeholder="Pin Code" required>
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+        <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
     </div>
-    <input type="submit" value="Buy Now">
+    <button class="form-cc" type="button" onclick="buyNow()">Buy Now</button>
 </form>
 <style>
+    .form-group{
+        vertical-align: inherit;
+        text-align: center;
+    }
     .form-control{
         width: 50%;
         height: 25px;
@@ -33,6 +44,15 @@
     body{
         margin: 5px 250px;
     }
+    button{
+        margin: 0 44%;
+    }
 </style>
+
+<script>
+    function buyNow() {
+        alert("Congratulations on your successful booking");
+    }
+</script>
 </body>
 </html>

@@ -60,10 +60,11 @@ h1{
     position: relative;
     color: #fff;
     background-color: #aaa;
+    padding-top: 5%;
     font-size: 26px;
     text-align: center;
     height: 150px;
-    line-height: 150px;
+    line-height: 35px;
     display: block;
     cursor: pointer;
     border: 3px solid transparent;
@@ -108,4 +109,7 @@ h1{
 .submit:hover{
     cursor: pointer;
     transform: rotateX(360deg);
+}
+#child, #guest{
+    width: 40px;
 }
