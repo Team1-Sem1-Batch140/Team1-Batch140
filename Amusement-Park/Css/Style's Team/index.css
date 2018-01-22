@@ -1,57 +1,72 @@
-#tuan140 > button{
+
+body {
+    background: #2d2c45;
+}
+.bot-line-carousel{
+    color: white;
+}
+#tuan140 > button {
     text-align: center;
 }
-.easy{
+
+.easy {
     text-align: center;
     margin-top: 0;
-    padding: -20px;
+    padding: -10px;
     color: white;
 }
- h3,p,a{
-    color: white;
-}
- .tuan h3{
-     text-align: center;
- }
-.tuan1 h3{
+
+/*h3,p,a{*/
+/*color: white;*/
+/*}*/
+.tuan h3 {
     text-align: center;
 }
-.tuan2 h3{
+
+.tuan1 h3 {
     text-align: center;
 }
-.button-3 p{
+
+.tuan2 h3 {
+    text-align: center;
+}
+
+.button-3 p {
     width: 100%;
 }
-.tuan button{
+
+.tuan button {
     background: green;
     border: 1px solid green;
 }
-.tuan1 button{
+
+.tuan1 button {
     background: green;
     border: 1px solid green;
 }
-.tuan2 button{
+
+.tuan2 button {
     background: green;
     border: 1px solid green;
 }
-.tuan button{
+
+.tuan button {
     margin-left: 73%;
 }
-.tuan2 button{
-    margin-left :73%;
+
+.tuan2 button {
+    margin-left: 73%;
 }
 
-
-
- .row a{
-    text-decoration: none;
-}
- .row-1 a{
-     text-decoration: none;
- }
- b:hover{
-     background: orange;
- }
+/*.row a{*/
+/*text-decoration: none;*/
+/*}*/
+/*.row-1 a{*/
+/*text-decoration: none;*/
+/*}*/
+/*b:hover{*/
+/*background: orange;*/
+/*}*/
 #bot-header {
     background: rgb(45, 44, 69);
     color: white;
@@ -66,10 +81,9 @@
     position: relative;
     z-index: 1;
     background-color: white;
-    margin: 1% 10%;
+    margin: 0 18%;
 
 }
-
 
 #carouselRes {
     position: relative;
@@ -105,6 +119,4 @@
 .carousel-item > .carousel-caption h2 {
     color: white;
 }
-body {
-    background: #2d2c45;
-}
+
