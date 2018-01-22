@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Restaurant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="Css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/Style's%20Team/Restaurant.css">
     <link rel="stylesheet" href="Css/Style's Team/Header.css">
@@ -13,11 +14,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script>
         w3IncludeHTML();
     </script>
+
 
 
 </head>
@@ -42,11 +43,12 @@
     var modal = document.getElementById('id01');
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
+    window.onclick = function(event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     };
+
 
 
 </script>
@@ -87,11 +89,10 @@
             </label>
         </div>
 
-        <button type="submit" id="login-modal">Đăng nhập</button>
+        <button type="submit" id="login">Đăng nhập</button>
         <button type="button" class="cancelbtn"
                 onclick="document.getElementById('sign-in-modal').style.display='none'">Hủy
         </button>
-        <span class="yet">Bạn chưa phải là thành viên ? <a href="Registration.html">Đăng ký</a></span>
         <span class="psw">Quên <a href="#">mật khẩu?</a></span>
 
     </form>
@@ -101,338 +102,225 @@
 <!-- BOT HEADER -->
 <div id="bot-header">
 
-    <div class="container">
+    <div id="main">
+        <h2 class="easy">&nbsp;</h2>
 
-        <!-- RESTAURANT -->
+        <div id="on-main">
 
-        <!-- LINE 1 -->
+            <div class="col-md-2"></div>
 
-        <!-- Intro Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Nhà hàng Oriental</span>
-                <br>
-                <p class="line"></p>
-            </h3>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
+            <!-- Carousel -->
+            <div class="row on-carousel">
 
-                    <p class="text-primary">
-                        <strong>Tầng 1, Khu tiền sảnh</strong>
-                    </p>
-                </div>
+                <!-- NEW CAROUSEL -->
 
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
+                <div id="carouselRes" class="carousel slide col-md-12 " data-ride="carousel" data-interval="3500">
 
-                    <p class="text-primary">
-                        <strong>120 chỗ</strong>
-                    </p>
-                </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselRes" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselRes" data-slide-to="1"></li>
+                        <li data-target="#carouselRes" data-slide-to="2"></li>
+                        <li data-target="#carouselRes" data-slide-to="3"></li>
+                        <li data-target="#carouselRes" data-slide-to="4"></li>
+                    </ol>
 
+                    <div class="carousel-inner">
 
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <p class="text-uppercase">
-                        <i class="fa fa-clock-o"></i> Giờ mở cửa
-                    </p>
+                        <div class="item active">
+                            <img src="Images/yen-sao.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h2>Yến Sào</h2>
+                            </div>
+                        </div>
 
-                    <p class="text-primary">
-                        <strong>Bữa tối: 18:00 - 22:00</strong>
-                    </p>
-                </div>
+                        <div class="item">
+                            <img src="Images/nem.jpeg" alt="">
+                            <div class="carousel-caption">
+                                <h2>Nem</h2>
+                            </div>
+                        </div>
 
-            </div>
-            <p>Tại đây, mỗi ngày du khách có thể thưởng thức hải sản tươi sống thu hoạch ngay từ biển bao quanh tại Đà
-                Nẵng
-                và rất nhiều món ngon tinh tế từ ẩm thực Việt Nam truyền thống. Nhà hàng có khu ẩm thực trong nhà và
-                ngoài
-                trời.</p>
-        </div>
+                        <div class="item">
+                            <img src="Images/muc.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h2>Mực nướng</h2>
+                            </div>
+                        </div>
 
+                        <div class="item">
+                            <img src="Images/tom-hum.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h2>Tôm hùm</h2>
+                            </div>
+                        </div>
 
-        <!-- Carousel Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar ">
-            <div id="carouselRes1" class="carousel slide" data-ride="carousel" data-interval="3500">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselRes1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselRes1" data-slide-to="1"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/nha-hang-oriental-1.jpg" alt="">
+                        <div class="item">
+                            <img src="Images/xien-nuong.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h2>Xiên nướng</h2>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="item">
-                        <img src="Images/nha-hang-oriental-2.jpg" alt="">
-                    </div>
 
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselRes1" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselRes1" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- LINE 2 -->
-
-        <!-- Carousel Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar">
-            <div id="carouselRes2" class="carousel slide" data-ride="carousel" data-interval="3550">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselRes2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselRes2" data-slide-to="1"></li>
-                    <li data-target="#carouselRes2" data-slide-to="2"></li>
-                    <li data-target="#carouselRes2" data-slide-to="3"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/nha-hang-gourmet-1.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/nha-hang-gourmet-2.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/nha-hang-gourmet-3.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/nha-hang-gourmet-4.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselRes2" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselRes2" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- Intro Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Nhà hàng Gourmet</span> <br>
-                <p class="line"></p>
-            </h3>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Tầng 1, Khu tiền sảnh</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>210 chỗ</strong>
-                    </p>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <p class="text-uppercase">
-                        <i class="fa fa-clock-o"></i> Giờ mở cửa
-                    </p>
-
-                    <p class=" text-primary">
-                        <strong class="col-md-3 hour">Bữa sáng: 6:00 - 10:00</strong>
-                        <strong class="col-md-3 hour">Bữa trưa: 12:00 - 14:00</strong>
-                        <strong class="col-md-3 hour">Bữa tối: 18:00 - 22:00</strong>
-                    </p>
-                </div>
-
-            </div>
-
-            <p>Nhà hàng Gourmet mang đến không gian ẩm thực từ phòng ăn riêng cao cấp cho khách VIP, đến một địa điểm ăn
-                uống ngoài trời tuyệt đẹp bên bờ biển. Nhà hàng cũng có thực đơn đặc biệt dành riêng cho trẻ em.</p>
-
-        </div>
-
-
-        <div class="clear"></div>
-
-        <!-- BAR -->
-
-        <!-- LINE 3 -->
-
-        <!-- Intro Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Pool Bar</span>
-                <br>
-                <p class="line"></p>
-            </h3>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Hồ bơi chính của khách sạn</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>36 chỗ</strong>
-                    </p>
+                    <a class="left carousel-control" href="#carouselRes" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselRes" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
 
 
             </div>
-            <p>Nằm ngay kế bên hồ bơi ngoài trời, Pool Bar là không gian tuyệt vời để ngả lưng trên ghế tắm nắng tận
-                hưởng khung cảnh hùng vĩ nhất của Vịnh Hạ Long và thưởng thức các loại nước trái cây, sinh tố và
-                cocktail tươi mát cùng các món đồ ăn nhẹ.
-            </p>
+            <div class="col-md-2"></div>
+
         </div>
+    </div>
 
-        <!-- Carousel Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar">
-            <div id="carouselBar1" class="carousel slide" data-ride="carousel" data-interval="3600">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselBar1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselBar1" data-slide-to="1"></li>
-                </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/pool-bar-1.jpg" alt="">
+    <div class="bot-carousel">
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <h3 id="main-logue">Catalogue</h3>
+                <div>
+                    <!-- LINE 1 -->
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/banh-khot.jpg" alt="" class="img-thumbnail"></a>
+                        <h3>Bánh Khọt</h3>
+                        <p>Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được chiên và ăn kèm với rau
+                            sống, ớt tươi, thường ăn với nước mắm pha ngọt, rất ít khi chấm nước sốt mắm tôm...</p>
+
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
                     </div>
 
-                    <div class="item">
-                        <img src="Images/pool-bar-2.jpg" alt="">
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/banh-canh.jpg" alt="" class="img-thumbnail"></a>
+                        <h3>Bánh Canh</h3>
+                        <p> Bánh canh bao gồm nước dùng được nấu từ tôm, cá và giò
+                            heo thêm gia vị tùy theo từng loại bánh canh. Bánh được làm từ bột gạo, bột mì, hoặc bột sắn
+                            hoặc bột gạo...</p>
+
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
                     </div>
 
-                </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/pho.jpg" alt="" class="img-thumbnail hard"></a>
+                        <h3>Phở</h3>
+                        <p>Phở là một món ăn truyền thống của Việt Nam, cũng có thể xem là một trong những món ăn tiêu
+                            biểu cho ẩm thực Việt Nam. Thành phần chính của phở là...</p>
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselBar1" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselBar1" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- LINE 4 -->
-
-        <!-- Carousel Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar">
-            <div id="carouselBar2" class="carousel slide" data-ride="carousel" data-interval="3650">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselBar2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselBar2" data-slide-to="1"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/writer-bar-1.jpg" alt="">
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
                     </div>
 
-                    <div class="item">
-                        <img src="Images/writer-bar-2.jpg" alt="">
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/banh-xeo.jpg" alt="" class="img-thumbnail hard"></a>
+                        <h3>Bánh Xèo</h3>
+                        <p>Bánh xèo là một loại bánh phổ biến ở Việt Nam, Nhật Bản và Triều Tiên có bột bên ngoài, bên
+                            trong có nhân là tôm, thịt, giá đỗ; kimchi, khoai tây, hẹ, thủy sản (bánh xèo Triều
+                            Tiên)...</p>
+
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
                     </div>
-
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselBar2" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselBar2" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Intro Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Writer’s Bar</span>
-                <br>
-                <p class="line"></p>
-            </h3>
-
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Tầng 2, Khu tiền sảnh</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>50 chỗ</strong>
-                    </p>
                 </div>
             </div>
 
-            <p>Nơi các du khách có thể thưởng thức hương vị những loại rượu nổi tiếng trên thế giới, hay những loại
-                cocktail được pha chế đặc biệt. Ngoài ra, Writer’s Bar cũng dành cho các du khách một không gian ấm cúng
-                sang trọng để thưởng thức sự kết hợp tuyệt diệu của tách trà chiều quyến rũ cùng những chiếc bánh ngọt
-                nhẹ nhàng.
-            </p>
+            <!-- LINE 2 -->
+
+            <div class="col-md-12">
+
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/ice-cream.jpeg" alt="" class="img-thumbnail hard"></a>
+                        <h3>Kem</h3>
+                        <p>Kem còn được gọi là cà rem, cà lem, là món ăn ngọt dạng đông lạnh làm từ sản phẩm sữa như kem
+                            béo, trứng gà thêm phụ gia như đường,
+                            vani, sô-cô-la... ..</p>
+
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/refreshments.jpg" alt="" class="img-thumbnail hard"></a>
+                        <h3>Sinh tố</h3>
+                        <p>Nước sinh tố là một dung dịch tự nhiên chứa các mô từ trái cây hoặc các loại rau. Nước sinh
+                            tố được tạo ra một cách máy móc bằng cách ép hoặc vắt hoặc giầm trái cây hoặc...</p>
+
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/xien-nuong.jpg" alt="" class="img-thumbnail hard"></a>
+                        <h3>Xiên nướng</h3>
+                        <p>Thịt nướng xâu hay là thịt nướng xiên que là một món ăn thịt nguyên miếng xắt nhỏ, xiên que
+                            và nướng, thường được phục vụ với một loại nước sốt. Có thể bao gồm...</p>
+
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 catalogue">
+                        <a href="#"><img src="Images/chuck.jpg" alt="" class="img-thumbnail hard"></a>
+                        <h3>Vịt Quay</h3>
+                        <p>Đặc trưng của món vịt quay là da vịt mỏng, giòn, màu vàng sậm. Nhiều nhà hàng phục vụ món da
+                            và món thịt riêng. Vịt Bắc Kinh to, béo sau khi được quay trong lò lửa lớn...</p>
+                        <p class="Giá">
+                            Giá: VNĐ
+                        </p>
+
+                        <button type="button" class="btn btn-default add-cart" onclick="myCart()"><span
+                                class="glyphicon glyphicon-shopping-cart"></span> Đặt hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-
-
-    </div>  <!-- Container -->
-</div>      <!-- Bot header -->
+    </div>
+</div>
 
 
 <!-- FOOTER -->

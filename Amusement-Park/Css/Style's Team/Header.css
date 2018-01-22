@@ -1,6 +1,3 @@
-header {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
 
 .affix {
     top: 0;
@@ -9,19 +6,19 @@ header {
 }
 
 .affix + .container {
-    padding-top: 70px;
+    padding-top: 130px;
 }
 
 .modal {
     display: none;
-    position: fixed;
-/ z-index: 999;
+    position: fixed; /
+    z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-/ background-color: rgb(0, 0, 0);
+    overflow: auto; /
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     padding-top: 60px;
 }
@@ -101,7 +98,7 @@ header {
     box-sizing: border-box;
 }
 
-#login-modal {
+#login {
     color: white;
     width: 8%;
     padding: 11px;
@@ -122,7 +119,7 @@ header {
     width: 99.2%;
 }
 
-#login-modal:hover, .cancelbtn:hover {
+#login:hover, .cancelbtn:hover {
     opacity: 0.8;
 }
 
@@ -152,22 +149,9 @@ span.psw {
     padding-top: 16px;
 }
 
-span.yet {
-    float: right;
-    margin-right: 15px;
-    padding-top: 16px;
-}
-
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 768px) {
     span.psw {
-        display: block;
-        float: none;
-        font-size: smaller;
-        margin: 0 0 2px 16px;
-    }
-
-    span.yet {
         display: block;
         float: none;
         font-size: smaller;
@@ -179,7 +163,7 @@ span.yet {
         padding: 10px;
     }
 
-    #login-modal {
+    #login {
         width: 45%;
         padding: 11px;
         font-size: small;
@@ -198,7 +182,7 @@ span.yet {
 #special a {
     margin: 10px 5px;
     color: white;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
 
 #special a:hover {
@@ -206,51 +190,42 @@ span.yet {
     text-decoration: none;
 }
 
-
-#error {
-    height: 63px;
+label {
+    font-size: small;
 }
 
 #search {
     width: 130px;
-    height: 32px;
+    height: 25px;
     margin-top: 23px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 13px;
     font-size: 16px;
     background-color: white;
+    /*background-image: url('../../Images/search-icon.png');*/
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 13px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     color: black;
-    float: left;
-
 }
 
 #search:focus {
     width: 80%;
 }
 
-#login {
-    float: right;
-    margin-top: 32px;
-    text-decoration: none;
-    color: white;
-}
-
 #btn-search {
-    width: 18%;
-    padding: 5px;
-    margin: 23px 0 0 -25px;
+    width: 13%;
+    padding: 3px;
+    margin: -2px 0 0 -25px;
     border-radius: 13px;
 }
 
 @media only screen and (max-width: 991px) {
     #just-only-form {
-        margin-left: 46%;
+        margin-left: 65%;
         margin-top: -64px;
     }
 }
@@ -288,7 +263,7 @@ span.yet {
 
 .navbar-nav > li > a {
     padding: 20px;
-    margin-left: 15px;
+    margin-left: 3px;
 
 }
 
@@ -329,7 +304,6 @@ span.yet {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
     margin-left: 2px;
-    font-size: 13px;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {

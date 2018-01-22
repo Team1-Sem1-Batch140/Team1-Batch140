@@ -1,122 +1,129 @@
-
-body {
-    background: #2d2c45;
+#myCarousel img{
+    height: 800px;
 }
-.bot-line-carousel{
-    color: white;
-}
-#tuan140 > button {
-    text-align: center;
-}
-
-.easy {
-    text-align: center;
-    margin-top: 0;
-    padding: -10px;
-    color: white;
-}
-
-/*h3,p,a{*/
-/*color: white;*/
-/*}*/
-.tuan h3 {
-    text-align: center;
-}
-
-.tuan1 h3 {
-    text-align: center;
-}
-
-.tuan2 h3 {
-    text-align: center;
-}
-
-.button-3 p {
-    width: 100%;
-}
-
-.tuan button {
-    background: green;
-    border: 1px solid green;
-}
-
-.tuan1 button {
-    background: green;
-    border: 1px solid green;
-}
-
-.tuan2 button {
-    background: green;
-    border: 1px solid green;
-}
-
-.tuan button {
-    margin-left: 73%;
-}
-
-.tuan2 button {
-    margin-left: 73%;
-}
-
-/*.row a{*/
-/*text-decoration: none;*/
-/*}*/
-/*.row-1 a{*/
-/*text-decoration: none;*/
-/*}*/
-/*b:hover{*/
-/*background: orange;*/
-/*}*/
-#bot-header {
-    background: rgb(45, 44, 69);
-    color: white;
-}
-
 #main {
-    /*background-color: rgb(230, 115, 0);*/
-    background: rgb(45, 44, 69);
+    height: 450px;
+    background-color: #1a172f;
 }
+.tuan h3{
+color: orange;
 
-#on-main {
-    position: relative;
-    z-index: 1;
+}
+#main p{
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+.tuan img {
+    width: 500px;
+}
+.img-circle {
+    margin-top: 17%;
+    background: #1a172f;
+}
+.tuan1 {
+    background-color: #1a172f;
+}
+.tuan2 h3{
+    text-align: center;
+}
+#main1 {
     background-color: white;
-    margin: 0 18%;
 
 }
-
-#carouselRes {
-    position: relative;
-    margin: 0 auto;
-    padding: 5px;
-    z-index: 2;
-
+.tuan2 hr {
+    margin-top: 8%;
 }
-
-.carousel-inner > .item > a > img, .carousel-inner > .item > img {
-    width: 1060px;
-    height: 475px;
-    border: 2px solid white;
-    border-radius: 13px;
-}
-
-.carousel-control.right, .carousel-control.left {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%);
-}
-
-.on-carousel {
-    position: relative;
-    z-index: 3;
-    border: 3px solid white;
-    border-radius: 2px;
-    margin: 0 auto;
-}
-
-.carousel-indicators li {
-    background-color: #f8d7da;
-}
-
-.carousel-item > .carousel-caption h2 {
+.tuan2 p{
     color: white;
 }
+.tuan2 h3{
+    color: black;
+}
+.tuan4 hr {
+    margin-top: 8%;
+}
 
+
+.tuan4 p{
+    color: black;
+}
+.tuan3 img{
+    width: 350px;
+    height: 200px;
+}
+.tuan3 p{
+    color: black;
+    padding: 5px;
+}
+.tuan3 h3{
+    color: black;
+}
+.tuan3 p{
+    color: black;
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 10px;
+
+}
+.tuan3 i{
+    color: #d0b181;
+
+}.tuan5 img{
+     width: 350px;
+     height: 200px;
+ }
+.tuan5 h3{
+    color: black;
+    padding: 5px;
+}
+.tuan5 p{
+    color: black;
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 10px;
+
+}
+.tuan5 i{
+    color: #d0b181;
+
+}
+.tuan4 h3{
+    color: black;
+}
+#main3 {
+    background: #1a172f;
+
+}
+#main3 p{
+    color: white;
+}
+#main3 h3{
+    color: orange;
+}
+.tuan6 p{
+    color: black;
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+#main3 h6{
+    color: white;
+
+}
+#main3 button{
+    background-color: #d0b181;
+    border: #d0b181;
+    margin-left: 48%;
+}
+#main4 iframe{
+    width: 100%;
+    height: 200px;
+}
+.tuan7 img{
+    padding: 20px;
+}
+.tuan7 h3 {
+    padding: 5px;
+}

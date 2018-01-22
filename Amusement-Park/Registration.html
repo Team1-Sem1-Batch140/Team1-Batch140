@@ -47,44 +47,44 @@
 
         <form method="post" action="" name="Registration">
             <div class="form-group">
-                <label for="fName">Họ <span class="require">*</span></label>
-                <input type="text" class="form-control" id="fName" placeholder="Họ" required
+                <label for="fName">First Name *</label>
+                <input type="text" class="form-control" id="fName" placeholder="First Name" required
                        minlength="5" maxlength="30">
             </div>
 
 
             <div class="form-group">
-                <label for="lName">Tên <span class="require">*</span></label>
-                <input type="text" class="form-control" id="lName" placeholder="Tên"
+                <label for="lName">Last Name *</label>
+                <input type="text" class="form-control" id="lName" placeholder="Last Name"
                        minlength="5" maxlength="30">
             </div>
 
 
             <div class="form-group">
-                <label for="email">Email <span class="require">*</span></label>
+                <label for="email">Email *</label>
                 <input type="email" placeholder="Email" class="form-control" id="email">
             </div>
 
 
             <div class="col-xs-12 col-sm-12 col-md-12 row">
                 <div class="form-group">
-                    <label>Ngày sinh <span class="require">*</span></label>
+                    <label>Date of Birth *</label>
                     <div class="row">
                         <div class="col-sm-5 col-md-5">
-                            <select name="month" class="leftDob">
-                                <option>Tháng</option>
-                                <option value="January">1</option>
-                                <option value="February">2</option>
-                                <option value="March">3</option>
-                                <option value="April">4</option>
-                                <option value="May">5</option>
-                                <option value="Jun">6</option>
-                                <option value="July">7</option>
-                                <option value="August">8</option>
-                                <option value="September">9</option>
-                                <option value="October">10</option>
-                                <option value="November">11</option>
-                                <option value="December">12</option>
+                            <select name="Month" class="leftDob">
+                                <option>Month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
                             </select>
                         </div>
 
@@ -131,26 +131,6 @@
                             <select name="Year" class="rightDob">
 
                                 <option>Year</option>
-                                <option value="1980">1960</option>
-                                <option value="1980">1961</option>
-                                <option value="1980">1962</option>
-                                <option value="1980">1963</option>
-                                <option value="1980">1964</option>
-                                <option value="1980">1965</option>
-                                <option value="1980">1966</option>
-                                <option value="1980">1967</option>
-                                <option value="1980">1968</option>
-                                <option value="1980">1969</option>
-                                <option value="1980">1970</option>
-                                <option value="1980">1971</option>
-                                <option value="1980">1972</option>
-                                <option value="1980">1973</option>
-                                <option value="1980">1974</option>
-                                <option value="1980">1975</option>
-                                <option value="1980">1976</option>
-                                <option value="1980">1977</option>
-                                <option value="1980">1978</option>
-                                <option value="1980">1979</option>
                                 <option value="1980">1980</option>
                                 <option value="1981">1981</option>
                                 <option value="1982">1982</option>
@@ -190,6 +170,7 @@
                                 <option value="2016">2016</option>
                                 <option value="2017">2017</option>
                                 <option value="2018">2018</option>
+				 <option value="2018">2018</option>
                             </select>
 
                         </div>
@@ -199,20 +180,20 @@
             </div>
 
             <div class="form-group">
-                <label for="gender">Giới tính <span class="require">*</span></label>
-                <input list="gender" placeholder="Giới tính" class="form-control">
+                <label for="gender">Gender *</label>
+                <input list="gender" placeholder="Gender" class="form-control">
                 <datalist id="gender">
-                    <option value="Nam">
-                    <option value="Nữ">
-                    <option value="Khác">
+                    <option value="Male">
+                    <option value="Female">
+                    <option value="Prefer not to say">
                 </datalist>
             </div>
 
             <div class="form-group">
-                <label for="phone">Số điện thoại</label>
+                <label for="phone">Phone Number</label>
                 <input type="tel" placeholder="Phone Number" class="form-control" id="phone">
             </div>
-            <button type="submit" class="btn btn-default" id="complete">Tạo tài khoản</button>
+            <button type="submit" class="btn btn-default" id="complete">Complete your registration</button>
         </form>
     </div>
 

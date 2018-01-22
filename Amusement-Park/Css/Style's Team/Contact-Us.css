@@ -13,12 +13,12 @@
 }
 input[name], textarea, [type=email] {
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -26,6 +26,16 @@ input[name], textarea, [type=email] {
         width: 100%;
         margin-top: 15px;
     }
+}
+
+#nameH {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 30px;
 }
 
 #map {
