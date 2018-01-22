@@ -40,271 +40,246 @@ $(function () {
 <body>
 <div w3-include-html="Common/Header.html" id="header"></div>
 
+<div id="sign-in-modal" class="modal">
+  <span onclick="document.getElementById('sign-in-modal').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <form action="" id="sign-in" class="modal-content animate">
+        <div class="imgContainer">
+            <img src="Images/default-ava.jpg" alt="" class="avatar">
+        </div>
+
+        <div class="" id="sign-in-form">
+            <div class="">
+                <div class="col-25">
+                    <label><b>Tài khoản</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="uname" placeholder="Tên đăng nhập" name="uname" required>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="col-25">
+                    <label><b>Mật khẩu</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="psw" placeholder="Mật khẩu" name="psw" required>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="checked" id="remember"> Nhớ mật khẩu
+            </label>
+        </div>
+
+        <button type="submit" id="login-modal">Đăng nhập</button>
+        <button type="button" class="cancelbtn"
+                onclick="document.getElementById('sign-in-modal').style.display='none'">Hủy
+        </button>
+        <span class="yet">Bạn chưa phải là thành viên ? <a href="Registration.html">Đăng ký</a></span>
+        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+
+    </form>
+</div>
 
 <div id="bot-header">
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+        <div id="main">
+            <h2>&nbsp;</h2>
+            <div id="on-main">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="Images/221.1.jpg" alt="Los Angeles" style="width: 100%">
-        </div>
+                <div class="col-md-2"></div>
 
-        <div class="item">
-            <img src="Images/221.3.jpg" alt="Chicago" style="width: 100%">
-        </div>
+                <!-- Carousel -->
+                <div class="row on-carousel">
 
-        <div class="item">
-            <img src="Images/221.2.jpg" alt="New York" style="width: 100%">
-        </div>
-    </div>
+                    <!-- NEW CAROUSEL -->
 
-    <!-- Left and right controls -->
+                    <div id="carouselRes" class="carousel slide col-md-12  " data-ride="carousel" data-interval="3500">
 
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselRes" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselRes" data-slide-to="1"></li>
+                            <li data-target="#carouselRes" data-slide-to="2"></li>
+                            <li data-target="#carouselRes" data-slide-to="3"></li>
+                            <li data-target="#carouselRes" data-slide-to="4"></li>
+                        </ol>
 
-</div>
-</div>
-<div class="tuan">
-    <div id="main" >
-        <div class="container">
-            <div class="tuan1">
-                <div class="col-md-8 co col-sm-12">
-                    <h3>Giới thiệu Vinpearl Land</h3>
-                    <br>
-                    <p>Với diện tích trên 200.000m2, Công viên giải trí Vinpearl Land Nha Trang là một trong những quần thể dự án của khu nghỉ dưỡng ven biển Vinpearl Nha Trang Resort & Villas được đầu tư kỳ công và tốn sức nhất nhằm mục đích mang đến cho du khách nghỉ dưỡng những giây phút thư giãn sảng khoái nhất</p>
-                    <p>Sắp xếp có chủ ý, Vinpearl Land Nha Trang được đặt ngay cạnh các hệ thống các khu vực trọng điểm của dự án như: Khách sạn 5 sao Vinpearl Resort Nha Trang – mang đẳng cấp quốc tế; Khách sạn Vinpearl Luxury Nha Trang => thuận lợi cho quý khách và gia đình, bạn bè tham gia các trò chơi giải trí.</p>
-                    <p>Trong năm 2015, Vinpearl Land Nha Trang chính thức là thành viên của Hiệp hội vui chơi giải trí quốc tế và được bình chọn là Khu vui chơi giải trí hấp dẫn nhất Việt Nam (Giải thưởng do Hiệp hội Du lịch Việt Nam trao tặng)
+                        <div class="carousel-inner" >
 
+                            <div class="item active">
+                                <img src="Images/11-750x309.jpg" alt="" style="width: 100%">
+                                <div class="carousel-caption">
+                                    <!--<h2>Yến Sào</h2>-->
+                                </div>
+                            </div>
 
+                            <div class="item">
+                                <img src="Images/index.jpg" alt=""style="width: 100%">
+                                <div class="carousel-caption">
+                                    <!--<h2>Nem</h2>-->
+                                </div>
+                            </div>
 
-                        Vinpearl Land Nha Trang được coi là hệ thống công viên giải trí hàng đầu Việt Nam</p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <img src="Images/221.5.jpg" class="img-circle" >
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div id="main1">
-    <div class="container">
-        <div class="tuan2">
-            <div class="col-md-5 col-sm-12">
-                <hr>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <h3>Giải Trí</h3>
-            </div>
-            <div class="col-md-5 col-sm-12">
-                <hr>
-            </div>
-        </div>
-        <div class="tuan3">
-            <div class="col-md-4 col-sm-12">
-                <img src="Images/VINPEARL-LAND-NHA-TRANG-77.jpg" style="width: 100%">
-                <p><i>Outside play</i></p>
-                <h3>Performances</h3>
-                <p>Carlos was honest and smart and had the highest personal integrity of anyone I have ever known about people.</p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="Images/11-750x309.jpg" style="width: 100%">
-                <p><i>Playground</i></p>
-                <h3>Entertaiment</h3>
-                <p>Alpine Coaster Vinpearl Land features a total length of 1.760 meters and height difference between two stations up to 133 meter – the largest in Southeast Asia.</p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="Images/duong-truot-6-lan-750x400.jpg" style="width: 100%">
-                <p><i>Swimming </i></p>
-                <h3>Water Park</h3>
-                <p>Being Vietnam’s first and only sea side water park with a total area of over 50,000 square meters, having an artificial mountain system measuring 30,000 square meters.</p>
-            </div>
-        </div>
-        <br>
-        <div class="tuan4">
-            <div class="col-md-5 col-sm-12">
-                <hr>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <h3>Tham Quan</h3>
-            </div>
-            <div class="col-md-5 col-sm-12">
-                <hr>
-            </div>
-        </div>
-        <div class="tuan5">
-            <div class="col-md-4 col-sm-12">
-                <img src="Images/221.8.jpg" style="width: 100%">
-                <p><i>Outside play</i></p>
-                <h3>Slings</h3>
-                <p>Carlos was honest and smart and had the highest personal integrity of anyone I have ever known about people.</p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="Images/captreo2.jpg" style="width: 100%">
-                <p><i>Enjoys</i></p>
-                <h3>Slings
-                </h3>
-                <p>Alpine Coaster Vinpearl Land features a total length of 1.760 meters and height difference between two stations up to 133 meter – the largest in Southeast Asia.</p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="Images/221.7.jpg" style="width: 100%">
-                <p><i>sighseeing </i></p>
-                <h3>Water supply</h3>
-                <p>Being Vietnam’s first and only sea side water park with a total area of over 50,000 square meters, having an artificial mountain system measuring 30,000 square meters.</p>
-            </div>
-        </div>
-</div>
-</div>
-    <div id="main3">
-        <div class="container">
-            <div class="tuan6">
-    <h3>Thông tin - Sự Kiện</h3>
-                <div class="container">
-                    <div class="row">
+                            <div class="item">
+                                <img src="Images/duong-truot-phao-750x450.jpg" alt="" style="width: 100%">
+                                <div class="carousel-caption">
+                                    <!--<h2>Mực nướng</h2>-->
+                                </div>
+                            </div>
 
-                        <div class="col-xs-12">
-                            <div class="row">
+                            <div class="item">
+                                <img src="Images/IMG_7058-copy-970x400.jpg" alt="" style="width: 100%">
+                                <div class="carousel-caption">
+                                    <!--<h2>Tôm hùm</h2>-->
+                                </div>
+                            </div>
 
-                                <div class="col-md-12">
-                                    <div class="container">
-                                        <div class="row">
-                                            <br>
-                                            <div class="col-sm-6 col-md-6">
-                                                <a href="#"><img src="Images/1.png" class="img-thumbnail"  style="width: 100%"></a>
-
-                                            </div>
-                                            <div class="col-sm-6 col-md-6">
-
-                                                <a href="#"><p>(Vietnamese) THÔNG BÁO – NHÀ HÀNG CORAL DỪNG DỊCH VỤ BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017</p></a>
-                                                <h6>In order to ensure the safety standards, Sky Wheel will be temporarily closed from January 16 throughout January 20, 2018 for periodic maintenance.</h6>
-
-  <h6>  We are sorry for this inconvenience and thank for your kind understanding.</h6>
-
-    <h6>   We look forward to welcoming to Vinpearl Land Nha Trang!</h6>
-
-
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6">
-                                                <a href="#">  <p>(Vietnamese) MÙA DU LỊCH, ĐỪNG BỎ LỠ NHỮNG HOẠT ĐỘNG NGOÀI TRỜI SIÊU HOT TẠI VINPEARL LAND NHA TRANG!</p></a>
-                                                <h6>In order to ensure the safety standards, Sky Wheel will be temporarily closed from January 16 throughout January 20, 2018 for periodic maintenance.</h6>
-
-                                                <h6>  We are sorry for this inconvenience and thank for your kind understanding.</h6>
-
-                                                <h6>   We look forward to welcoming to Vinpearl Land Nha Trang!</h6>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6">
-                                                <a href="#">  <img src="Images/15.jpg" class="img-thumbnail"  style="width: 100%"></a>
-                                            </div>
-
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6">
-                                                <a href="#"> <img src="Images/13.jpg" class="img-thumbnail"  style="width: 100%"></a>
-
-
-                                            </div>
-                                            <div class="col-sm-6 col-md-6">
-                                                <a href="#"><p>(Vietnamese) THÔNG BÁO – NHÀ HÀNG CORAL DỪNG DỊCH VỤ BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017</p></a>
-                                                <h6>In order to ensure the safety standards, Sky Wheel will be temporarily closed from January 16 throughout January 20, 2018 for periodic maintenance.</h6>
-
-                                                <h6>  We are sorry for this inconvenience and thank for your kind understanding.</h6>
-
-                                                <h6>   We look forward to welcoming to Vinpearl Land Nha Trang!</h6>
-                                            </div>
-
-                                        </div>
-                                        <br>
-
-                                        <br>
-                                        <button>Xem thêm</button>
-                                    </div>
-                                <br>
+                            <div class="item">
+                                <img src="Images/VINPEARL-LAND-NHA-TRANG-77.jpg" alt="" style="width: 100%">
+                                <div class="carousel-caption">
+                                    <!--<h2>Xiên nướng</h2>-->
                                 </div>
                             </div>
                         </div>
+
+
+                        <a class="left carousel-control" href="#carouselRes" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carouselRes" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
 
-                </div>
-            </div>
-
 
                 </div>
-    </div>
-    </div>
-<div id="main4">
-    <div class="container">
+                <div class="col-md-2"></div>
 
-    <div class="tuan7">
-
-
-        <div class="col-sm-4 col-md-4">
-            <h3>Video Vinpearl Land</h3>
-            <iframe src="https://www.youtube.com/embed/npuZB8Xt5Go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width: 100%"></iframe></p>
-
+            </div>
         </div>
-        <div class="col-sm-8 col-md-8">
-            <h3>Gallery</h3>
 
 
+<br>
+    <br>
 
+<div class="container bot-line-carousel" >
 
-</div>
-        <br>
-
-            <div class="col-sm-2 col-md-2">
-                <img src="Images/captreo2.jpg" style="width: 100%">
+            <div class="tuan">
+            <div class="col-md-4 col-sm-12">
+                <h3>Sự kiện - thông báo</h3>
+                <a href="thongbaosukien.html"> <img src="Images/lịch-hoạt-động.jpg" class="img-thumbnail" style="width: 100%"></a>
+                <p><i>Sự kiện và thông báo sẽ được cập nhật thường xuyên tại đây ..</i></p>
+                <a href="thongbaosukien.html" class="button-2"><button>Read More..</button></a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h3>Vinpearl</h3>
+                <a href="vinpearl.html"><img src="Images/slide-Nha-Trang-750x309.jpg" class="img-thumbnail" style="width: 100%"></a>
+                <p><i>Vinpearl Land Nha Trang - thiên đường giải trí đẳng cấp thế giới - nằm trong một trong số 29..</i>
+                </p>
+                <a  href="vinpearl.html" class="button-2" ><button>Read More..</button></a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h3>Biểu diễn</h3>
+                <a href="bieudien.html"><img src="Images/VINPEARL-LAND-NHA-TRANG-77.jpg" class="img-thumbnail" style="width: 100%"></a>
+                <p><i>Bên cạnh công viên nước, trò chơi ngoài trời và trong nhà, Vinpearl Land Nha Trang cũng nổi
+                    tiếng..</i></p>
+                <a href="bieudien.html" class="button-2"><button>Read More..</button></a>
 
             </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 
-            <div class="col-sm-2 col-md-2">
-                <img src="Images/captreo2.jpg"  style="width: 100%">
+    <div class="container bot-line-carousel">
+        <!--<h2 class="easy">Attraction</h2>-->
+        <div class="tuan1">
+            <div class="col-md-4 col-sm-12">
+                <h3 style="text-align: center">Cáp treo</h3>
+                <a  href="captreo.html"><img src="Images/images.jpg" class="img-thumbnail" style="width: 100%"></a>
+                <p><i>Tuyến cáp treo Vinpearl Land là một tuyến cáp treo đi qua Vịnh Nha Trang dài 3320 m nối Nha Trang
+                    ..</i></p>
+                <a href="captreo.html" class="button-2"><button style="margin-left: 73%">Read More..</button></a>
 
             </div>
-            <div class="col-sm-2 col-md-2">
-                <img src="Images/captreo2.jpg"  style="width: 100%">
-            </div>
-                <div class="col-sm-2 col-md-2">
-                    <img src="Images/captreo2.jpg" style="width: 100%">
+            <div class="col-md-4 col-sm-12">
+                <div class="thumbnail">
+                        <img src="Images/ve.jpg" alt="Nature" style="width:100%">
+                        <div class="caption">
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width: 100%">Đặt vé</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Some text in the modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                 </div>
-            <div class="col-sm-2 col-md-2">
-                <img src="Images/captreo2.jpg"  style="width: 100%">
+
 
             </div>
-            <div class="col-sm-2 col-md-2">
-                <img src="Images/captreo2.jpg"  style="width: 100%">
+
+            <div class="col-md-4 col-sm-12">
+                <h3 style="text-align: center">Khu vui chơi</h3>
+                <a href="khuvuichoi.html"><img src="Images/11-750x309.jpg" class="img-thumbnail" style="width: 100%"></a>
+                <p><i>Đưa du thuyền từ đất liền đến Vinpearl Land cách thủ đô hơn 2 hải lý và mất 20 phút  .</i></p>
+                <a href="khuvuichoi.html" class="button-2"><button style="margin-left: 73%">Read More..</button></a>
 
             </div>
-        <div class="col-sm-2 col-md-2">
-            <img src="Images/captreo2.jpg"  style="width: 100%">
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+<div class="container bot-line-carousel">
+    <div class="tuan2">
+        <div class="col-md-4 col-sm-12">
+            <h3>Bộ sưu tập</h3>
+            <a href="Gallery.html"> <img src="Images/bosuutap.jpg" class="img-thumbnail" style="width: 100%"></a>
+            <p><i>Sự kiện và thông báo sẽ được cập nhật thường xuyên tại đây ..</i></p>
+            <a href="Gallery.html" class="button-2"><button>Read More..</button></a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h3>Bến phà</h3>
+            <a href="benpha.html"><img src="Images/0123.jpg" class="img-thumbnail" style="width: 100%"></a>
+            <p><i>Đưa du thuyền từ đất liền đến Vinpearl Land cách thủ đô hơn 2 hải lý và mất 20 phút đi bằng
+                phà..</i></p>
+            <a href="benpha.html" class="button-2"><button>Read More..</button></a>
 
         </div>
-        <div class="col-sm-2 col-md-2">
-        <img src="Images/captreo2.jpg"  style="width: 100%">
-
-
-
-
+        <div class="col-md-4 col-sm-12">
+            <h3>Restaurant</h3>
+            <a href="Restaurant.html"><img src="Images/13.jpg" class="img-thumbnail" style="width: 100%"></a>
+            <p><i>Bên cạnh công viên nước, trò chơi ngoài trời và trong nhà, Vinpearl Land Nha Trang cũng nổi
+                tiếng..</i></p>
+            <a href="Restaurant.html" class="button-2" ><button>Read More..</button></a>
 
         </div>
     </div>
 </div>
-
-
-
-
-<div w3-include-html="Common/Footer.html" id="footer">
-
-</div>
+<br>
+<br>
+<div w3-include-html="Common/Footer.html" id="footer"></div>
 </body>
 </html>

@@ -1,24 +1,37 @@
-
 <header>
     <div id="main-header" ng-app="cusApp" ng-controller="cusController">
 
         <div class="container">
             <div class="row">
                 <div class="hidden-xs col-sm-12 col-md-7" id="special">
-                    <h2><a href="index.html">Vinpearl Land</a></h2>
+                    <h1><a href="index.html">Vinpearl Land</a></h1>
+                    <!--<span><img src="../Images/logo.png" alt="" class="img-rounded" style="background: yellow"></span>-->
                 </div>
 
-                <div class="hidden-xs col-md-5">
+                <div class="hidden-xs col-md-5" id="error">
                     <div class="col-xs-5 col-sm-12 col-md-12">
                         <form id="just-only-form">
-                            <input type="text" name="search" placeholder="Tìm kiếm.." id="search">
-                            <button class="btn btn-default" type="submit" id="btn-search">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </form>
-                    </div>
 
+                            <div class="col-sm-8 col-md-8">
+                                <input type="text" name="search" placeholder="Tìm kiếm.." id="search">
+                                <button class="btn btn-default" type="submit" id="btn-search">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="hidden-xs col-sm-4 col-md-4">
+                                <!--<span class="fa fa-user" ng-show="showNecess"></span>-->
+                                <a href="#" id="login"
+                                   onclick="document.getElementById('sign-in-modal').style.display='block'">ĐĂNG
+                                    NHẬP</a>
+                            </div>
+                        </form>
+
+                        <div class="hidden-xs col-sm-4 col-md-4">
+
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
         </div>
@@ -41,7 +54,7 @@
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">ĐIỂM ĐẾN
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="Restaurant.html">NHÀ HÀNG</a></li>
+                                <li><a href="Restaurant.html">NHÀ HÀNG &amp; BAR</a></li>
                                 <li><a href="Gallery.html">CẢNH QUAN</a></li>
                                 <li><a href="#">HOẠT ĐỘNG</a></li>
                                 <li><a href="attractions.html">ĐIỂM THU HÚT</a></li>
@@ -55,18 +68,15 @@
                     </ul>
 
                     <!--Right Nav -->
-                    <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                    <!--<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">-->
 
-                        <li><a href="#"><span id="quantity">(0)</span> <span
-                                class="glyphicon glyphicon-shopping-cart"></span>
-                            {{Customer.cart}}</a></li>
-                    </ul>
-                    <p class="navbar-text hidden-xs hidden-sm"><a href="#" onclick="document.getElementById('sign-in-modal').style.display='block'">ĐĂNG NHẬP</a><span id="or"> hoặc</span> <a href="#">ĐĂNG KÝ</a></p>
+                    <!--<li><a href="#"><span id="quantity">(0)</span> <span-->
+                    <!--class="glyphicon glyphicon-shopping-cart"></span>-->
+                    <!--{{Customer.cart}}</a></li>-->
+                    <!--</ul>-->
                 </div>
             </div>
         </nav>
-
-
 
 
     </div>
