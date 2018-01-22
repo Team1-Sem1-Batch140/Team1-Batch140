@@ -3,33 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/styleRadio.css">
+    <link rel="stylesheet" href="Css/Style's Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Css/Style's%20Team/styleRadio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="Js/simpleCounter.js"></script>
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <script>
+        w3IncludeHTML();
+
+
+        $(function () {
+            $("#header").load("Common/Header.html");
+            $("#footer").load("Common/Footer.html");
+        });
+
+        var modal = document.getElementById('sign-in-modal');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+
 </head>
 <body ng-app="">
-<div class="container">
-    <h3>Park tickets</h3>
-    <p>Start your reservation by choosing your tickets <br>All ticket access to all games (except for water sports games)</a></p>
+<!-- HEADER -->
+<div w3-include-html="Common/Header.html" id="header"></div>
+
+<div id="sign-in-modal" class="modal">
+  <span onclick="document.getElementById('sign-in-modal').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <form action="" id="sign-in" class="modal-content animate">
+        <div class="imgContainer">
+            <img src="Images/default-ava.jpg" alt="" class="avatar">
+        </div>
+
+        <div class="" id="sign-in-form">
+            <div class="">
+                <div class="col-25">
+                    <label><b>Tài khoản</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="uname" placeholder="Tên đăng nhập" name="uname" required>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="col-25">
+                    <label><b>Mật khẩu</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="psw" placeholder="Mật khẩu" name="psw" required>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="checked" id="remember"> Nhớ mật khẩu
+            </label>
+        </div>
+
+        <button type="submit" id="login">Đăng nhập</button>
+        <button type="button" class="cancelbtn"
+                onclick="document.getElementById('sign-in-modal').style.display='none'">Hủy
+        </button>
+        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+
+    </form>
+</div>
+
+
+<div class="container ticketHtml">
+    <h2>Đặt vé cáp treo</h2>
+    <h4>Giờ mở cửa: 08h30 – 21h00 hàng ngày</h4>
+    <p>- Vé được chấp nhận cho mọi trò chơi (trừ các trò thể thao dưới nước)
+        <br>- Thẻ có giá trị sử dụng 01 lần trong vòng 90 ngày từ ngày xuất thẻ.</p>
     <div class="container">
         <div class="row">
             <div class="col-lg-1">
                 <h2>1</h2>
             </div>
             <div class="col-lg-11">
-                <h2>Select your type of tickets</h2>
+                <h2>Chọn loại vé</h2>
                 <form class="form cf">
                     <section class="plan cf">
                         <input type="radio" ng-model="myVar" name="ticket" id="ticket1" value="ticket1">
                         <label class="free-label four col" for="ticket1">
-                            <div>Cable car return ticket.</div>
+                            <div>Cáp treo 02 lượt đi & về</div>
                         </label>
                         <input type="radio" ng-model="myVar" name="ticket" id="ticket2" value="ticket2">
-                        <label class="basic-label four col" for="ticket2">Cable car ticket on returning.</label>
+                        <label class="basic-label four col" for="ticket2">Cáp treo 01 lượt về</label>
                     </section>
                 </form>
             </div>
@@ -40,64 +114,69 @@
                 <h2>2</h2>
             </div>
             <div class="col-lg-11" >
-                <h2>Select your Number of tickets</h2>
-                <p>Please note that children under 1m don't need a ticket.</p>
+                <h2>Chọn số lượng vé</h2>
+                <p>Lưu ý: Trẻ em dưới 1m được miễn phí</p>
                 <div class="row" >
-                    <div class="col-lg-6">
-                        <span>Guests >= 1.4m:</span>
+                    <div class="col-lg-4">
+                        <span>Khách hàng >= 1.4m:</span>
                         <input type="number" id="guest">
                         <div ng-switch="myVar">
-                            <p ng-switch-when="ticket1">Price: 800.000 VND</p>
-                            <p ng-switch-when="ticket2">Price: 730.000 VND</p>
+                            <p ng-switch-when="ticket1">Giá: 800.000 VND</p>
+                            <p ng-switch-when="ticket2">Giá: 730.000 VND</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <span>Guests from 1m – under 1.4m:</span>
+                    <div class="col-lg-4">
+                        <span>Khách hàng 1m – dưới 1.4m:</span>
                         <input type="number" id="child">
                         <div ng-switch="myVar">
-                            <p ng-switch-when="ticket1">Price: 700.000 VND</p>
-                            <p ng-switch-when="ticket2">Price: 650.000 VND</p>
+                            <p ng-switch-when="ticket1">Giá: 700.000 VND</p>
+                            <p ng-switch-when="ticket2">Giá: 650.000 VND</p>
                         </div>
                     </div>
-                    <!--<a href="cart.html">NEXT</a>-->
+                    <div class="col-lg-4">
+                    </div>
+
                 </div>
 
             </div>
         </div>
         <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-11"><button type="button" onClick="price()">Submit</button></div>
+            <div class="col-lg-11"><button type="button" onClick="price()" class="btn btn-info btn-lg">Xác nhận</button></div>
         </div>
         <div class="row">
             <div class="col-lg-1">
                 <h2>3</h2>
             </div>
             <div class="col-lg-11" >
-                <h2>Ticket Prices: </h2>
+                <h2>Tổng giá vé đã chọn: </h2>
                 <div ng-switch="myVar">
-                    <p ng-switch-when="ticket1">Ticket package: Cable car return ticket</p>
-                    <p ng-switch-when="ticket2">Ticket package: Cable car ticket on returning</p>
+                    <p ng-switch-when="ticket1">Gói vé đã chọn: Cáp treo 02 lượt đi & về</p>
+                    <p ng-switch-when="ticket2">Gói vé đã chọn: Cáp treo 01 lượt về</p>
                 </div>
-                <h3>Total Prices: <a id="totalPrice">0</a> VND</h3>
+                <h3>Tổng giá vé: <a id="totalPrice">0</a> VND</h3>
             </div>
         </div>
     </div>
-    <script>
-        function price() {
-            var i, j,total,package;
-            i= document.getElementById("guest").value;
-            j= document.getElementById("child").value;
-            var checkbox = document.getElementsByName("ticket");
-            for (var i = 0; i < checkbox.length; i++){
-                if (checkbox[i].checked === true){
-                    package = checkbox[i].value;
-                }
-            }
-            if(package == "ticket1"){total = i * 800000 + j * 700000;}
-            else {total = i * 730000 + j * 650000;}
-            document.getElementById("totalPrice").innerHTML = total;
-        }
-    </script>
+    <a href="cart.html">NEXT</a>
 </div>
+
+<div w3-include-html="Common/Footer.html" id="footer"></div>
+<script>
+    function price() {
+        var i, j,total,package;
+        i= document.getElementById("guest").value;
+        j= document.getElementById("child").value;
+        var checkbox = document.getElementsByName("ticket");
+        for (var i = 0; i < checkbox.length; i++){
+            if (checkbox[i].checked === true){
+                package = checkbox[i].value;
+            }
+        }
+        if(package == "ticket1"){total = i * 800000 + j * 700000;}
+        else {total = i * 730000 + j * 650000;}
+        document.getElementById("totalPrice").innerHTML = total;
+    }
+</script>
 </body>
 </html>
