@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+    <title>Bến Phà</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/benpha.css">
+    <link rel="stylesheet" href="Css/Style's Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <link rel="stylesheet" href="Css/Style's Team/vinpearl.css">
-    <link rel="stylesheet" href="Css/Style's Team/Header.css">
-    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
 
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script>
@@ -19,33 +20,90 @@
     </script>
 
 
-
-    <script>
-        //        var app = angular.module('myApp', []);
-        //        app.controller('customersCtrl', function ($scope, $http) {
-        //            $http.get("customers.php").then(function (response) {
-        //                $scope.names = response.data.records;
-        //            });
-        //        });
-        $(function () {
-            $("#header").load("Common/Header.html");
-            $("#footer").load("Common/Footer.html");
-        });
-    </script>
 </head>
-<body ng-app="myApp" ng-controller="customersCtrl"  style="background: #2d2c45;">
-<div w3-include-html="Common/Header.html" id="header"></div>
-<br>
-<br>
-<main id="main" >
-    <div class="container">
-        <div class="tuan">
 
-            <div class="col-xs-12">
-                <div class="tuan1">
+<script>
+    $(function () {
+        $("#header").load("Common/Header.html");
+        $("#footer").load("Common/Footer.html");
+    });
+
+    var add = (function () {
+        var counter = 0;
+        return function () {
+            return counter += 1;
+        }
+    })();
+
+    function myCart() {
+        document.getElementById("quantity").innerHTML = add();
+    }
+
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+
+</script>
+<body>
+<!-- HEADER -->
+<div w3-include-html="Common/Header.html" id="header"></div>
+
+<div id="sign-in-modal" class="modal">
+  <span onclick="document.getElementById('sign-in-modal').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <form action="" id="sign-in" class="modal-content animate">
+        <div class="imgContainer">
+            <img src="Images/default-ava.jpg" alt="" class="avatar">
+        </div>
+
+        <div class="" id="sign-in-form">
+            <div class="">
+                <div class="col-25">
+                    <label><b>Tài khoản</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="uname" placeholder="Tên đăng nhập" name="uname" required>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="col-25">
+                    <label><b>Mật khẩu</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="psw" placeholder="Mật khẩu" name="psw" required>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="checked" id="remember"> Nhớ mật khẩu
+            </label>
+        </div>
+
+        <button type="submit" id="login-modal">Đăng nhập</button>
+        <button type="button" class="cancelbtn"
+                onclick="document.getElementById('sign-in-modal').style.display='none'">Hủy
+        </button>
+        <span class="yet">Bạn chưa phải là thành viên ? <a href="Registration.html">Đăng ký</a></span>
+        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+
+    </form>
+</div>
+<div id="bot-header">
+
+<main id="main" >
+    <br>
+    <div class="container">
+
 
                     <div class="col-md-12">
-                        <h2><span class="glyphicon glyphicon-pawn"> Vinpearl</span></h2>
                         <div class="text-center">
                         <iframe width="700" height="450" src="https://www.youtube.com/embed/npuZB8Xt5Go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width: 100%"></iframe></p>
                         </div>
@@ -54,19 +112,147 @@
                         </p>
                         <p>Du khách bắt đầu cuộc hành trình cảm xúc với những trò chơi gia đình hấp dẫn như Merry-go-round, Voi đi vòng, Trà cốc, xe Bumper, vv và dần dần leo thang thách thức với những chuyến đi vui chơi như đi xe Evolution, Swing Carousel, Roller Coaster , Tàu Pirate ... Đặc biệt, đừng quên trải nghiệm chiếc tàu cao tốc Alpine Coaster của Vinpearl Land - hệ thống tàu cao tốc hòn đảo đầu tiên của châu Á - một trong những chuyến đi chơi giải trí yêu thích nhất của mọi người trên thế giới với tổng chiều dài 1.760 mét, hai vòng xoắn ốc trên cùng chiều xuống và chiều cao giữa hai ga tới 133 mét - lớn nhất ở Đông Nam Á.
                         </p>
-                        <h2>Cáp treo vượt biển Vinpearl Land</h2>
-                        <br>
-                        <p>Hành trình cáp treo vượt biển  sẽ đưa quý khách vượt qua vịnh Nha Trang, một trong hai mươi chín vịnh biển đẹp nhất hành tinh để đến với Vinpearl Land Nha Trang.
+                        <h2>Vinpearl Land</h2>
+                        <div class="container">
+
+                            <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
+                                <h3>
+                                    <span class="head-text">Cáp Treo</span>
+                                    <br>
+                                    <p class="line"></p>
+                                </h3>
+                                <div class="row">
+                                    <div class="col-xs-7 col-sm-6 col-md-6">
+                                        <p class="text-uppercase">
+                                            <i class="fa fa-location-arrow"></i> Vị trí
+                                        </p>
+
+                                        <p class="text-primary">
+                                            <strong>Nha Trang, Khánh Hòa, Việt Nam
+
+                                            </strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-xs-5 col-sm-6 col-md-6">
+
+                                    </div>
 
 
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <p class="text-uppercase">
+                                            <i class="fa fa-clock-o"></i> Lịch hoạt động
+                                        </p>
 
-                        </p>
-                        <p>Vị trí: Quảng Trường Đại Dương
+                                        <p class="text-primary">
+                                            <strong> 8h00 - 22h30</strong>
+                                        </p>
+                                    </div>
 
-                        </p>
-                            <div class="text-center">
-                            <img src="Images/slide-Nha-Trang-750x309.jpg" style="width: 70%" >
+                                </div>
+                                <p>Tuyến cáp treo Vinpearl Land là một tuyến cáp treo vượt biển vịnh Nha Trang dài 3320 m, nối Nha Trang với khu du lịch Hòn Ngọc Việt trên đảo Hòn Tre. Đây là tuyến cáp treo vượt biển dài nhất thế giới và cũng là cáp treo chứa được nhiều người nhất trên 1 cabin (8 người) [1].
+
+
+                                </p>
+                                <p>Đến Vinpearl Land bằng bến phà mất 20 phút, với nhiều dịch vụ phà khởi hành khi cần thiết.
+
+                                </p>
+                                <p>Được xây dựng và tạo nên bởi hệ thống cáp treo một dây, cabin 8 người (thiết kế theo hình thức kẹp nhả) do tập đoàn POMA - Pháp chế tạo, với chiều dài 3320m, độ cao trung bình từ 40m đến 60m so với mực nước biển, cáp treo Vinpearl trở thành cáp treo vượt biển dài nhất thế giới có thể hoạt động ổn định trong điều kiện tốc độ gió 72km/giờ, đứng vững trong điều kiện động đất gia tốc 14m/giây hay sóng thần với bước sóng 90m. Tất cả vật tư, trang thiết bị sử dụng trong quá trình xây dựng và chế tạo hệ thống cáp treo Vinpearl đều có xuất xứ từ châu Âu, đạt tiêu chuẩn của Hiệp hội Cáp treo Thế giới.</p>
+                            <p>Với 9 cột trụ có hình dáng và cấu trúc sang trọng, đồ sộ mà mềm mại giống tháp Eiffel, cáp treo Vinpearl được ví như một “kỳ quan” có sức cuốn hút và hấp dẫn đặc biệt đối với du khách mỗi khi đến thăm Vinpearl. Từ độ cao lý tưởng của cáp treo, ngồi trong cabin, bạn có thể thấy toàn cảnh thành phố Nha Trang xinh đẹp với những bãi biển uốn lượn ôm gọn lấy thành phố, được chiêm ngưỡng cảnh đẹp tựa thiên đường của Vịnh Nha Trang và toàn cảnh khu du lịch giải trí Vinpearl Land xinh đẹp. Vào những buổi tối, khi ánh sáng của hệ thống đèn laser và đèn trang trí được thắp lên, cáp treo Vinpearl bỗng trở nên lung linh huyền ảo hơn bao giờ hết.</p>
+                            <p>Giờ hoạt động:
+                            </p>
+                                <p>Mùa thấp điểm: 8h30 - 21h15 (từ thứ 2 đến thứ 5)
+                                    8h30 - 22h00 (thứ 6, thứ 7, Chủ nhật)
+
+                                </p>
+                                <p>Mùa cao điểm:  8h - 22h hàng ngày
+                                </p>
                             </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar ">
+                                <div class="tuan">
+                                    <img src="Images/25.3.jpg!d" class="thumbnail">
+                                    <img src="Images/25.4.jpg!d" class="thumbnail">
+
+                                </div>
+
+
+                            <!-- Carousel Restaurant -->
+                        </div>
+                        </div>
+                    </div>
+        <div class="col-md-12">
+
+            <div class="container">
+
+                <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
+                    <div class="tuan">
+                        <img src="Images/24.5.jpg" class="thumbnail">
+                        <img src="Images/24.6.jpg" class="thumbnail">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar ">
+
+                        <h3>
+                            <span class="head-text">Khu vui chơi</span>
+                            <br>
+                            <p class="line"></p>
+                        </h3>
+                        <div class="row">
+                            <div class="col-xs-7 col-sm-6 col-md-6">
+                                <p class="text-uppercase">
+                                    <i class="fa fa-location-arrow"></i> Vị trí
+                                </p>
+
+                                <p class="text-primary">
+                                    <strong>Nha Trang, Khánh Hòa, Việt Nam
+
+                                    </strong>
+                                </p>
+                            </div>
+
+                            <div class="col-xs-5 col-sm-6 col-md-6">
+
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <p class="text-uppercase">
+                                    <i class="fa fa-clock-o"></i> Lịch hoạt động
+                                </p>
+
+                                <p class="text-primary">
+                                    <strong> 8h00 - 22h30</strong>
+                                </p>
+                            </div>
+
+                        </div>
+                    <p>Là công viên nước biển đầu tiên và duy nhất ở Việt Nam với tổng diện tích hơn 50.000 mét vuông, có hệ thống núi non nhân tạo có diện tích 30.000 mét vuông cùng với nhiều trò chơi nước độc đáo, bao quanh bởi sông Lazy thơ mộng và một vài trăm mét biển bờ biển, Vinpearlland Water Park Nha Trang hứa hẹn mang lại cho bạn một cảm giác mới mẻ và sự hài lòng tuyệt đối.</p>
+
+                    <p>Vinpearl Land Nha Trang  - thiên đường giải trí đẳng cấp thế giới - nằm trong một trong 29 vịnh biển đẹp nhất trên thế giới. Du khách có thể tận hưởng kỳ nghỉ trăng mật, tham gia cùng gia đình trong các trò chơi thú vị, thư giãn trên bãi biển, hoặc thậm chí để thử những trò chơi vui chơi giải trí hiện đại, Vinpearl Land Nha Trang chắc chắn sẽ đáp ứng được kỳ vọng của bạn. Vào năm 2015, Vinpearl Land Nha Trang chính thức trở thành thành viên của Hiệp hội Công viên giải trí Quốc tế (IAAPA) và được bình chọn là khu vui chơi giải trí hấp dẫn nhất của Việt Nam (do Hiệp hội Du lịch Việt Nam trao tặng)
+
+                    </p>
+                       <p>Chinh phục công viên nước với hàng chục giàn nước như Kamikaze, Space Hole, v.v., đặc biệt là Boomerang làm bạn cảm thấy như rơi xuống từ độ cao 21 mét. Sau những chuyến đi chơi vui chơi giải trí, hãy tự giải phóng mình trong khu vực Gia đình và Trẻ em thư giãn.
+
+                       </p>
+
+                    <p>Vinpearl Land Nha Trang chắc chắn là một thiên đường giải trí - nơi những giấc mơ thời thơ ấu trở thành hiện thực. Đây là nơi chúng ta có thể nhìn thấy những chú cá ngừ đẹp bơi trong đại dương, cá heo và hải cẩu hài hước, chương trình nhạc nước đầy màu sắc đầy ngoạn mục, đảm bảo mang lại cho bạn niềm vui trọn vẹn trong thế giới giải trí tuyệt vời. Đặc biệt, trong dịp nghỉ hè hoặc mùa hè cao điểm, Vinpearl Land Nha Trang tổ chức nhiều chương trình nghệ thuật hấp dẫn và lễ hội đầy màu sắc
+
+                    </p>
+                        <p>Mùa thấp điểm: 8h30 - 21h15 (từ thứ 2 đến thứ 5)
+                            8h30 - 22h00 (thứ 6, thứ 7, Chủ nhật)
+
+                        </p>
+                        <p>Mùa cao điểm:  8h - 22h hàng ngày
+                        </p>
+
+
+
+
+                    <!-- Carousel Restaurant -->
+                </div>
+            </div>
+        </div>
+                         <div class="container">
                         <br>
                         <p><h4>Những trò chơi cảm giác mạnh
 
@@ -101,44 +287,11 @@
                         <br>
                         <br>
                 </div>
-            </div>
-        </div>
-
     </div>
-    </div>
-    <br>
-    <br>
-    <br>
-
 </main>
-<div class="container">
-
-<hr>
-</div>
-<div class="container" id="1">
-    <div class="tuan2">
-        <div class="col-md-4 col-sm-12">
-            <a href="captreo.html"><img src="Images/images.jpg"  class="img-thumbnail" style="width: 100%"></a>
-            <h3>Cáp treo</h3>
-
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=" benpha.html"><img src="Images/0123.jpg" class="img-thumbnail" style="width: 100%"></a>
-            <h3>Bến phà</h3>
-
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href="khuvuichoi.html"><img src="Images/11-750x309.jpg"  class="img-thumbnail" style="width: 100%"></a>
-            <h3>Khu vui chơi</h3>
-
-
-        </div>
-    </div>
-
 </div>
 
 
-</div>
 <div w3-include-html="Common/Footer.html" id="footer"></div>
 
 

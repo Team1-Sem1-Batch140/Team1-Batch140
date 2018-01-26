@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+    <title>Thông báo & Sự kiện</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style's%20Team/Gallery.css">
+    <link rel="stylesheet" href="Css/Style's Team/Header.css">
+    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <link rel="stylesheet" href="Css/Style's Team/captreo.css">
-    <link rel="stylesheet" href="Css/Style's Team/Header.css">
-    <link rel="stylesheet" href="Css/Style's Team/Footer.css">
 
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script>
@@ -19,26 +20,85 @@
     </script>
 
 
-
-    <script>
-        //        var app = angular.module('myApp', []);
-        //        app.controller('customersCtrl', function ($scope, $http) {
-        //            $http.get("customers.php").then(function (response) {
-        //                $scope.names = response.data.records;
-        //            });
-        //        });
-        $(function () {
-            $("#header").load("Common/Header.html");
-            $("#footer").load("Common/Footer.html");
-        });
-    </script>
 </head>
-<body ng-app="myApp" ng-controller="customersCtrl"  style="background: #2d2c45;">
+
+<script>
+    $(function () {
+        $("#header").load("Common/Header.html");
+        $("#footer").load("Common/Footer.html");
+    });
+
+    var add = (function () {
+        var counter = 0;
+        return function () {
+            return counter += 1;
+        }
+    })();
+
+    function myCart() {
+        document.getElementById("quantity").innerHTML = add();
+    }
+
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+
+</script>
+<body>
+<!-- HEADER -->
 <div w3-include-html="Common/Header.html" id="header"></div>
-<br>
-<br>
+
+<div id="sign-in-modal" class="modal">
+  <span onclick="document.getElementById('sign-in-modal').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <form action="" id="sign-in" class="modal-content animate">
+        <div class="imgContainer">
+            <img src="Images/default-ava.jpg" alt="" class="avatar">
+        </div>
+
+        <div class="" id="sign-in-form">
+            <div class="">
+                <div class="col-25">
+                    <label><b>Tài khoản</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="uname" placeholder="Tên đăng nhập" name="uname" required>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="col-25">
+                    <label><b>Mật khẩu</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="psw" placeholder="Mật khẩu" name="psw" required>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="checked" id="remember"> Nhớ mật khẩu
+            </label>
+        </div>
+
+        <button type="submit" id="login-modal">Đăng nhập</button>
+        <button type="button" class="cancelbtn"
+                onclick="document.getElementById('sign-in-modal').style.display='none'">Hủy
+        </button>
+        <span class="yet">Bạn chưa phải là thành viên ? <a href="Registration.html">Đăng ký</a></span>
+        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+
+    </form>
+</div>
+<div id="bot-header">
+
 <div class="container">
-    <h2 style="color: white"><span class="glyphicon glyphicon-pawn"> Gallery</span></h2>
     <br>
     <br>
     <div class="tuan">
@@ -87,29 +147,7 @@
 <br>
 <br>
 <br>
-<div class="container" id="1">
-    <div class="tuan2">
-        <hr>
-        <div class="col-md-4 col-sm-12">
-            <a href="Restaurant.html"><img src="Images/13.jpg"  class="img-thumbnail" style="width: 100%">
-            <h3 style="text-align: center">Restaurant</h3>
-            </a>
 
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href="thongbaosukien.html"><img src="Images/lịch-hoạt-động.jpg" class="img-thumbnail" style="width: 100%">
-            <h3 style="text-align: center">Thông Báo - Sự Kiện</h3>
-            </a>
-
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href="khuvuichoi.html"><img src="Images/11-750x309.jpg"  class="img-thumbnail" style="width: 100%">
-            <h3 style="text-align: center">Khu vui chơi</h3>
-            </a>
-
-
-        </div>
-    </div>
 
 </div>
 <div w3-include-html="Common/Footer.html" id="footer"></div>

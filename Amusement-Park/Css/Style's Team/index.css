@@ -1,4 +1,19 @@
-
+#bot-header {
+    background: rgb(45, 44, 69);
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+.header {
+    font-family: "Antiqua", Serif, sans-serif;
+    font-size: 27px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
 body {
     background: #2d2c45;
 }
@@ -16,6 +31,14 @@ body {
     color: white;
 }
 
+#tuandeptrai {
+    width: 80%;
+    margin-left: 10%;
+}
+#tuandeptrai img {
+    height: 400px;
+}
+
 /*h3,p,a{*/
 /*color: white;*/
 /*}*/
@@ -31,32 +54,30 @@ body {
     text-align: center;
 }
 
-.button-3 p {
-    width: 100%;
+.button-2 {
+    width: 30%;
+    height: 30px;
+    background: orange;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+.tuan-1 {
+    text-align: right;
 }
 
-.tuan button {
-    background: green;
-    border: 1px solid green;
-}
 
-.tuan1 button {
-    background: green;
-    border: 1px solid green;
-}
 
-.tuan2 button {
-    background: green;
-    border: 1px solid green;
-}
 
-.tuan button {
-    margin-left: 73%;
-}
 
-.tuan2 button {
-    margin-left: 73%;
-}
+
+
+
+
+
+
+
+
 
 /*.row a{*/
 /*text-decoration: none;*/

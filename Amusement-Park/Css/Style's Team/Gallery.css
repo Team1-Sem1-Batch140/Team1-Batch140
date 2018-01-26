@@ -4,3 +4,8 @@ img {
 h2{
     color: white;
 }
+#bot-header {
+    background: rgb(45, 44, 69);
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}

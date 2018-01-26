@@ -1,9 +1,9 @@
 h3 {
     color: white;
 }
-.row a{
-    text-decoration: none;
+a {
     color: white;
+    text-decoration: none;
 }
 .pagination {
     margin-left: 40%;
@@ -11,8 +11,16 @@ h3 {
 }
 h3 {
     color: white;
-    text-align: center;
 }
 h2{
     color: white;
+}
+.tuan img{
+     width: 100%;
+     height: 400px;
+ }
+#bot-header {
+    background: rgb(45, 44, 69);
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
 }
