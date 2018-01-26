@@ -1,31 +1,6 @@
 #contact-us {
     background: rgb(45, 44, 69);
-}
-
-.only-text > p {
-    text-align: center;
-    color: white;
-}
-.only-bighead h2{
-    float: left;
-    color: white;
-    margin-left: 13px;
-}
-input[name], textarea, [type=email] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    margin-bottom: 22px;
-}
-
-@media screen and (max-width: 600px) {
-    input[type=text], textarea, [type=email] {
-        width: 100%;
-        margin-top: 15px;
-    }
+    font-family: Avenir,Helvetica,Arial,sans-serif;
 }
 
 #map {
@@ -34,12 +9,39 @@ input[name], textarea, [type=email] {
     margin-bottom: 20px;
 }
 
-#submit {
-    width: 50%;
-    border-radius: 25px;
-    margin-left: -15px;
-
+input[type=text], [type=email], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
-/*#submit:hover {*/
-    /*color: white;*/
-/*}*/
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.columnH {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .columnH, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

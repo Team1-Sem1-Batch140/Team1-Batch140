@@ -1,0 +1,29 @@
+#bot-header {
+    background: rgb(45, 44, 69);
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+h2 {
+    color: white;
+}
+h3{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: white;
+}
+.tuan img{
+    width: 100%;
+    height: 440px;
+    margin: 20px 0 10px 0;
+}
+table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    color: white;
+
+}
+

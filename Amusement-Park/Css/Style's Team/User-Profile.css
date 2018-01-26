@@ -2,6 +2,7 @@
     background: rgb(45, 44, 69);
     color: white;
     height: 400px;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
 }
 .thumbnail, .form-horizontal{
     margin-top: 20px;

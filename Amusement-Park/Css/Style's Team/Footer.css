@@ -9,12 +9,15 @@
 .box-footer {
     width: auto;
     height: 144px;
-    background: rgb(45, 44, 69);
-    border: 2px solid gray;
+    background: rgb(26, 23, 47);
+    border: 1px solid white;
     margin: 13px 10px 2px 5px;
     text-align: center;
+    opacity: 0.5;
 }
-
+.box-footer:hover{
+    opacity: 1.0;
+}
 #address p {
     margin: 23px 30px;
     font-size: 16px;
@@ -44,7 +47,7 @@
     width: 51px;
     height: 37px;
     padding: 4px;
-    border: 1px solid yellow;
+    border: 1px solid white;
     border-radius: 5px;
     margin: 15px 1px;
     opacity: 0.7;

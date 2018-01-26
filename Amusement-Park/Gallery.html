@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thông báo & Sự kiện</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Css/Style's%20Team/Gallery.css">
+    <link rel="stylesheet" href="Css/Style's Team/Gallery.css">
     <link rel="stylesheet" href="Css/Style's Team/Header.css">
     <link rel="stylesheet" href="Css/Style's Team/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,38 +21,22 @@
     </script>
 
 
+    <script>
+        //        var app = angular.module('myApp', []);
+        //        app.controller('customersCtrl', function ($scope, $http) {
+        //            $http.get("customers.php").then(function (response) {
+        //                $scope.names = response.data.records;
+        //            });
+        //        });
+        $(function () {
+            $("#header").load("Common/Header.html");
+            $("#footer").load("Common/Footer.html");
+        });
+
+    </script>
+
 </head>
-
-<script>
-    $(function () {
-        $("#header").load("Common/Header.html");
-        $("#footer").load("Common/Footer.html");
-    });
-
-    var add = (function () {
-        var counter = 0;
-        return function () {
-            return counter += 1;
-        }
-    })();
-
-    function myCart() {
-        document.getElementById("quantity").innerHTML = add();
-    }
-
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    };
-
-
-</script>
 <body>
-<!-- HEADER -->
 <div w3-include-html="Common/Header.html" id="header"></div>
 
 <div id="sign-in-modal" class="modal">
@@ -96,60 +81,107 @@
 
     </form>
 </div>
+
 <div id="bot-header">
+    <div class="container">
+        <!--<h2 style="color: white"><span class="glyphicon glyphicon-pawn"> Gallery</span></h2>-->
 
-<div class="container">
-    <br>
-    <br>
-    <div class="tuan">
-        <div class="col-md-4 col-sm-12">
-            <a href=""> <img src="Images/duong-truot-6-lan-750x400.jpg" class="thumbnail" style="width: 100%"></a>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=""><img src="Images/rides_1800x900.jpg" class="thumbnail" style="width: 100%"></a>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=""><img src="Images/aqua-shute.jpg" class="thumbnail" style="width: 100%"></a>
 
+        <!-- Line 1 -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 lineOne">
+                <a href="#"> <img src="Images/gallery-1.1.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineOne">
+                <a href="#"><img src="Images/gallery-1.2.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineOne">
+                <a href="#"><img src="Images/gallery-1.3.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineOne">
+                <a href="#"><img src="Images/gallery-1.4.jpg" class="img-thumbnail"></a>
+            </div>
         </div>
+
+
+        <!-- Line 2 -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 lineFour">
+                <a href=""> <img src="Images/gallery-4.1.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineFour">
+                <a href=""><img src="Images/gallery-4.2.JPG" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineFour">
+                <a href=""><img src="Images/gallery-4.3.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineFour">
+                <a href=""><img src="Images/gallery-4.4.jpg" class="img-thumbnail"></a>
+            </div>
+        </div>
+
+
+        <!-- Line 3 -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 lineThree">
+                <a href=""> <img src="Images/gallery-3.1.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineThree">
+                <a href=""><img src="Images/gallery-3.2.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineThree">
+                <a href=""><img src="Images/gallery-3.3.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineThree">
+                <a href=""><img src="Images/gallery-3.4.jpg" class="img-thumbnail"></a>
+            </div>
+        </div>
+
+
+        <!-- Line 4 -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 lineTwo">
+                <a href=""> <img src="Images/gallery-2.1.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineTwo">
+                <a href=""><img src="Images/gallery-2.2.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineTwo">
+                <a href=""><img src="Images/gallery-2.3.jpg" class="img-thumbnail"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 lineTwo">
+                <a href=""><img src="Images/gallery-2.4.jpg" class="img-thumbnail"></a>
+            </div>
+        </div>
+
+
     </div>
-        <br>
-
-    <div class="tuan1">
-        <div class="col-md-4 col-sm-12">
-            <a href=""> <img src="Images/aqua-swing.jpg" class="thumbnail" style="width: 100%"></a>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=""><img src="Images/duong-truot-phao-750x450.jpg" class="thumbnail" style="width: 100%"></a>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=""><img src="Images/11-750x309.jpg" class="thumbnail" style="width: 100%"></a>
-
-        </div>
-    </div>
-    <br>
-    <div class="tuan2">
-        <div class="col-md-4 col-sm-12">
-            <a href=""> <img src="Images/anhtulieu-2-750x560.jpg" class="thumbnail" style="width: 100%"></a>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=""><img src="Images/DSC_0761-750x450.jpg" class="thumbnail" style="width: 100%"></a>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <a href=""><img src="Images/IMG_7058-copy-970x400.jpg" class="thumbnail" style="width: 100%"></a>
-
-        </div>
-    </div>
-
-    <br>
-
 </div>
-<br>
-<br>
-<br>
+<!--<div class="tuan2">-->
+<!--<hr>-->
+<!--<div class="col-xs-12 col-sm-6 col-md-3">-->
+<!--<a href="Restaurant.html"><img src="Images/13.jpg" class="img-thumbnail" style="width: 100%">-->
+<!--<h3 style="text-align: center">Restaurant</h3>-->
+<!--</a>-->
+
+<!--</div>-->
+<!--<div class="col-xs-12 col-sm-6 col-md-3">-->
+<!--<a href="thongbaosukien.html"><img src="Images/lịch-hoạt-động.jpg" class="img-thumbnail"-->
+<!--style="width: 100%">-->
+<!--<h3 style="text-align: center">Thông Báo - Sự Kiện</h3>-->
+<!--</a>-->
+
+<!--</div>-->
+<!--<div class="col-xs-12 col-sm-6 col-md-3">-->
+<!--<a href="Entertainment.html"><img src="Images/gallery-2.2.jpg" class="img-thumbnail" style="width: 100%">-->
+<!--<h3 style="text-align: center">Khu vui chơi</h3>-->
+<!--</a>-->
 
 
-</div>
+<!--</div>-->
+<!--</div>-->
+
+
 <div w3-include-html="Common/Footer.html" id="footer"></div>
 
 

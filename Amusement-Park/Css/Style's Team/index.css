@@ -7,6 +7,10 @@
     font-family: "Antiqua", Serif, sans-serif;
     font-size: 27px;
 }
+.carousel-inner > .item img{
+    width: 100%;
+    border-radius: 0;
+}
 p {
     display: block;
     -webkit-margin-before: 1em;
@@ -57,10 +61,18 @@ body {
 .button-2 {
     width: 30%;
     height: 30px;
-    background: orange;
     color: white;
-    padding: 5px;
+    /*background: deepskyblue;*/
+    padding: 8px;
+    border-radius: 10px;
     text-align: right;
+    /*border-color: white;*/
+    text-decoration: none;
+}
+.button-2:hover{
+    text-decoration: none;
+    color: white;
+    /*background: #000000;*/
 }
 .tuan-1 {
     text-align: right;

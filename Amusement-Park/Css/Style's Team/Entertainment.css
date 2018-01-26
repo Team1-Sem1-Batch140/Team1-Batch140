@@ -1,0 +1,75 @@
+#bot-header{
+    background: rgb(45, 44, 69);
+    color: white;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+.clear{
+    clear: both;
+}
+.clear hr{
+    width: 50%;
+}
+.slide-entertain, .leftEntertain{
+    margin: 20px 0 15px 0;
+}
+.carousel-inner > .item img {
+    width: 100%;
+    height: 350px;
+}
+
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+}
+.head-text{
+    font-family: "Antiqua", Serif, sans-serif;
+    font-size: 27px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+    text-align: left;
+    padding: 13px;
+}
+hr{
+    border: 1px dashed white;
+}
+
+
+/*#main .container{*/
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
+    /*border-bottom-left-radius: 10px;*/
+    /*border-bottom-right-radius: 10px;*/
+/*}*/
+/*.row h2{*/
+ /*padding: 10px;*/
+/*}*/
+/*h3 {*/
+    /*color: white;*/
+/*}*/
+/*p {*/
+    /*color: white;*/
+/*}*/
+/*b{*/
+    /*color: white;*/
+/*}*/
+/*h4{*/
+    /*color: white;*/
+/*}*/
+/*h2{*/
+    /*color: white;*/
+/*}*/
+/*td{*/
+    /*color: white;*/
+/*}*/
+/*.thumbnail{*/
+    /*text-align: center;*/
+    /*width: 50%;*/
+/*}*/
+
+
+

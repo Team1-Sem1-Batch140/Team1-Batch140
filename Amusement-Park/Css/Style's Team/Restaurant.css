@@ -1,18 +1,18 @@
 #bot-header {
     background: rgb(45, 44, 69);
     color: white;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
-    .leftRes {
-        float: left;
-    }
+/*@media only screen and (max-width: 768px) {*/
+    /*.leftRes {*/
+        /*float: left;*/
+    /*}*/
 
-    .slide-res-bar {
-        float: right;
-    }
-}
+    /*.slide-res-bar {*/
+        /*float: right;*/
+    /*}*/
+/*}*/
 
 .leftRes {
     margin-top: 20px;
@@ -73,96 +73,3 @@
     clear: both;
 }
 
-/*#main {*/
-/*!*background-color: rgb(230, 115, 0);*!*/
-/*background: rgb(45, 44, 69);*/
-/*}*/
-
-/*#on-main {*/
-/*position: relative;*/
-/*z-index: 1;*/
-/*background-color: white;*/
-/*margin: 1% 18%;*/
-
-/*}*/
-
-/*#carouselRes {*/
-/*position: relative;*/
-/*margin: 0 auto;*/
-/*padding: 5px;*/
-/*z-index: 2;*/
-
-/*}*/
-
-/*.carousel-inner > .item > a > img, .carousel-inner > .item > img {*/
-/*width: 100%;*/
-/*height: 375px;*/
-/*border: 2px solid white;*/
-/*border-radius: 13px;*/
-/*}*/
-/*@media only screen and(max-width: 768px){*/
-/*.hard{*/
-/*width: 315px;*/
-/*height: 213px;*/
-/*}*/
-
-/*}*/
-
-/*.carousel-control.right, .carousel-control.left {*/
-/*background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%);*/
-/*}*/
-
-/*.on-carousel {*/
-/*position: relative;*/
-/*z-index: 3;*/
-/*border: 3px solid white;*/
-/*border-radius: 2px;*/
-/*margin: 0 auto;*/
-/*}*/
-
-/*.carousel-indicators li {*/
-/*background-color: #f8d7da;*/
-/*}*/
-
-/*.carousel-item > .carousel-caption h2 {*/
-/*color: white;*/
-/*}*/
-
-/*.easy {*/
-/*text-align: center;*/
-/*margin-top: 0;*/
-/*padding: 13px;*/
-/*color: white;*/
-/*}*/
-
-/*.price {*/
-/*color: white;*/
-/*}*/
-
-/*.add-cart {*/
-/*margin: 0 0 23px 0;*/
-/*color: black;*/
-/*!*background: rgb(247, 220, 20);*!*/
-/*}*/
-/*!*.add-cart:hover{*!*/
-/*!*color: white;*!*/
-/*!*}*!*/
-
-/*.catalogue p {*/
-/*color: white;*/
-/*font-size: 15px;*/
-/*}*/
-
-/*.catalogue h3 {*/
-/*color: white;*/
-/*}*/
-
-/*#main-logue {*/
-/*margin-left: 15px;*/
-/*}*/
-/*@media only screen  and (max-width: 768px)*/
-/*and (min-width: 769px){*/
-/*.img-thumbnail{*/
-/*width: 100%;*/
-/*}*/
-/*}*/
