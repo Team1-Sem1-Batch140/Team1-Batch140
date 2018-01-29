@@ -1,136 +1,55 @@
 
 .all-footer {
-    background: rgb(26, 23, 47);
-    color: white;
+    /*background: rgb(26, 23, 47);*/
+    background: rgb(103, 184, 228);
     font-family: "Comic Sans MS", cursive, sans-serif;;
 
 }
-
-.box-footer {
-    width: auto;
-    height: 144px;
-    background: rgb(26, 23, 47);
-    border: 1px solid white;
-    margin: 13px 10px 2px 5px;
-    text-align: center;
-    opacity: 0.5;
+hr{
+    color: black;
+    width: 90%;
 }
-.box-footer:hover{
-    opacity: 1.0;
-}
-#address p {
-    margin: 23px 30px;
-    font-size: 16px;
-    opacity: 0.7;
-
+.icon-bar-social {
+    width: 50px;
+    z-index: 998;
+    position: fixed;
+    top: 120px;
+    left: 0;
 }
 
-#contact p {
-    margin: 20px 30px;
-    font-size: 18px;
-    opacity: 0.7;
-}
-
-#contact p a {
-    list-style: none;
-    color: white;
-
-}
-
-#contact p a:hover {
-    text-decoration: none;
-}
-
-#about-social > #social-list li {
-    float: left;
-    list-style: none;
-    width: 51px;
-    height: 37px;
-    padding: 4px;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 15px 1px;
-    opacity: 0.7;
-    transition: all 0.2s ease-out 0s;
+.icon-bar-social a {
     display: block;
-}
-
-#about-social > #social-list a {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    display: inline-block;
-}
-
-@media only screen and (max-width: 1199px) {
-    #address p {
-        margin: 25px 30px;
-        font-size: 13px;
-    }
-
-    #contact p {
-        margin: 30px 5px;
-        font-size: 13px;
-    }
-
-    #about-social > #social-list li {
-        width: 41px;
-        margin: 0 0;
-        height: 31px;
-    }
-
-    #about-social > #social-list a {
-        font-size: 15px;
-    }
-
-    #connect h3 {
-        margin-bottom: 25px;
-    }
-
-}
-
-.about-social > #social-list > .facebook {
-    margin-left: 20px;
-}
-
-#about-social > #social-list > .facebook:hover {
-    background: rgb(54, 89, 148);
+    text-align: center;
+    padding: 4px;
     color: white;
-    opacity: 1.0;
+    font-size: 26px;
+}
+.icon-bar-social a:hover{
+    -webkit-transition: width 2.3s ease-in-out	;
+    transition: width 2.3s ease-in-out	;
+    width: 63px;
+}
+.icon-bar-social > .fb {
+    background: rgb(59, 89, 152);
 }
 
-#about-social > #social-list > .inst:hover {
-    background: rgb(123, 102, 86);
-    opacity: 1.0;
+.icon-bar-social > .twit, .icon-bar-social > .sky {
+    background: rgb(29, 161, 242);
 }
 
-#about-social > #social-list > .youtube:hover {
-    background: rgb(180, 70, 57);
-    opacity: 1.0;
+.icon-bar-social > .print {
+    background: rgb(115, 138, 141);
 }
 
-#about-social > #social-list > .twitter:hover {
-    background: rgb(57, 156, 205);
-    opacity: 1.0;
+.icon-bar-social > .globe {
+    background: rgb(255, 77, 77);
 }
-
-#about-social > #social-list > .pinterest:hover {
-    background: rgb(191, 50, 50);
-    opacity: 1.0;
+#text-final{
+    color:#ffffff;
+    margin-top: 18px;
 }
-
 .breadcrumb {
     padding: 0 15px;
-}
-
-@media only screen and (max-width: 440px) {
-    #menu-menu-footer a {
-        margin: 0 0 0 -8px;
-        font-size: 9px;
-    }
-
-    #text-final {
-        margin-left: -23px;
-    }
 }
 
 #menu-menu-footer li {
@@ -142,14 +61,23 @@
 }
 
 #menu-menu-footer a {
-    color: white;
+    color: #ffffff;
     margin: 0 20px 0 45px;
-    opacity: 0.5;
     font-size: 13px;
 
 }
 
 #menu-menu-footer a:hover {
-    opacity: 1.0;
+    color: rgb(38, 61, 89);
 }
 
+@media only screen and (max-width: 440px) {
+    #menu-menu-footer a {
+        margin: 0 0 0 -8px;
+        font-size: 9px;
+    }
+
+    #text-final {
+        margin-left: -10px;
+    }
+}

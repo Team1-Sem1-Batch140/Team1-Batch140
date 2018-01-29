@@ -1,6 +1,14 @@
 #contact-us {
-    background: rgb(45, 44, 69);
-    font-family: Avenir,Helvetica,Arial,sans-serif;
+    background: rgb(64, 160, 208);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    height: 1200px;
+}
+
+.test {
+    background: #ffffff;
+    color: rgb(37, 59, 86);
+    border-radius: 35px;
+    padding: 10px;
 }
 
 #map {
@@ -9,7 +17,7 @@
     margin-bottom: 20px;
 }
 
-input[type=text], [type=email], textarea {
+#nameH, #subject, #email, #comments {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -19,14 +27,20 @@ input[type=text], [type=email], textarea {
     resize: vertical;
 }
 
-input[type=submit] {
+#send {
     padding: 12px 20px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    background: rgb(64, 160, 208);
+    color: #ffffff;
+}
+#send:hover{
+    background: rgb(37, 59, 86);
+    color: #ffffff;
 }
 
-.columnH {
+.support {
     float: left;
     width: 50%;
     margin-top: 6px;
@@ -40,7 +54,7 @@ input[type=submit] {
 }
 
 @media (max-width: 600px) {
-    .columnH, input[type=submit] {
+    .support, #send {
         width: 100%;
         margin-top: 0;
     }

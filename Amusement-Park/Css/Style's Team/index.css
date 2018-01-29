@@ -1,7 +1,13 @@
 #bot-header {
-    background: rgb(45, 44, 69);
-    color: white;
+    background: rgb(64, 160, 208);
+    color: rgb(37, 59, 86);
     font-family: "Helvetica Neue", sans-serif;
+}
+.test{
+    background: #ffffff;
+    color: rgb(37, 59, 86);
+    border-radius: 35px;
+    padding: 10px;
 }
 .header {
     font-family: "Antiqua", Serif, sans-serif;
@@ -18,12 +24,8 @@ p {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
-body {
-    background: #2d2c45;
-}
-.bot-line-carousel{
-    color: white;
-}
+
+
 #tuan140 > button {
     text-align: center;
 }
@@ -114,7 +116,8 @@ a {
 
 #main {
     /*background-color: rgb(230, 115, 0);*/
-    background: rgb(45, 44, 69);
+    background: rgb(64, 160, 208);
+    color: rgb(37, 59, 86);
 }
 
 #on-main {

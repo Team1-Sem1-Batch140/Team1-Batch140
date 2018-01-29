@@ -1,19 +1,29 @@
 #bot-header {
-    background: rgb(45, 44, 69);
-    color: white;
-    font-family: Avenir,Helvetica,Arial,sans-serif;
+    background: rgb(64, 160, 208);
+    color: rgb(38, 61, 89);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.test {
+    background: #ffffff;
+    color: rgb(37, 59, 86);
+    border-radius: 35px;
+    padding: 10px;
 }
 
 /*@media only screen and (max-width: 768px) {*/
-    /*.leftRes {*/
-        /*float: left;*/
-    /*}*/
-
-    /*.slide-res-bar {*/
-        /*float: right;*/
-    /*}*/
+/*.leftRes {*/
+/*margin-left: 100px;*/
 /*}*/
 
+/*.slide-res-bar {*/
+/*margin-right: 100px;*/
+/*}*/
+/*}*/
+
+strong{
+    color: rgb(38, 61, 89);
+}
 .leftRes {
     margin-top: 20px;
 }
@@ -53,9 +63,13 @@
 
 .carousel-inner > .item img {
     width: 100%;
-    height: 440px;
+    height: 300px;
 }
-
+@media only screen and (max-width: 600px) {
+    .carousel-inner > .item img {
+        height: 182px;
+    }
+}
 .carousel-inner > .item img:hover {
     background: #337ab7;
     opacity: 0.6;

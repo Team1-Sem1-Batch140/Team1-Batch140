@@ -27,10 +27,11 @@ header {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #ffffff;
     margin: 5px auto;
     border: 1px solid #888;
     width: 80%;
+    color:  rgb(38, 61, 89);
 }
 
 /* The Close Button */
@@ -39,7 +40,7 @@ header {
     right: 25px;
     z-index: 9999;
     top: 60px;
-    color: white;
+    color: rgb(38, 61, 89);
     font-size: 35px;
     font-weight: bold;
 }
@@ -101,7 +102,7 @@ header {
 }
 
 #login-modal {
-    color: white;
+    color: rgb(38, 61, 89);
     width: 12%;
     padding: 12px;
     background: rgb(76, 175, 80);
@@ -112,7 +113,7 @@ header {
 }
 
 .cancelbtn, #remember {
-    color: white;
+    color: rgb(38, 61, 89);
     padding: 14px 20px;
     margin: 8px 0;
     font-size: 13px;
@@ -188,34 +189,36 @@ span.yet {
         font-size: 12px;
     }
 }
+
 @media only screen and (max-width: 600px) {
     #login-modal {
         width: 48%;
         padding: 5px;
         font-size: small;
     }
+
     .cancelbtn {
         width: 35%;
         padding: 5px;
     }
+
     #uname, #psw {
         width: 100%;
         padding: 12px 0;
     }
 }
+
 #main-header {
-    background: rgb(26, 23, 47);
-    color: white;
+    background: rgb(64, 160, 208);
 }
 
 #special a {
     margin: 10px 5px;
-    color: white;
+    color: #ffffff;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #special a:hover {
-    color: white;
     text-decoration: none;
 }
 
@@ -230,15 +233,15 @@ span.yet {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 13px;
-    font-size: 16px;
-    background-color: white;
+    font-size: 14px;
+    background-color: #ffffff;
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 13px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    color: black;
-    float: left;
+    color: rgb(64, 160, 208);
+    float: right;
 
 }
 
@@ -250,45 +253,66 @@ span.yet {
     float: right;
     margin-top: 32px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
+    font-size: smaller;
+}
+
+#login:hover {
+    color: rgb(38, 61, 89);
 }
 
 #btn-search {
-    width: 18%;
+    width: 15%;
     padding: 5px;
-    margin: 23px 0 0 -25px;
-    border-radius: 13px;
+    margin: -54px 0 0 221px;
+    border-radius: 11px;
+    position: relative;
+    color: rgb(38, 61, 89);
+}
+
+@media only screen and (max-width: 990px) {
+    #btn-search {
+        width: 9%;
+        margin: -54px 0 0 311px;
+    }
+
 }
 
 .navbar-default {
     border-radius: 0;
-    background: rgb(26, 23, 47);
+    background: rgb(64, 160, 208);
     margin: 0;
     border-color: transparent;
 }
 
 .navbar-default .navbar-brand {
-    color: white;
+    color: #ffffff;
     font-size: x-large;
 }
 
 .navbar-default .navbar-brand:hover {
-    color: white;
+    color: rgb(64, 160, 208);
 }
 
 .navbar-nav > li > .dropdown-menu {
-    background-color: rgb(26, 23, 47);
+    background-color: rgb(64, 160, 208);
     margin-left: 22px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: white;
-    font-size: 13px;
+    /*color: rgb(38, 61, 89);*/
+    color:#ffffff;
+    font-size: smaller;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    background: rgb(64, 160, 208);
+    color:  rgb(38, 61, 89);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    background: rgb(20, 18, 33);
-    color: white;
+    background: rgb(64, 160, 208);
+    color:  rgb(38, 61, 89);
 }
 
 .navbar-nav > li > a {
@@ -309,49 +333,36 @@ span.yet {
     }
 }
 
-.navbar-default .navbar-text {
-    padding: 5px;
-    margin-left: 100px;
-    font-size: 13px;
-}
-
-.navbar-default .navbar-text a {
-    color: white;
-}
-
-@media only screen and (max-width: 1199px) {
-    .navbar-default .navbar-text {
-        visibility: hidden;
-    }
-}
-
-.navbar-default .navbar-text a:hover:focus {
-    text-decoration: none;
-}
-
 .navbar-default .navbar-toggle .icon-bar {
-    background: white;
+    background: #ffffff;
 }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background: rgb(20, 18, 33);
+.navbar-default .navbar-toggle{
+    border-color: rgb(64, 160, 208);
 }
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-    background: rgb(26, 23, 47);
+.navbar-default .navbar-toggle:hover {
+    background: rgb(64, 160, 208);
+}
+.navbar-default .navbar-toggle:focus{
+    background:rgb(64, 160, 208);
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
+    background: #ffffff;
+    color: rgb(64, 160, 208);
+}
+.navbar-default .navbar-nav > .open > a:focus{
+    background: rgb(64, 160, 208);
     color: white;
-
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: white;
+    color: #ffffff;
     margin-left: 2px;
     font-size: 13px;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    background: rgb(20, 18, 33);
-    color: white;
+    background: rgb(64, 160, 208);
+    color: rgb(38, 61, 89);
 }
 
 #sign-in {

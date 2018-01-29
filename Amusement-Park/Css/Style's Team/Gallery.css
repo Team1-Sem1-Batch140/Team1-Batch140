@@ -1,20 +1,25 @@
 #bot-header {
-    background: rgb(45, 44, 69);
+    background: rgb(64, 160, 208);
+    /*margin-bottom: -10px;*/
 }
-
+.test{
+    background: #ffffff;
+    color: rgb(37, 59, 86);
+    border-radius: 35px;
+    padding: 45px;
+}
 .lineOne, .lineTwo, .lineThree, .lineFour {
     padding: 25px;
     transition: transform .2s; /* Animation */
 
 }
 .lineOne img, .lineTwo img, .lineThree img, .lineFour img {
-    margin: 20px 0 5px 0;
-    width: 350px;
-    height: 222px;
+    width: 100%;
+    height: 180px;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    opacity: .7;
+    opacity: .9;
 }
 
 .lineOne:hover img, .lineTwo:hover img, .lineThree:hover img, .lineFour:hover img{
@@ -25,6 +30,6 @@
 @media only screen and (max-width: 990px) {
     #bot-header img{
         width: 100%;
-        height: 335px;
+        height: 200px;
     }
 }
