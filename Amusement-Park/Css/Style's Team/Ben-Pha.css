@@ -17,13 +17,32 @@ p{
 }
 .tuan img{
     width: 100%;
-    height: 440px;
-    margin: 20px 0 10px 0;
+    height: 295px;
+
+}
+.carousel-inner > .item img {
+    width: 100%;
+    height: 295px;
 }
 table, th, td {
     border: 2px solid white;
     border-collapse: collapse;
     color: white;
 
+}
+.slide-res-bar {
+    margin: 20px 0 20px 0;
+}
+.leftRes {
+    margin: 20px 0 20px 0;
+}
+.leftRes a{
+    text-decoration: none;
+    color: white;
+
+}
+.slide-res-bar a {
+    text-decoration: none;
+    color: white;
 }
 

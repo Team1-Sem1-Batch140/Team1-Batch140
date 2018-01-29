@@ -1,16 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/Style's%20Team/index.css">
     <link rel="stylesheet" href="Css/Style's Team/Header.css">
     <link rel="stylesheet" href="Css/Style's Team/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,22 +21,38 @@
     </script>
 
 
-
-    <script>
-//        var app = angular.module('myApp', []);
-//        app.controller('customersCtrl', function ($scope, $http) {
-//            $http.get("customers.php").then(function (response) {
-//                $scope.names = response.data.records;
-//            });
-//        });
-$(function () {
-    $("#header").load("Common/Header.html");
-    $("#footer").load("Common/Footer.html");
-});
-    </script>
-
 </head>
+
+<script>
+    $(function () {
+        $("#header").load("Common/Header.html");
+        $("#footer").load("Common/Footer.html");
+    });
+
+    var add = (function () {
+        var counter = 0;
+        return function () {
+            return counter += 1;
+        }
+    })();
+
+    function myCart() {
+        document.getElementById("quantity").innerHTML = add();
+    }
+
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+
+</script>
 <body>
+<!-- HEADER -->
 <div w3-include-html="Common/Header.html" id="header"></div>
 
 <div id="sign-in-modal" class="modal">
@@ -100,12 +115,12 @@ $(function () {
                 <div class="carousel-inner">
 
                     <div class="item active">
-                        <img src="Images/24.5.jpg" alt="" style="width:100%;">
+                        <img src="Images/29.2.jpg" alt="" style="width:100%;">
 
                     </div>
 
                     <div class="item">
-                        <img src="Images/24.6.jpg" alt="" style="width:100%;">
+                        <img src="Images/221.2.jpg" alt="" style="width:100%;">
 
                     </div>
 
@@ -136,7 +151,7 @@ $(function () {
                 <h3 class="header">Sự kiện - thông báo</h3>
                 <a href="Events.html"> <img src="Images/lịch-hoạt-động.jpg" class="img-thumbnail"></a>
                 <p>Sự kiện và thông báo sẽ được cập nhật thường xuyên tại đây ..</p>
-                <p class="tuan-1"><a href="Events.html" class="button-2">Read More</a></p>
+                <p class="tuan-1"><a href="Events.html" >Read More</a></p>
 
             </div>
 
@@ -145,14 +160,14 @@ $(function () {
                 <a href="Vinpearl.html"><img src="Images/24.2.jpg" class="img-thumbnail"></a>
                 <p>Vinpearl Land Nha Trang - thiên đường giải trí đẳng cấp thế giới - nằm trong một trong số 29..
                 </p>
-                    <p class="tuan-1"><a  href="Vinpearl.html" class="button-2" >Read more</a></p>
+                    <p class="tuan-1"><a  href="Vinpearl.html"  >Read more</a></p>
             </div>
             <div class="col-md-4 col-sm-12">
                 <h3 class="header">Biểu diễn</h3>
                 <a href="Perform.html"><img src="Images/24.3.jpg" class="img-thumbnail"></a>
                 <p>Bên cạnh công viên nước, trò chơi ngoài trời và trong nhà, Vinpearl Land Nha Trang cũng nổi
                     tiếng..</p>
-                <p class="tuan-1"><a href="Perform.html" class="button-2">Read more</a></p>
+                <p class="tuan-1"><a href="Perform.html">Read more</a></p>
 
             </div>
         </div>
@@ -162,16 +177,16 @@ $(function () {
     <div class="tuan2">
         <div class="col-md-4 col-sm-12">
             <h3 class="header">Cảnh Quan</h3>
-            <a href="Gallery.html"> <img src="Images/24.1.jpg" class="img-thumbnail" ></a>
+            <a href="Gallery.html"> <img src="Images/24.1.jpg" class="img-thumbnail" style="width: 100%"></a>
             <p>Sự kiện và thông báo sẽ được cập nhật thường xuyên tại đây ..</p>
-            <p class="tuan-1"><a href="Gallery.html" class="button-2">Read more</a></p>
+            <p class="tuan-1"><a href="Gallery.html" >Read more</a></p>
         </div>
         <div class="col-md-4 col-sm-12">
             <h3 class="header">Bến phà</h3>
             <a href="Ben-Pha.html"><img src="Images/22.5.jpg" class="img-thumbnail" ></a>
             <p>Đưa du thuyền từ đất liền đến Vinpearl Land cách thủ đô hơn 2 hải lý và mất 20 phút đi bằng
                 phà..</p>
-            <p class="tuan-1"><a href="Ben-Pha.html" class="button-2">Read more</a></p>
+            <p class="tuan-1"><a href="Ben-Pha.html" >Read more</a></p>
 
         </div>
         <div class="col-md-4 col-sm-12">
@@ -179,7 +194,7 @@ $(function () {
             <a href="Restaurant.html"><img src="Images/24.4.jpg" class="img-thumbnail" ></a>
             <p>Bên cạnh công viên nước, trò chơi ngoài trời và trong nhà, Vinpearl Land Nha Trang cũng nổi
                 tiếng..</p>
-            <p class="tuan-1"><a href="Restaurant.html" class="button-2" >Read more</a></p>
+            <p class="tuan-1"><a href="Restaurant.html"  >Read more</a></p>
 
         </div>
     </div>
