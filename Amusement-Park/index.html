@@ -28,16 +28,6 @@
         $("#footer").load("Common/Footer.html");
     });
 
-    var add = (function () {
-        var counter = 0;
-        return function () {
-            return counter += 1;
-        }
-    })();
-
-    function myCart() {
-        document.getElementById("quantity").innerHTML = add();
-    }
 
     var modal = document.getElementById('id01');
 
@@ -113,17 +103,17 @@
                 <div class="carousel-inner">
 
                     <div class="item active">
-                        <img src="Images/29.2.jpg" alt="" style="width:100%;">
+                        <img src="Images/29.2.jpg" alt="" >
 
                     </div>
 
                     <div class="item">
-                        <img src="Images/221.2.jpg" alt="" style="width:100%;">
+                        <img src="Images/221.2.jpg" alt="">
 
                     </div>
 
                     <div class="item">
-                        <img src="Images/24.7.jpg" alt="" style="width:100%;">
+                        <img src="Images/24.7.jpg" alt="">
                     </div>
 
                 </div>
@@ -199,7 +189,6 @@
     </div>
 </div>
 
-<br>
 <div w3-include-html="Common/Footer.html" id="footer"></div>
 </body>
 </html>

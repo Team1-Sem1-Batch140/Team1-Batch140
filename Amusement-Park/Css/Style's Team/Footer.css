@@ -5,10 +5,12 @@
     font-family: "Comic Sans MS", cursive, sans-serif;;
 
 }
-hr{
+
+hr {
     color: black;
     width: 90%;
 }
+
 .icon-bar-social {
     width: 50px;
     z-index: 998;
@@ -24,11 +26,13 @@ hr{
     color: white;
     font-size: 26px;
 }
-.icon-bar-social a:hover{
-    -webkit-transition: width 2.3s ease-in-out	;
-    transition: width 2.3s ease-in-out	;
+
+.icon-bar-social a:hover {
+    -webkit-transition: width 2.3s ease-in-out;
+    transition: width 2.3s ease-in-out;
     width: 63px;
 }
+
 .icon-bar-social > .fb {
     background: rgb(59, 89, 152);
 }
@@ -44,10 +48,12 @@ hr{
 .icon-bar-social > .globe {
     background: rgb(255, 77, 77);
 }
-#text-final{
-    color:#ffffff;
+
+#text-final {
+    color: #ffffff;
     margin-top: 18px;
 }
+
 .breadcrumb {
     padding: 0 15px;
 }
@@ -67,13 +73,9 @@ hr{
 
 }
 
-#menu-menu-footer a:hover {
-    color: rgb(38, 61, 89);
-}
-
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 700px) {
     #menu-menu-footer a {
-        margin: 0 0 0 -8px;
+        margin: 0 0 0 -7px;
         font-size: 9px;
     }
 
@@ -81,3 +83,9 @@ hr{
         margin-left: -10px;
     }
 }
+
+#menu-menu-footer a:hover {
+    color: rgb(38, 61, 89);
+}
+
+

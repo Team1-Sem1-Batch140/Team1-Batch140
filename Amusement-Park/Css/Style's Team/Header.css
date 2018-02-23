@@ -146,18 +146,21 @@ img.avatar {
     padding: 16px;
 }
 
-span.psw {
+span.psw{
     float: right;
     margin-right: 20px;
     padding-top: 16px;
 }
 
-span.yet {
+span.yet{
     float: right;
     margin-right: 15px;
     padding-top: 16px;
 }
-
+span.psw a, span.yet a{
+    color: rgb(38, 61, 89);
+    font-style: italic;
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 768px) {
     span.psw {
@@ -167,7 +170,7 @@ span.yet {
         margin: 0 0 2px 16px;
     }
 
-    span.yet {
+    span.yet{
         display: block;
         float: none;
         font-size: smaller;
