@@ -81,11 +81,11 @@ p {
 
 }
 a:hover{
-    color: black;
+    color: #40a0d0;
     text-decoration: none;
 }
 a {
-    color: white;
+    color: black;
 }
 
 
@@ -110,7 +110,6 @@ a {
 /*background: orange;*/
 /*}*/
 #bot-header {
-    background: rgb(45, 44, 69);
     color: white;
 }
 
