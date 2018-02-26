@@ -1,27 +1,5 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    color: #333;
-    background-color: #eee;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-weight: 200;
-}
-
-h1{
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #2fcc71;
-    max-width: 40%;
-    margin: 20px auto;
-}
-
-/* CONTAINERS */
-
-.container {max-width: 850px; width: 100%; margin: 0 auto;}
-.four { width: 32.26%; max-width: 32.26%;}
+/*.container {max-width: 850px; width: 100%; margin: 0 auto;}*/
+.four { width: 49%; max-width: 50%;}
 
 
 /* COLUMNS */
@@ -60,7 +38,7 @@ h1{
     position: relative;
     color: #fff;
     background-color: #aaa;
-    padding-top: 5%;
+    padding-top: 9%;
     font-size: 26px;
     text-align: center;
     height: 150px;
@@ -110,6 +88,17 @@ h1{
     cursor: pointer;
     transform: rotateX(360deg);
 }
-#child, #guest{
+#child, #adult{
     width: 40px;
+}
+#bot-header {
+    background: rgb(64, 160, 208);
+    color: rgb(38, 61, 89);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+.test {
+    background: #ffffff;
+    color: rgb(37, 59, 86);
+    border-radius: 35px;
+    padding: 10px;
 }
