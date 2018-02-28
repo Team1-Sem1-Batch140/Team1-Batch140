@@ -1,19 +1,19 @@
 #bot-header {
-    background: rgb(45, 44, 69);
+    background: rgb(64, 160, 208);
     color: white;
     font-family: "Helvetica Neue", sans-serif;
 }
 h2 {
-    color: white;
+    color: black;
 }
 h3{
-    color: white;
+    color: black;
 }
 a{
     text-decoration: none;
 }
 p{
-    color: white;
+    color: black;
 }
 .tuan img{
     width: 100%;
@@ -27,7 +27,7 @@ p{
 table, th, td {
     border: 2px solid white;
     border-collapse: collapse;
-    color: white;
+    color: black;
 
 }
 .slide-res-bar {
@@ -38,11 +38,16 @@ table, th, td {
 }
 .leftRes a{
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 .slide-res-bar a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
-
+.test {
+    background: #ffffff;
+    color: rgb(64, 160, 208);
+    border-radius: 35px;
+    padding: 10px;
+}

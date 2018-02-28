@@ -1,20 +1,21 @@
 p {
-    color: white;
+    color: black;
 }
 b{
-    color: white;
+    color: black;
 }
 h4 {
-    color: white;
+    color: black;
 }
 h3{
-    color: white;
+    color: black;
 }
 h2{
-    color: white;
+    color: black;
 }
 #bot-header {
-    background: rgb(45, 44, 69);
+    background: rgb(64, 160, 208);
+
     color: white;
     font-family: "Helvetica Neue", sans-serif;
 }
@@ -25,3 +26,10 @@ img {
 .pagination {
     text-align: center;
 }
+.test {
+    background: #ffffff;
+    color: rgb(64, 160, 208);
+    border-radius: 35px;
+    padding: 10px;
+}
+
