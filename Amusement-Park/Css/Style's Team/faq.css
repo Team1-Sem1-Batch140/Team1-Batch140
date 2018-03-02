@@ -1,0 +1,24 @@
+body{
+    background: image(firebrick);
+}
+#title,#title1,#title2,#title3,#title4,#title5,#title6{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#a,#c,#d,#e,#f,#j {
+    width: 500px;
+}
+#vv{
+    color: green;
+}
+
+
+
+
