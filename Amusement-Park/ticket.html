@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Ticket Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/Style's%20Team/ticket.css">
     <link rel="stylesheet" href="Css/Style's Team/Header.css">
     <link rel="stylesheet" href="Css/Style's Team/Footer.css">
-    <!--<script src="Js/simpleCounter.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<body ng-app="">
 <script>
     $(function () {
         $("#header").load("Common/Header.html");
@@ -32,8 +38,8 @@
 
 
 </script>
-<body>
-<!-- HEADER -->
+
+
 <div w3-include-html="Common/Header.html" id="header"></div>
 <div id="sign-in-modal" class="modal">
   <span onclick="document.getElementById('sign-in-modal').style.display='none'"
@@ -77,6 +83,8 @@
 
     </form>
 </div>
+
+
 <div id="bot-header">
     <div class="container test">
         <div class="col-lg-8 col-sm-12 col-xs-12">
@@ -91,10 +99,10 @@
                         <h2>Chọn loại vé</h2>
                         <form class="form cf">
                             <section class="plan cf">
-                                <input type="radio" ng-model="myVar" name="ticket" id="ticket1" value="ticket1">
+                                <input type="radio" ng-model="myChose" name="ticket" id="ticket1" value="ticket1">
                                 <label class="free-label four col" for="ticket1"><div>Vé đi 2 chiều</div></label>
 
-                                <input type="radio" ng-model="myVar" name="ticket" id="ticket2" value="ticket2">
+                                <input type="radio" ng-model="myChose" name="ticket" id="ticket2" value="ticket2">
                                 <label class="basic-label four col" for="ticket2">Vé đi 1 chiều</label>
                             </section>
                         </form>
@@ -112,7 +120,7 @@
                             <div class="col-lg-6 col-sm-12 col-xs-12">
                                 <span>Khách hàng >=1.4m</span>
                                 <input type="number" id="adult">
-                                <div ng-switch="myVar">
+                                <div ng-switch="myChose">
                                     <p ng-switch-when="ticket1">Price: 800.000 VND</p>
                                     <p ng-switch-when="ticket2">Price: 730.000 VND</p>
                                 </div>
@@ -120,19 +128,19 @@
                             <div class="col-lg-6 col-sm-12 col-xs-12">
                                 <span>Khách hàng từ 1m – 1.4m:</span>
                                 <input type="number" id="child">
-                                <div ng-switch="myVar">
+                                <div ng-switch="myChose">
                                     <p ng-switch-when="ticket1">Price: 700.000 VND</p>
                                     <p ng-switch-when="ticket2">Price: 650.000 VND</p>
                                 </div>
                             </div>
                             <!--<a href="cart.html">NEXT</a>-->
                         </div>
-
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-11">
+                        <p></p>
                         <button type="button" class="btn btn-info btn-lg" onClick="price()">Xác nhận</button>
                     </div>
                 </div>
@@ -141,12 +149,19 @@
                         <h2>3</h2>
                     </div>
                     <div class="col-lg-11">
-                        <h2>Vé đã chọn: </h2>
-                        <div ng-switch="myVar">
-                            <p ng-switch-when="ticket1">Gói vé: Vé đi 2 chiều</p>
-                            <p ng-switch-when="ticket2">Gói vé: Vé đi 1 chiều</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <h2>Vé đã chọn: </h2>
+                                <div ng-switch="myChose">
+                                    <p ng-switch-when="ticket1">Gói vé: Vé đi 2 chiều</p>
+                                    <p ng-switch-when="ticket2">Gói vé: Vé đi 1 chiều</p>
+                                </div>
+                                <h3>Tổng giá vé: <a id="totalPrice">0</a> VND</h3>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <a class="btn btn-info btn-lg cart" href="cart.html">THANH TOÁN</a>
+                            </div>
                         </div>
-                        <h3>Tổng giá vé: <a id="totalPrice">0</a> VND</h3>
                     </div>
                 </div>
             </div>

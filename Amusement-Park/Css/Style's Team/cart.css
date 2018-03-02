@@ -1,0 +1,36 @@
+#bot-header {
+    background: rgb(64, 160, 208);
+    color: rgb(38, 61, 89);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.test {
+    background: #ffffff;
+    color: rgb(37, 59, 86);
+    border-radius: 35px;
+    padding: 10px;
+
+}
+
+#content {
+    margin-left: 85px;
+}
+
+.form-group {
+    vertical-align: inherit;
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    height: 40px;
+    margin: 25px auto;
+}
+
+button {
+    margin: 0 44%;
+}
+.checkbox-inline{
+    font-size: 20px;
+    font-weight: bold;
+}
