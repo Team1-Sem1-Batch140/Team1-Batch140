@@ -12,14 +12,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="170">
               <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+=======
+            <state relative-caret-position="2601">
+              <caret line="153" column="20" lean-forward="false" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="96" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
               <folding />
             </state>
           </provider>
@@ -28,11 +32,62 @@
       <file leaf-file-name="ticket.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ticket.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1700">
               <caret line="100" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="196" selection-end-column="7" />
               <folding>
                 <element signature="e#1667#1674#1" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="-187">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="63" column="69" lean-forward="true" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contact-Us.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Contact-Us.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="749">
+              <caret line="370" column="44" lean-forward="true" selection-start-line="370" selection-start-column="44" selection-end-line="370" selection-end-column="44" />
+              <folding>
+                <element signature="e#4924#4929#0" expanded="true" />
+                <element signature="e#4929#4935#0" expanded="true" />
+                <element signature="e#15441#15446#0" expanded="true" />
+                <element signature="e#15446#15452#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phrase.rnc" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="343" column="16" lean-forward="false" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faq.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Css/Style's Team/faq.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
             </state>
           </provider>
         </entry>
@@ -40,6 +95,7 @@
       <file leaf-file-name="ticket.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Css/Style's Team/ticket.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1581">
               <caret line="93" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="109" selection-end-column="1" />
               <folding />
@@ -74,6 +130,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
               <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+=======
+            <state relative-caret-position="1785">
+              <caret line="105" column="19" lean-forward="false" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
               <folding />
             </state>
           </provider>
@@ -141,7 +201,6 @@
         <option value="$PROJECT_DIR$/vinpearl.html" />
         <option value="$PROJECT_DIR$/Events.html" />
         <option value="$PROJECT_DIR$/Css/Style's Team/Events.css" />
-        <option value="$PROJECT_DIR$/Contact-Us.html" />
         <option value="$PROJECT_DIR$/Css/Style's Team/index.css" />
         <option value="$PROJECT_DIR$/Css/Style's Team/Contact-Us.css" />
         <option value="$PROJECT_DIR$/Perform.html" />
@@ -154,9 +213,13 @@
         <option value="$PROJECT_DIR$/Css/Style's Team/Header.css" />
         <option value="$PROJECT_DIR$/ticket.html" />
         <option value="$PROJECT_DIR$/Css/Style's Team/ticket.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/cart.html" />
         <option value="$PROJECT_DIR$/Css/Style's Team/cart.css" />
+=======
+        <option value="$PROJECT_DIR$/Contact-Us.html" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
       </list>
     </option>
   </component>
@@ -187,9 +250,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Amusement-Park" />
@@ -260,9 +324,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+=======
+          <expand>
+            <path>
+              <item name="Amusement-Park" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amusement-Park" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amusement-Park" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amusement-Park" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amusement-Park" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amusement-Park" type="462c0819:PsiDirectoryNode" />
+              <item name="Css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amusement-Park" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amusement-Park" type="462c0819:PsiDirectoryNode" />
+              <item name="Css" type="462c0819:PsiDirectoryNode" />
+              <item name="Style's Team" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,6 +361,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Team1-Batch140\Amusement-Park\Css\Style's Team" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,6 +380,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -321,15 +423,6 @@
       <option name="cucumberJsArguments" value="" />
       <option name="executablePath" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -394,25 +487,40 @@
       <workItem from="1519539028668" duration="602000" />
       <workItem from="1519626213210" duration="6054000" />
       <workItem from="1519635569975" duration="402000" />
+<<<<<<< HEAD
       <workItem from="1519808449466" duration="128000" />
       <workItem from="1519992304880" duration="6225000" />
       <workItem from="1519999411479" duration="377000" />
+=======
+      <workItem from="1519991393476" duration="2384000" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="84570000" />
+=======
+    <option name="totallyTimeSpent" value="80224000" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24358974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -446,7 +554,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -456,11 +564,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Images/duong-truot-phao-750x450.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+=======
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
     <entry file="file://$PROJECT_DIR$/Images/images.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -636,6 +747,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Css/Style's Team/Restaurant.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-136">
@@ -644,6 +756,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Restaurant.html">
+=======
+    <entry file="file://$PROJECT_DIR$/Gallery.html">
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5219">
           <caret line="307" column="24" lean-forward="false" selection-start-line="307" selection-start-column="24" selection-end-line="307" selection-end-column="24" />
@@ -674,6 +789,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Css/Style's Team/ticket.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
@@ -683,6 +799,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ticket.html">
+=======
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/Css/Style's Team/Restaurant.css">
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
           <caret line="100" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="196" selection-end-column="7" />
@@ -694,21 +814,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Contact-Us.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="614">
           <caret line="127" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="133" selection-end-column="7" />
+=======
+        <state relative-caret-position="5219">
+          <caret line="307" column="24" lean-forward="false" selection-start-line="307" selection-start-column="24" selection-end-line="307" selection-end-column="24" />
+          <folding />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="9" />
+=======
+        <state relative-caret-position="1785">
+          <caret line="105" column="19" lean-forward="false" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cart.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="248">
           <caret line="100" column="49" lean-forward="false" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="49" />
           <folding>
@@ -721,7 +853,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+=======
+        <state relative-caret-position="2601">
+          <caret line="153" column="20" lean-forward="false" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="63" column="69" lean-forward="true" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+>>>>>>> e0ad4042213834ee519a1f471f879f66bf76416b
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Css/Style's Team/faq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="343" column="16" lean-forward="false" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contact-Us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="370" column="44" lean-forward="true" selection-start-line="370" selection-start-column="44" selection-end-line="370" selection-end-column="44" />
+          <folding>
+            <element signature="e#4924#4929#0" expanded="true" />
+            <element signature="e#4929#4935#0" expanded="true" />
+            <element signature="e#15441#15446#0" expanded="true" />
+            <element signature="e#15446#15452#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
