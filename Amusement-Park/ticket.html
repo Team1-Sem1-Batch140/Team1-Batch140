@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <title>Ticket Online</title>
@@ -10,13 +10,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
 
-    <!--<link rel="stylesheet" href="Bootstrap/bootstrap.min.css">-->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/Style's%20Team/ticket.css">
     <link rel="stylesheet" href="Css/Style's Team/Header.css">
     <link rel="stylesheet" href="Css/Style's Team/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="Data/tickets.json"></script>
+
+
 
 </head>
 <body ng-app="">
@@ -184,14 +186,26 @@
             </script>
         </div>
 
-        <div class="col-lg-4 hidden-sm hidden-xs">
-            <h2>HÌNH ẢNH</h2>
-            <a href="Restaurant.html"><img src="Images/24.4.jpg" class="img-thumbnail"></a>
-            <a href="Ben-Pha.html"><img src="Images/22.5.jpg" class="img-thumbnail"></a>
-            <a href="Perform.html"><img src="Images/24.3.jpg" class="img-thumbnail"></a>
+        <script>
+            var App = angular.module('App', []);
+
+            App.controller('ImageCtrl', function($scope, $http) {
+                $http.get('Data/tickets.json')
+                    .then(function(res){
+                        $scope.tickets = res.data;
+                    });
+            });
+        </script>
+
+        <div class="col-lg-4 hidden-sm hidden-xs left" ng-controller="ImageCtrl">
+            <h3>HÌNH ẢNH</h3>
+            <div ng-repeat="item in tickets">
+                <a href="{{item.Herf}}"><img src="{{item.ImagePath}}" class="img-thumbnail"></a>
+            </div>
         </div>
     </div>
 </div>
 <div w3-include-html="Common/Footer.html" id="footer"></div>
+
 </body>
 </html>

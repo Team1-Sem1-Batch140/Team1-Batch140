@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Sự kiện - thông báo",
+    "href": "Events.html",
+    "imagePath": "Images/lịch-hoạt-động.jpg",
+    "content": "Sự kiện và thông báo sẽ được cập nhật thường xuyên tại đây .."
+  },
+  {
+    "title": "Vinpearl",
+    "href": "vinpearl.html",
+    "imagePath": "Images/24.2.jpg",
+    "content": "Vinpearl Land Nha Trang - thiên đường giải trí đẳng cấp thế giới - nằm trong một trong số 29.."
+  },
+  {
+    "title": "Biểu diễn",
+    "href": "Perform.html",
+    "imagePath": "Images/24.3.jpg",
+    "content": "Bên cạnh công viên nước, trò chơi ngoài trời và trong nhà, Vinpearl Land Nha Trang cũng nổi tiếng.."
+  },
+  {
+    "title": "Cảnh Quan",
+    "href": "Gallery.html",
+    "imagePath": "Images/24.1.jpg",
+    "content": "Sự kiện và thông báo sẽ được cập nhật thường xuyên tại đây .."
+  },
+  {
+    "title": "Bến phà",
+    "href": "Ben-Pha.html",
+    "imagePath": "Images/22.5.jpg",
+    "content": "Đưa du thuyền từ đất liền đến Vinpearl Land cách thủ đô hơn 2 hải lý và mất 20 phút đi bằng phà.."
+  },
+  {
+    "title": "Nhà Hàng & Bar",
+    "href": "Restaurant.html",
+    "imagePath": "Images/24.4.jpg",
+    "content": "Bên cạnh công viên nước, trò chơi ngoài trời và trong nhà, Vinpearl Land Nha Trang cũng nổi tiếng.."
+  }
+]
