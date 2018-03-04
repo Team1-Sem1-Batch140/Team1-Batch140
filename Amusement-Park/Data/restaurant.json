@@ -1,0 +1,50 @@
+[
+  {
+    "float": "left",
+    "resName": "Nhà hàng Oriental",
+    "location": "Tầng 1, Khu tiền sảnh",
+    "capacity": "120 chỗ",
+    "hours": "Bữa sáng: 6:00 - 10:00&emsp;Bữa trưa: 12:00 - 14:00&emsp;Bữa tối: 18:00 - 22:00",
+    "introduce": "Nhà hàng Gourmet mang đến không gian ẩm thực từ phòng ăn riêng cao cấp cho khách VIP, đến một địa điểm ăn uống ngoài trời tuyệt đẹp bên bờ biển. Nhà hàng cũng có thực đơn đặc biệt dành riêng cho trẻ em.",
+    "id": "carouselRes2",
+    "imgPath1": "Images/nha-hang-oriental-1.jpg",
+    "imgPath2": "Images/nha-hang-oriental-2.jpg",
+    "imgPath3": "Images/nha-hang-oriental-1.jpg"
+  },
+  {
+    "float": "right",
+    "resName": "Nhà hàng Gourmet",
+    "location": "Tầng 1, Khu tiền sảnh",
+    "capacity": "210 chỗ",
+    "hours": "Bữa tối: 18:00 - 22:00",
+    "introduce": "Tại đây, mỗi ngày du khách có thể thưởng thức hải sản tươi sống thu hoạch ngay từ biển bao quanh tại Đà Nẵng và rất nhiều món ngon tinh tế từ ẩm thực Việt Nam truyền thống. Nhà hàng có khu ẩm thực trong nhà và ngoài trời.",
+    "id": "carouselRes2",
+    "imgPath1": "Images/nha-hang-gourmet-1.jpg",
+    "imgPath2": "Images/nha-hang-gourmet-2.jpg",
+    "imgPath3": "Images/nha-hang-gourmet-3.jpg"
+  },
+  {
+    "float": "left",
+    "resName": "Pool Bar",
+    "location": "Hồ bơi chính của khách sạn",
+    "capacity": "36 chỗ",
+    "hours": "",
+    "introduce": "Nằm ngay kế bên hồ bơi ngoài trời, Pool Bar là không gian tuyệt vời để ngả lưng trên ghế tắm nắng tận hưởng khung cảnh hùng vĩ nhất của Vịnh Hạ Long và thưởng thức các loại nước trái cây, sinh tố và cocktail tươi mát cùng các món đồ ăn nhẹ.",
+    "id": "carouselBar1",
+    "imgPath1": "Images/pool-bar-1.jpg",
+    "imgPath2": "Images/pool-bar-2.jpg",
+    "imgPath3": "Images/pool-bar-1.jpg"
+  },
+  {
+    "float": "right",
+    "resName": "Writer’s Bar",
+    "location": "Tầng 2, Khu tiền sảnh",
+    "capacity": "50 chỗ",
+    "hours": "",
+    "introduce": "Nơi các du khách có thể thưởng thức hương vị những loại rượu nổi tiếng trên thế giới, hay những loại cocktail được pha chế đặc biệt. Ngoài ra, Writer’s Bar cũng dành cho các du khách một không gian ấm cúng sang trọng để thưởng thức sự kết hợp tuyệt diệu của tách trà chiều quyến rũ cùng những chiếc bánh ngọt nhẹ nhàng.",
+    "id": "carouselBar2",
+    "imgPath1": "Images/writer-bar-1.jpg",
+    "imgPath2": "Images/writer-bar-2.jpg",
+    "imgPath3": "Images/writer-bar-1.jpg"
+  }
+]

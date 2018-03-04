@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <title>Restaurant</title>
@@ -102,335 +102,104 @@
 <!-- BOT HEADER -->
 <div id="bot-header">
 
-    <div class="container test">
+    <script>
+        var App = angular.module('App', []);
+
+        App.controller('RestaurantCtrl', function($scope, $http) {
+            $http.get('Data/restaurant.json')
+                .then(function(res){
+                    $scope.restaurant = res.data;
+                });
+        });
+    </script>
+
+    <div class="container test" ng-controller="RestaurantCtrl">
 
         <!-- RESTAURANT -->
+        <div class="row" ng-repeat="item in restaurant">
+            <!-- LINE 1 -->
+            <!-- Intro Restaurant -->
+            <div class="col-xs-12 col-sm-6 col-md-6 leftRes" style="float: {{item.float}}">
+                <h3>
+                    <span class="head-text">{{item.resName}}</span>
+                    <br>
+                    <p class="line"></p>
+                </h3>
+                <div class="row">
+                    <div class="col-xs-7 col-sm-6 col-md-6">
+                        <p class="text-uppercase">
+                            <i class="fa fa-location-arrow"></i> Vị trí
+                        </p>
 
-        <!-- LINE 1 -->
-
-        <!-- Intro Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Nhà hàng Oriental</span>
-                <br>
-                <p class="line"></p>
-            </h3>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Tầng 1, Khu tiền sảnh</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>120 chỗ</strong>
-                    </p>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <p class="text-uppercase">
-                        <i class="fa fa-clock-o"></i> Giờ mở cửa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Bữa tối: 18:00 - 22:00</strong>
-                    </p>
-                </div>
-
-            </div>
-            <p>Tại đây, mỗi ngày du khách có thể thưởng thức hải sản tươi sống thu hoạch ngay từ biển bao quanh tại Đà
-                Nẵng
-                và rất nhiều món ngon tinh tế từ ẩm thực Việt Nam truyền thống. Nhà hàng có khu ẩm thực trong nhà và
-                ngoài
-                trời.</p>
-        </div>
-
-
-        <!-- Carousel Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar ">
-            <div id="carouselRes1" class="carousel slide" data-ride="carousel" data-interval="3500">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselRes1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselRes1" data-slide-to="1"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/nha-hang-oriental-1.jpg" alt="">
+                        <p class="text-primary">
+                            <strong>{{item.location}}</strong>
+                        </p>
                     </div>
 
-                    <div class="item">
-                        <img src="Images/nha-hang-oriental-2.jpg" alt="">
+                    <div class="col-xs-5 col-sm-6 col-md-6">
+                        <p class="text-uppercase">
+                            <i class="fa fa-user"></i> Sức chứa
+                        </p>
+
+                        <p class="text-primary">
+                            <strong>{{item.capacity}}</strong>
+                        </p>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <p class="text-uppercase">
+                            <i class="fa fa-clock-o"></i> Giờ mở cửa
+                        </p>
+
+                        <p class="text-primary">
+                            <strong>{{item.hours}}</strong>
+                        </p>
                     </div>
 
                 </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselRes1" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselRes1" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- LINE 2 -->
-
-        <!-- Carousel Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar">
-            <div id="carouselRes2" class="carousel slide" data-ride="carousel" data-interval="3550">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselRes2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselRes2" data-slide-to="1"></li>
-                    <li data-target="#carouselRes2" data-slide-to="2"></li>
-                    <li data-target="#carouselRes2" data-slide-to="3"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/nha-hang-gourmet-1.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/nha-hang-gourmet-2.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/nha-hang-gourmet-3.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/nha-hang-gourmet-4.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselRes2" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselRes2" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- Intro Restaurant -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Nhà hàng Gourmet</span> <br>
-                <p class="line"></p>
-            </h3>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Tầng 1, Khu tiền sảnh</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>210 chỗ</strong>
-                    </p>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <p class="text-uppercase">
-                        <i class="fa fa-clock-o"></i> Giờ mở cửa
-                    </p>
-
-                    <p class=" text-primary">
-                        <strong class="col-md-3 hour">Bữa sáng: 6:00 - 10:00</strong>
-                        <strong class="col-md-3 hour">Bữa trưa: 12:00 - 14:00</strong>
-                        <strong class="col-md-3 hour">Bữa tối: 18:00 - 22:00</strong>
-                    </p>
-                </div>
-
+                <p>{{item.introduce}}</p>
             </div>
 
-            <p>Nhà hàng Gourmet mang đến không gian ẩm thực từ phòng ăn riêng cao cấp cho khách VIP, đến một địa điểm ăn
-                uống ngoài trời tuyệt đẹp bên bờ biển. Nhà hàng cũng có thực đơn đặc biệt dành riêng cho trẻ em.</p>
 
-        </div>
+            <!-- Carousel Restaurant -->
+            <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar ">
+                <div id="{{item.id}}" class="carousel slide" data-ride="carousel" data-interval="3500">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#{{item.id}}" data-slide-to="0" class="active"></li>
+                        <li data-target="#{{item.id}}" data-slide-to="1"></li>
+                        <li data-target="#{{item.id}}" data-slide-to="2"></li>
+                    </ol>
 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{{item.imgPath1}}" alt="">
+                        </div>
 
-        <div class="clear"></div>
+                        <div class="item">
+                            <img src="{{item.imgPath2}}" alt="">
+                        </div>
 
-        <!-- BAR -->
+                        <div class="item">
+                            <img src="{{item.imgPath3}}" alt="">
+                        </div>
 
-        <!-- LINE 3 -->
-
-        <!-- Intro Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Pool Bar</span>
-                <br>
-                <p class="line"></p>
-            </h3>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Hồ bơi chính của khách sạn</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>36 chỗ</strong>
-                    </p>
-                </div>
-
-
-            </div>
-            <p>Nằm ngay kế bên hồ bơi ngoài trời, Pool Bar là không gian tuyệt vời để ngả lưng trên ghế tắm nắng tận
-                hưởng khung cảnh hùng vĩ nhất của Vịnh Hạ Long và thưởng thức các loại nước trái cây, sinh tố và
-                cocktail tươi mát cùng các món đồ ăn nhẹ.
-            </p>
-        </div>
-
-        <!-- Carousel Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar">
-            <div id="carouselBar1" class="carousel slide" data-ride="carousel" data-interval="3600">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselBar1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselBar1" data-slide-to="1"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/pool-bar-1.jpg" alt="">
                     </div>
 
-                    <div class="item">
-                        <img src="Images/pool-bar-2.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselBar1" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselBar1" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- LINE 4 -->
-
-        <!-- Carousel Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 slide-res-bar">
-            <div id="carouselBar2" class="carousel slide" data-ride="carousel" data-interval="3650">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselBar2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselBar2" data-slide-to="1"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="Images/writer-bar-1.jpg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="Images/writer-bar-2.jpg" alt="">
-                    </div>
-
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#carouselBar2" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carouselBar2" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Intro Bar -->
-        <div class="col-xs-12 col-sm-6 col-md-6 leftRes">
-            <h3>
-                <span class="head-text">Writer’s Bar</span>
-                <br>
-                <p class="line"></p>
-            </h3>
-
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-location-arrow"></i> Vị trí
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>Tầng 2, Khu tiền sảnh</strong>
-                    </p>
-                </div>
-
-                <div class="col-xs-5 col-sm-6 col-md-6">
-                    <p class="text-uppercase">
-                        <i class="fa fa-user"></i> Sức chứa
-                    </p>
-
-                    <p class="text-primary">
-                        <strong>50 chỗ</strong>
-                    </p>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#{{item.id}}" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#{{item.id}}" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-
-            <p>Nơi các du khách có thể thưởng thức hương vị những loại rượu nổi tiếng trên thế giới, hay những loại
-                cocktail được pha chế đặc biệt. Ngoài ra, Writer’s Bar cũng dành cho các du khách một không gian ấm cúng
-                sang trọng để thưởng thức sự kết hợp tuyệt diệu của tách trà chiều quyến rũ cùng những chiếc bánh ngọt
-                nhẹ nhàng.
-            </p>
         </div>
-
 
     </div>  <!-- Container -->
 </div>      <!-- Bot header -->
