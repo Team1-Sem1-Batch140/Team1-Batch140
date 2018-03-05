@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <title>Thông báo & Sự kiện</title>
@@ -28,16 +28,6 @@
         $("#footer").load("Common/Footer.html");
     });
 
-    var add = (function () {
-        var counter = 0;
-        return function () {
-            return counter += 1;
-        }
-    })();
-
-    function myCart() {
-        document.getElementById("quantity").innerHTML = add();
-    }
 
     var modal = document.getElementById('id01');
 
@@ -98,93 +88,106 @@
 </div>
 
 
-<!-- BOT HEADER -->
 <div id="bot-header">
     <br>
-    <div class="container" id="go0luck">
-        <h2>New & Event</h2>
-        <p>This is the place to announce - the fastest in vinpearl nha trang. We will update regularly, thank you</p>
+    <div class="container"  id="go0luck">
+        <h2>Events & Information</h2>
+        <p>We will update the venue and event information here, thank you</p>
 
     </div>
+
     <br>
     <br>
-    <div class="container">
-    <div class="col-md-4 col-sm-12">
+    <script>
+        var App = angular.module('App', []);
+
+        App.controller('EventsCtrl', function($scope, $http) {
+            $http.get('Data/events.json')
+                .then(function(res){
+                    $scope.events = res.data;
+                });
+        });
+    </script>
+    <div class="container" ng-controller="EventsCtrl">
+
+
+        <div class="col-md-4 col-sm-12" ng-repeat="item in events">
         <div class="thumbnail">
-            <a href="/w3images/nature.jpg" target="_blank">
-                <img src="Images/26.2.jpg" alt="Nature" style="width:100%">
+            <a href="{{item.href}}" target="_blank">
+            <img src="{{item.imagePath}}" alt="Nature" style="width:100%">
                 <div class="caption">
-                    <p><b>VINPEARL LAND NHA TRANG – “MỘT ĐIỂM ĐẾN, VẠN TRẢI NGHIỆM”.</b></p>
+                    <p><b>{{item.content}}</b></p>
                 </div>
             </a>
         </div>
 
     </div>
 
-    <div class="col-md-4 col-sm-12">
-        <div class="thumbnail">
-            <a href="/w3images/nature.jpg" target="_blank">
-                <img src="Images/26.3.jpg!d" alt="Nature" style="width:100%">
-                <div class="caption">
-                    <p><b>THÔNG BÁO TẠM DỪNG MỘT SỐ TRÒ CHƠI NGOÀI TRỜI.</b></p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12">
-        <div class="thumbnail">
-            <a href="#">
-                <img src="Images/221.8.jpg" alt="Nature" style="width:100%">
-                <div class="caption">
-                    <p><b>(Vietnamese) [THÔNG BÁO] BẢO DƯỠNG BÁNH XE BẦU TRỜI.</b></p>
-                </div>
-            </a>
-        </div>
-    </div>
-        <div class="col-md-4 col-sm-12">
-            <div class="thumbnail">
-                <a href="/w3images/nature.jpg" target="_blank">
-                    <img src="Images/221.1.jpg" alt="Nature" style="width:100%">
-                    <div class="caption">
-                        <p><b>THÔNG BÁO ĐIỀU CHỈNH GIÁ VÉ TỪ NGÀY 19/05/2017.</b></p>
-                    </div>
-                </a>
-            </div>
+    <!--<div class="col-md-4 col-sm-12">-->
+        <!--<div class="thumbnail">-->
+            <!--<a href="/w3images/nature.jpg" target="_blank">-->
+                <!--<img src="Images/26.3.jpg!d" alt="Nature" style="width:100%">-->
+                <!--<div class="caption">-->
+                    <!--<p><b>THÔNG BÁO TẠM DỪNG MỘT SỐ TRÒ CHƠI NGOÀI TRỜI.</b></p>-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-4 col-sm-12">-->
+        <!--<div class="thumbnail">-->
+            <!--<a href="#">-->
+                <!--<img src="Images/221.8.jpg" alt="Nature" style="width:100%">-->
+                <!--<div class="caption">-->
+                    <!--<p><b>(Vietnamese) [THÔNG BÁO] BẢO DƯỠNG BÁNH XE BẦU TRỜI.</b></p>-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+        <!--<div class="col-md-4 col-sm-12">-->
+            <!--<div class="thumbnail">-->
+                <!--<a href="/w3images/nature.jpg" target="_blank">-->
+                    <!--<img src="Images/221.1.jpg" alt="Nature" style="width:100%">-->
+                    <!--<div class="caption">-->
+                        <!--<p><b>THÔNG BÁO ĐIỀU CHỈNH GIÁ VÉ TỪ NGÀY 19/05/2017.</b></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-4 col-sm-12">
-            <div class="thumbnail">
-                <a href="/w3images/nature.jpg" target="_blank">
-                    <img src="Images/13.jpg" alt="Nature" style="width:100%">
-                    <div class="caption">
-                        <p><b>BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017.</b></p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <div class="thumbnail">
-                <a href="#">
-                    <img src="Images/cavoi2.jpg" alt="Nature" style="width:100%">
-                    <div class="caption">
-                        <p><b>(Vietnamese) Điều chỉnh giá vé từ 1/7/2016.</b></p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <div class="thumbnail">
-                <a href="#">
-                    <img src="Images/11-750x309.jpg" alt="Nature" style="width:100%">
-                    <div class="caption">
-                        <p><b>What’s new this June?.</b></p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+        <!--<div class="col-md-4 col-sm-12">-->
+            <!--<div class="thumbnail">-->
+                <!--<a href="/w3images/nature.jpg" target="_blank">-->
+                    <!--<img src="Images/13.jpg" alt="Nature" style="width:100%">-->
+                    <!--<div class="caption">-->
+                        <!--<p><b>BUFFET CHUYỂN SANG DỊCH VỤ À LA CARTE TỪ 19/11/2017.</b></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-4 col-sm-12">-->
+            <!--<div class="thumbnail">-->
+                <!--<a href="#">-->
+                    <!--<img src="Images/cavoi2.jpg" alt="Nature" style="width:100%">-->
+                    <!--<div class="caption">-->
+                        <!--<p><b>(Vietnamese) Điều chỉnh giá vé từ 1/7/2016.</b></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-4 col-sm-12">-->
+            <!--<div class="thumbnail">-->
+                <!--<a href="#">-->
+                    <!--<img src="Images/11-750x309.jpg" alt="Nature" style="width:100%">-->
+                    <!--<div class="caption">-->
+                        <!--<p><b>What’s new this June?.</b></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
+</div>
 </div>
 <!-- FOOTER -->
 <div w3-include-html="Common/Footer.html" id="footer"></div>
